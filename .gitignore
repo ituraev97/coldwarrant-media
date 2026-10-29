@@ -5,3 +5,4 @@ gfx/
 seg/
 vo/
 nat/
+__pycache__/
