@@ -183,5 +183,7 @@ META = dict(
         dict(id="s3", lines=[21, 25], hook="HOW DEPORTATIONS<br>[SPREAD] MS-13"),
         dict(id="s4", lines=[42, 46], hook="OPERATION<br>[RAGING BULL]"),
         dict(id="s5", lines=[53, 58], hook="62 KILLED<br>IN [ONE DAY]"),
+        dict(id="s6", lines=[8, 13], hook="MS-13 WASN'T BORN<br>IN [EL SALVADOR]", cta="FULL CASE FILE DROPS TOMORROW"),
+        dict(id="s7", lines=[47, 51], hook="MS-13 HAD A<br>[BOARD OF DIRECTORS]", cta="FULL CASE FILE DROPS TOMORROW"),
     ],
 )
