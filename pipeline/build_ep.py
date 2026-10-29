@@ -35,8 +35,7 @@ def render(idx, shot, d):
     if src.startswith("g:"):
         key = gkey(src[2:], o); frames = sorted(glob.glob(f"gfx/{key}/f*.jpg")); nint = len(frames)
         vf = (f"[0:v]fps={FPS},trim=end_frame={min(n, nint)},setpts=PTS-STARTPTS[a];"
-              f"[1:v]loop=loop=-1:size=1,fps={FPS},trim=end_frame={max(0, n - nint) + 1},scale=2016:1134,"
-              f"crop={W}:{H}:x='48*t/{max(d,1):.2f}':y='27*t/{max(d,1):.2f}',setsar=1,setpts=PTS-STARTPTS[b];"
+              f"[1:v]loop=loop=-1:size=1,fps={FPS},trim=end_frame={max(0, n - nint) + 1},setsar=1,setpts=PTS-STARTPTS[b];"  # RULE: graphics hold perfectly still after their intro (no zoom/drift -> no jitter)
               f"[a][b]concat=n=2:v=1,trim=end_frame={n},format=yuv420p,fade=t=in:st=0:d=0.2[v]")
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-framerate", str(FPS), "-i", f"gfx/{key}/f%04d.jpg",
              "-loop", "1", "-i", frames[-1], "-filter_complex", vf, "-map", "[v]", "-frames:v", str(n), "-an"] + ENC + [out])
@@ -44,7 +43,8 @@ def render(idx, shot, d):
         img = IMGS[src[4:]]; kb = o.get("kb", "in")
         z = "min(zoom+0.0008,1.22)" if kb == "in" else "1.15"
         x = "iw/2-(iw/zoom/2)" if kb == "in" else f"(iw-iw/zoom)*on/{n}"
-        vf = (f"scale=3840:-2,crop=3840:2160,zoompan=z='{z}':x='{x}':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS},"
+        # RULE: Ken Burns only on stills, computed on a 4x-supersampled canvas so motion is sub-pixel smooth
+        vf = (f"scale=7680:-2,crop=7680:4320,zoompan=z='{z}':x='{x}':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS},"
               f"eq=saturation=0.6,curves=preset=increase_contrast,{GRADE}")
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-loop", "1", "-i", img, "-vf", vf, "-frames:v", str(n), "-an"] + ENC + [out])
     else:
@@ -56,10 +56,8 @@ def render(idx, shot, d):
         if o.get("heli"): pre = "crop=iw*0.70:ih*0.70:iw*0.15:ih*0.03,"
         if o.get("pb"): pre = "crop=ih*4/3:ih:(iw-ih*4/3)/2:0,"
         if o.get("crop"): pre = f"crop={o['crop']},"
-        # cheap slow drift: scale 8% larger once, then move the crop window
-        dx = "96*t/%.2f" % d if idx % 2 == 0 else "96-96*t/%.2f" % d
-        vf = (f"{pre}fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},scale=2074:1166,"
-              f"crop={W}:{H}:x='{dx}':y='43',setsar=1,{GRADE}")
+        # RULE: no artificial zoom/drift on footage (integer-pixel crops/scales make it shake); keep the camera's own motion
+        vf = (f"{pre}fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},setsar=1,{GRADE}")
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", f"{ss}", "-i", clip, "-t", f"{d + 0.2:.3f}", "-vf", vf,
              "-frames:v", str(n), "-an"] + ENC + [out])
     return out, n / FPS

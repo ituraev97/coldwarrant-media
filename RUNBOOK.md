@@ -39,7 +39,7 @@ Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 
 ## 4. Script → `episodes/NNN-slug/episode.py`
 - Copy the structure of `episodes/001-ms13/episode.py`: `LINES = [(spoken_text, shots, opts), ...]`, `DISPLAY` (spoken → on-screen spelling), `META` (case, label, title, imgs, credit, shorts).
-- 1,300–1,600 words → 10–12.5 min. Cold open (≤40 s, the most dramatic verified moment + the question) → `g:title` → 5–6 chapters (`g:chapter` with n, t, case) → close + `g:end`.
+- 1,600–1,900 words → 10–12 min at narration speed 1.06 (TTS_SPEED). Episode must stay ≥ 10:00. Cold open (≤40 s, the most dramatic verified moment + the question) → `g:title` → 5–6 chapters (`g:chapter` with n, t, case) → close + `g:end`.
 - Write numbers/years as words in spoken text (Kokoro), add digit forms to DISPLAY. Respell hard names for TTS and map them back in DISPLAY (check with `Kokoro(...).tokenizer.phonemize(word,"en-us")`).
 - Shots: 2–3 per line, each 2.5–6 s. ~25–35% of screen time should be our own graphics (maps, stats, documents, timelines, lists) — this is what makes the channel original.
 - Graphics available in `pipeline/graphics.mjs`: title{case,title,sub}, chapter{case,n,t}, stat{a,b,c}, quote{q,w}, doc{header,title,body,stamp,source}, list{kicker,title,items,footer}, phases{kicker,title,left,right,active,total,footer}, cards3{kicker,title,cards}, timeline{kicker,title,events}, map{map:{bounds|useUS,highlight,cities,arcs,labels,topPad},kicker,title,footer}, end{case,label}.
@@ -58,6 +58,13 @@ bash $P/encode.sh $EP $EP/long.mp4 95   # must stay < 100 MB (GitHub file limit)
 python3 $P/shorts.py $EP $EP/shorts
 cd $P && node thumb.mjs $EP/thumb.json $EP   # thumb_A (main) + thumb_C (alternative for Test & Compare)
 ```
+
+## Motion & pacing rules (owner feedback after ep. 001 — mandatory)
+- No artificial zoom/drift/shake on video footage. Use the camera's own motion only. (Per-frame scale/crop rounds to whole pixels and makes the picture twitch.)
+- Graphics: animate in, then hold perfectly still until the cut. Never start a zoom or pan after the intro animation ends.
+- Ken Burns only on still photos, and only via zoompan on a 4×-supersampled canvas (already in build_ep.py).
+- Narration speed 1.06 (default in tts_ep.py). Do not go back to 0.94 — it felt slow.
+- Before upload, scrub the transitions from intro→hold on 3 graphics and 3 footage cuts at full size: anything that jumps or wobbles is a blocker.
 
 ## 6. QA (do not skip)
 - Contact sheet of the long video every ~8 s: no gore, no unreadable overlaps, no black frames, subtitles inside frame.

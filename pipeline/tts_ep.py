@@ -13,6 +13,6 @@ tot = 0
 for i, (t, shots, o) in enumerate(E.LINES, 1):
     f = f"{ep}/vo/raw_{i:02d}.wav"
     if not os.path.exists(f):
-        a, sr = k.create(t, voice=voice, speed=0.94, lang=lang); sf.write(f, a, sr)
+        a, sr = k.create(t, voice=voice, speed=float(os.environ.get("TTS_SPEED", "1.06")), lang=lang); sf.write(f, a, sr)  # RULE: speed 1.06 (ep.001 used 0.94 — too slow)
     a, sr = sf.read(f); tot += len(a) / sr
 print("speech seconds:", round(tot, 1))
