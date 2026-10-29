@@ -49,6 +49,10 @@ def render(idx, shot, d):
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-loop", "1", "-i", img, "-vf", vf, "-frames:v", str(n), "-an"] + ENC + [out])
     else:
         clip = f"{CLIPS}/{src}.mp4"; pre = ""
+        cd = dur(clip)
+        if ss + d > cd - 0.4:  # never run past the end of a clip (end slates / black)
+            print(f"WARN clip {src} start {ss} + {d:.1f}s > {cd:.1f}s, clamping", flush=True)
+            ss = max(0.0, cd - d - 0.4)
         if o.get("heli"): pre = "crop=iw*0.70:ih*0.70:iw*0.15:ih*0.03,"
         if o.get("pb"): pre = "crop=ih*4/3:ih:(iw-ih*4/3)/2:0,"
         if o.get("crop"): pre = f"crop={o['crop']},"

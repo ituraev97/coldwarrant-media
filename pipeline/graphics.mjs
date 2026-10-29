@@ -112,7 +112,7 @@ function header(kicker, title, d = 0.1) {
    <div class="mono a" data-d="${d}" style="font-size:24px">${kicker}</div>
    <div class="osw a" data-d="${d + 0.12}" style="font-size:64px;margin-top:10px">${title}</div></div>`;
 }
-const footer = (src) => `<div class="mono a" data-d="0.9" style="position:absolute;left:110px;bottom:60px;font-size:21px;letter-spacing:.16em">${src}</div>`;
+const footer = (src) => `<div class="mono a" data-d="0.9" style="position:absolute;left:110px;bottom:150px;font-size:21px;letter-spacing:.16em">${src}</div>`;
 
 // ---------- graphic builders ----------
 const B = {
@@ -200,9 +200,10 @@ const B = {
     <div style="height:3px;background:#141416;margin:26px 0 40px"></div>
     <div class="anton" style="font-size:96px;line-height:1">MS-13 DESIGNATED A<br>TRANSNATIONAL CRIMINAL<br>ORGANIZATION</div>
     <div style="font-family:Plex;font-weight:500;font-size:30px;line-height:1.5;margin-top:40px;color:#333">The first street gang to receive the designation.<br>Assets under U.S. jurisdiction can be frozen.</div>
+    <div style="position:absolute;left:90px;bottom:60px;font-family:Plex;font-weight:600;font-size:18px;letter-spacing:.14em;color:#777">SOURCE: ICE / TREASURY PRESS RELEASE · EXECUTIVE ORDER 13581</div>
    </div>
    <div class="stamp a" data-d="0.8" data-k="slam" data-base="rotate(-12deg)" style="position:absolute;right:300px;bottom:170px;font-size:44px;background:rgba(236,231,220,.0)">DESIGNATED · TCO</div>
-   ${footer("SOURCE: ICE / TREASURY PRESS RELEASE, OCTOBER 2012 · EXECUTIVE ORDER 13581")}`),
+   `),
 
   raging: (o) => page(`${header("OPERATION RAGING BULL", o.phase === 1 ? "PHASE I · EL SALVADOR" : "PHASE II · UNITED STATES")}
    <div style="position:absolute;left:110px;right:110px;top:330px;display:grid;grid-template-columns:1fr 1fr;gap:60px">
@@ -229,9 +230,10 @@ const B = {
     <div style="height:3px;background:#141416;margin:26px 0 40px"></div>
     <div class="anton" style="font-size:110px;line-height:1">INDICTMENT<br>UNSEALED</div>
     <div style="font-family:Plex;font-weight:500;font-size:32px;line-height:1.5;margin-top:40px;color:#333">Defendants: 14 leaders of the<br><b>Ranfla Nacional</b> — MS-13's top council.<br>Investigated by Joint Task Force Vulcan.</div>
+    <div style="position:absolute;left:90px;bottom:60px;font-family:Plex;font-weight:600;font-size:18px;letter-spacing:.14em;color:#777">SOURCE: U.S. DEPARTMENT OF JUSTICE · CHARGES ARE ALLEGATIONS</div>
    </div>
    <div class="stamp a" data-d="0.8" data-k="slam" data-base="rotate(-10deg)" style="position:absolute;right:300px;bottom:150px;font-size:44px">TERRORISM CHARGES</div>
-   ${footer("SOURCE: U.S. DEPARTMENT OF JUSTICE · CHARGES ARE ALLEGATIONS")}`),
+   `),
 
   charges: () => page(`${header("THE CHARGES", "UNITED STATES v. RANFLA NACIONAL")}
    <div style="position:absolute;left:110px;top:330px">
@@ -260,9 +262,10 @@ const B = {
     <div style="height:3px;background:#141416;margin:26px 0 40px"></div>
     <div class="anton" style="font-size:${o.tsize || 96}px;line-height:1">${o.title}</div>
     <div style="font-family:Plex;font-weight:500;font-size:30px;line-height:1.5;margin-top:40px;color:#333">${o.body || ""}</div>
+    ${o.source ? `<div style="position:absolute;left:90px;bottom:60px;font-family:Plex;font-weight:600;font-size:18px;letter-spacing:.14em;color:#777">${o.source}</div>` : ""}
    </div>
    ${o.stamp ? `<div class="stamp a" data-d="0.8" data-k="slam" data-base="rotate(-10deg)" style="position:absolute;right:300px;bottom:160px;font-size:44px">${o.stamp}</div>` : ""}
-   ${o.source ? footer(o.source) : ""}`),
+   `),
   list: (o) => page(`${header(o.kicker, o.title)}
    <div style="position:absolute;left:110px;top:330px;right:110px">
    ${o.items.map((c, i) => `<div class="a" data-d="${0.25 + i * 0.22}" style="display:flex;align-items:center;gap:34px;margin-bottom:40px">

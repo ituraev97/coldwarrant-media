@@ -45,8 +45,8 @@ for sh in E.META.get("shorts", []):
             s = e
     ev.append(f"Dialogue: 3,{ts(D - 2.4)},{ts(D)},CTA,,0,0,0,,{{\\an5\\pos(540,1600)\\fad(200,0)}}FULL CASE FILE ON THE CHANNEL")
     ass = f"{OUT}/{sh['id']}.ass"; open(ass, "w", encoding="utf-8").write(HEAD + "\n".join(ev) + "\n")
-    vf = (f"[0:v]split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=30:2,eq=brightness=-0.25[bg];"
-          f"[b]scale=1220:-2,crop=1080:ih[fg];[bg][fg]overlay=0:(H-h)/2-80,ass={ass},fade=t=in:st=0:d=0.3,fade=t=out:st={D-0.5:.2f}:d=0.5[v]")
+    vf = (f"[0:v]split[a][b];[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=26:2,eq=brightness=-0.16:saturation=0.8[bg];"
+          f"[b]scale=1080:-2[fg];[bg][fg]overlay=0:(H-h)/2-80,ass={ass},fade=t=in:st=0:d=0.3,fade=t=out:st={D-0.5:.2f}:d=0.5[v]")
     out = f"{OUT}/{sh['id']}.mp4"
     subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", f"{t0:.3f}", "-t", f"{D:.3f}", "-i", f"{EP}/video_raw.mp4",
                     "-ss", f"{t0:.3f}", "-t", f"{D:.3f}", "-i", f"{EP}/mix.wav", "-filter_complex", vf, "-map", "[v]", "-map", "1:a",
