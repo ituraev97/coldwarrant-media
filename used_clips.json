@@ -343,5 +343,430 @@
 "clip": 284170,
 "start": 46,
 "episode": "001"
+},
+{
+"clip": 736339,
+"start": 0.3,
+"episode": "002"
+},
+{
+"clip": 736336,
+"start": 4,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 16,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 108,
+"episode": "002"
+},
+{
+"clip": 736336,
+"start": 9,
+"episode": "002"
+},
+{
+"clip": 736336,
+"start": 14,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 32,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 228,
+"episode": "002"
+},
+{
+"clip": 392482,
+"start": 8,
+"episode": "002"
+},
+{
+"clip": 392482,
+"start": 24,
+"episode": "002"
+},
+{
+"clip": 392482,
+"start": 52,
+"episode": "002"
+},
+{
+"clip": 392482,
+"start": 72,
+"episode": "002"
+},
+{
+"clip": 322256,
+"start": 8,
+"episode": "002"
+},
+{
+"clip": 322256,
+"start": 120,
+"episode": "002"
+},
+{
+"clip": 323707,
+"start": 172,
+"episode": "002"
+},
+{
+"clip": 323707,
+"start": 270,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 392,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 402,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 40,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 56,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 128,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 88,
+"episode": "002"
+},
+{
+"clip": 120262,
+"start": 10,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 36,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 56,
+"episode": "002"
+},
+{
+"clip": 120262,
+"start": 30,
+"episode": "002"
+},
+{
+"clip": 120262,
+"start": 55,
+"episode": "002"
+},
+{
+"clip": 120262,
+"start": 66,
+"episode": "002"
+},
+{
+"clip": 120262,
+"start": 92,
+"episode": "002"
+},
+{
+"clip": 120063,
+"start": 86,
+"episode": "002"
+},
+{
+"clip": 120063,
+"start": 108,
+"episode": "002"
+},
+{
+"clip": 120063,
+"start": 252,
+"episode": "002"
+},
+{
+"clip": 120063,
+"start": 178,
+"episode": "002"
+},
+{
+"clip": 120063,
+"start": 262,
+"episode": "002"
+},
+{
+"clip": 120063,
+"start": 296,
+"episode": "002"
+},
+{
+"clip": 120063,
+"start": 12,
+"episode": "002"
+},
+{
+"clip": 120063,
+"start": 40,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 8,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 200,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 300,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 104,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 144,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 160,
+"episode": "002"
+},
+{
+"clip": 305785,
+"start": 44,
+"episode": "002"
+},
+{
+"clip": 305785,
+"start": 76,
+"episode": "002"
+},
+{
+"clip": 305785,
+"start": 96,
+"episode": "002"
+},
+{
+"clip": 305785,
+"start": 176,
+"episode": "002"
+},
+{
+"clip": 305785,
+"start": 206,
+"episode": "002"
+},
+{
+"clip": 305785,
+"start": 330,
+"episode": "002"
+},
+{
+"clip": 327334,
+"start": 8,
+"episode": "002"
+},
+{
+"clip": 327334,
+"start": 26,
+"episode": "002"
+},
+{
+"clip": 327334,
+"start": 66,
+"episode": "002"
+},
+{
+"clip": 327382,
+"start": 108,
+"episode": "002"
+},
+{
+"clip": 455669,
+"start": 4,
+"episode": "002"
+},
+{
+"clip": 455669,
+"start": 66,
+"episode": "002"
+},
+{
+"clip": 455669,
+"start": 104,
+"episode": "002"
+},
+{
+"clip": 455669,
+"start": 178,
+"episode": "002"
+},
+{
+"clip": 455669,
+"start": 198,
+"episode": "002"
+},
+{
+"clip": 620914,
+"start": 54,
+"episode": "002"
+},
+{
+"clip": 620914,
+"start": 62,
+"episode": "002"
+},
+{
+"clip": 620914,
+"start": 68,
+"episode": "002"
+},
+{
+"clip": 620914,
+"start": 78,
+"episode": "002"
+},
+{
+"clip": 620914,
+"start": 92,
+"episode": "002"
+},
+{
+"clip": 736339,
+"start": 1,
+"episode": "002"
+},
+{
+"clip": 736336,
+"start": 10,
+"episode": "002"
+},
+{
+"clip": 736336,
+"start": 15,
+"episode": "002"
+},
+{
+"clip": 736336,
+"start": 6,
+"episode": "002"
+},
+{
+"clip": 736339,
+"start": 4,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 112,
+"episode": "002"
+},
+{
+"clip": 150748,
+"start": 168,
+"episode": "002"
+},
+{
+"clip": 322256,
+"start": 140,
+"episode": "002"
+},
+{
+"clip": 139025,
+"start": 552,
+"episode": "002"
+},
+{
+"clip": 327334,
+"start": 36,
+"episode": "002"
+},
+{
+"clip": 843465,
+"start": 8,
+"episode": "002"
+},
+{
+"clip": 843465,
+"start": 22,
+"episode": "002"
+},
+{
+"clip": 843465,
+"start": 46,
+"episode": "002"
+},
+{
+"clip": 843465,
+"start": 70,
+"episode": "002"
+},
+{
+"clip": 843465,
+"start": 84,
+"episode": "002"
+},
+{
+"clip": 843465,
+"start": 94,
+"episode": "002"
+},
+{
+"clip": 131505,
+"start": 316,
+"episode": "002"
+},
+{
+"clip": 305785,
+"start": 108,
+"episode": "002"
+},
+{
+"clip": 392482,
+"start": 60,
+"episode": "002"
+},
+{
+"clip": 843465,
+"start": 104,
+"episode": "002"
+},
+{
+"clip": 323707,
+"start": 366,
+"episode": "002"
+},
+{
+"clip": 323707,
+"start": 376,
+"episode": "002"
 }
 ]

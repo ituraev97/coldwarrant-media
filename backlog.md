@@ -6,7 +6,7 @@ Never use DVIDS videos titled "Lethal Kinetic Strike" or any footage showing peo
 | # | Case | Footage check (DVIDS query → hits, 29 Oct 2026) | Status |
 |---|------|-----------------------------|--------|
 | 001 | MS-13: How a Gang of Refugee Kids in L.A. Became a Terrorist Organization | gang / MS-13 / removal flights | done 2026-10-30 |
-| 002 | The Longest Drug Tunnel Ever Found (Baja Metro / Otay Mesa tunnels) | "drug tunnel" → 16 | todo |
+| 002 | The Longest Drug Tunnel Ever Found (Baja Metro / Otay Mesa tunnels) | "drug tunnel" → 16 | done 2026-10-31 |
 | 003 | Cocaine at Sea: The Coast Guard vs. the Narco-Subs | "semi-submersible" → 33, "cocaine offload" → 52 (exclude strike videos) | todo |
 | 004 | Rancho San Pedro: The Night 1,300 Officers Hit the L.A. Harbor | "Rancho San Pedro" → 3 parts + LA gang b-roll | todo |
 | 005 | Fentanyl at San Ysidro: How It Crosses the Busiest Border in the West | "fentanyl" → 31, "San Ysidro" → 65 | todo |

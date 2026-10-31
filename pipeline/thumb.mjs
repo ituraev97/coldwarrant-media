@@ -11,7 +11,7 @@ const r = (s) => s.replace(/<r>/g, '<span style="color:#D3212D">').replace(/<\/r
 const CSS = `@font-face{font-family:Anton;src:url(file://${NM}/@fontsource/anton/files/anton-latin-400-normal.woff2)}
 *{margin:0;padding:0;box-sizing:border-box}body{background:#000}
 .t{position:relative;width:1280px;height:720px;overflow:hidden;background:#0A0A0B;color:#ECE7DC}
-.ph{position:absolute;right:-120px;top:-40px;width:1000px;height:800px;background-image:url(file://${cfg.image});background-position:${cfg.pos || "50% 30%"};background-size:${cfg.zoom || 118}%}
+.ph{position:absolute;right:-120px;top:-40px;width:1000px;height:800px;background-image:url(data:image/jpeg;base64,${fs.readFileSync(cfg.image).toString("base64")});background-repeat:no-repeat;background-position:${cfg.pos || "50% 30%"};background-size:${cfg.zoom || 118}%}
 .anton{font-family:Anton;line-height:.86}.sh{text-shadow:0 6px 0 rgba(0,0,0,.55),0 0 40px rgba(0,0,0,.6)}
 .tag{display:inline-block;font-family:Anton;color:#0A0A0B;background:#E8A33D;padding:8px 20px 4px;transform:rotate(-2deg)}
 .vig{position:absolute;inset:0;box-shadow:inset 0 0 180px rgba(0,0,0,.75)}
@@ -31,7 +31,7 @@ const b = await chromium.launch(); const pg = await b.newPage({ viewport: { widt
 for (const k of ["A", "C"]) {
   if (!cfg[k]) continue;
   await pg.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>${CSS}</style></head><body>${html[k](cfg[k])}</body></html>`);
-  await pg.evaluate(() => document.fonts.ready); await pg.waitForTimeout(200);
+  await pg.evaluate(() => document.fonts.ready); await pg.waitForTimeout(800);
   await pg.screenshot({ path: path.join(out, `thumb_${k}.jpg`), type: "jpeg", quality: 92 });
   console.log("thumb", k);
 }

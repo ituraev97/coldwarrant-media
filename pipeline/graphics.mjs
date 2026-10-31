@@ -267,8 +267,8 @@ const B = {
    ${o.stamp ? `<div class="stamp a" data-d="0.8" data-k="slam" data-base="rotate(-10deg)" style="position:absolute;right:300px;bottom:160px;font-size:44px">${o.stamp}</div>` : ""}
    `),
   list: (o) => page(`${header(o.kicker, o.title)}
-   <div style="position:absolute;left:110px;top:330px;right:110px">
-   ${o.items.map((c, i) => `<div class="a" data-d="${0.25 + i * 0.22}" style="display:flex;align-items:center;gap:34px;margin-bottom:40px">
+   <div style="position:absolute;left:110px;top:${o.items.length > 4 ? 270 : 330}px;right:110px">
+   ${o.items.map((c, i) => `<div class="a" data-d="${0.25 + i * 0.22}" style="display:flex;align-items:center;gap:34px;margin-bottom:${o.items.length > 4 ? 12 : 40}px">
      <div class="anton" style="font-size:72px;color:#D3212D;width:90px">${String(i + 1).padStart(2, "0")}</div>
      <div class="osw" style="font-size:50px;text-transform:none;letter-spacing:.01em">${c}</div></div>`).join("")}
    </div>${o.footer ? footer(o.footer) : ""}`),
@@ -294,6 +294,33 @@ const B = {
      <div class="a" data-d="${0.4 + i * 0.2}" style="position:absolute;left:${Math.min(x - 20, 1550)}px;top:${i % 2 ? 610 : 380}px;width:340px"><div class="anton" style="font-size:64px">${e.y}</div><div class="osw" style="font-size:28px;text-transform:none;letter-spacing:.02em">${e.t}</div></div>`; }).join("")}
    ${o.footer ? footer(o.footer) : ""}`),
   map: (o) => page(mapSvg(o.map) + (o.kicker ? header(o.kicker, o.title) : "") + (o.footer ? footer(o.footer) : "")),
+
+
+  // ---------- added for CASE FILE 002 (generic) ----------
+  bars: (o) => { const mx = Math.max(...o.rows.map((r) => r.v)); return page(`${header(o.kicker, o.title)}
+   <div style="position:absolute;left:110px;right:110px;top:320px">
+   ${o.rows.map((r, i) => `<div style="margin-bottom:46px">
+     <div class="a" data-d="${0.2 + i * 0.25}" style="display:flex;justify-content:space-between;align-items:baseline">
+       <div class="osw" style="font-size:36px;text-transform:none;letter-spacing:.02em">${r.l}</div>
+       <div class="anton" style="font-size:54px;color:${i === o.rows.length - 1 ? "#D3212D" : "#ECE7DC"}">${r.t}</div></div>
+     <div class="a" data-d="${0.3 + i * 0.25}" data-k="wipe" data-dur="0.8" style="height:26px;margin-top:10px;width:${(r.v / mx) * 100}%;background:${i === o.rows.length - 1 ? "#D3212D" : "#7A8089"}"></div></div>`).join("")}
+   </div>${o.footer ? footer(o.footer) : ""}`); },
+  // side-view diagram of a tunnel: o.left/o.right place names, o.mex/o.total feet (border position), o.depth, o.len, o.note
+  profile: (o) => { const gy = 420, ty = 780, x0 = 330, x1 = 1720, bx = x0 + (x1 - x0) * (o.mex / o.total);
+    let s = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="position:absolute;inset:0">
+     <rect x="0" y="${gy}" width="${W}" height="${H - gy}" fill="#141417"/>
+     <line x1="0" y1="${gy}" x2="${W}" y2="${gy}" stroke="#7A8089" stroke-width="3"/>
+     <line x1="${bx}" y1="${gy - 90}" x2="${bx}" y2="${H - 120}" stroke="#E8A33D" stroke-width="3" stroke-dasharray="14 10" data-d="0.2"/>
+     <text x="${bx + 16}" y="${gy + 50}" text-anchor="start" font-size="30" fill="#E8A33D" data-d="0.3">BORDER</text>
+     <text x="${bx - 20}" y="${gy - 30}" text-anchor="end" font-size="34" fill="#ECE7DC" data-d="0.4">${o.left}</text>
+     <text x="${(bx + x1) / 2}" y="${gy - 30}" text-anchor="middle" font-size="34" fill="#ECE7DC" data-d="0.4">${o.right}</text>
+     <path d="M${x0},${gy} L${x0},${ty} L${x1},${ty}" fill="none" stroke="#D3212D" stroke-width="10" data-k="draw" data-d="0.5" data-dur="1.3"/>
+     <line x1="${x0 - 60}" y1="${gy}" x2="${x0 - 60}" y2="${ty}" stroke="#7A8089" stroke-width="2" data-d="1.2"/>
+     <text x="${x0 - 80}" y="${(gy + ty) / 2 + 12}" text-anchor="end" font-size="40" fill="#ECE7DC" data-d="1.2">${o.depth}</text>
+     <text x="${(x0 + x1) / 2}" y="${ty + 80}" text-anchor="middle" font-size="44" fill="#ECE7DC" data-d="1.4">${o.len}</text>
+     ${o.note ? `<text x="${(x0 + x1) / 2}" y="${ty + 130}" text-anchor="middle" font-size="24" fill="#7A8089" style="font-family:Plex;letter-spacing:.2em" data-d="1.6">${o.note}</text>` : ""}
+     </svg>`;
+    return page(s + header(o.kicker, o.title)); },
 
   // ---------- maps ----------
   map_es: () => page(mapSvg({ bounds: [[-93.5, 16.5], [-86.5, 12.6]], highlight: { 222: "#5a1217" },
