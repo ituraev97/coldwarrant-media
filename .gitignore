@@ -6,3 +6,10 @@ seg/
 vo/
 nat/
 __pycache__/
+# per-episode build artifacts (media lives in drop-* branches)
+episodes/*/gspec.json
+episodes/*/timing.json
+episodes/*/subs.ass
+episodes/*/thumb_*.jpg
+episodes/*/shorts/
+pipeline/package-lock.json
