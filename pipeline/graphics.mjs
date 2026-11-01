@@ -322,6 +322,25 @@ const B = {
      </svg>`;
     return page(s + header(o.kicker, o.title)); },
 
+  // ---------- added for CASE FILE 003 (generic) ----------
+  // side view of a semi-submersible at the waterline. o.kicker/o.title, o.labels=[{x,y,t,s,tx,ty}] callouts (hull coords 0..1)
+  spss: (o) => { const wy = 560, x0 = 300, x1 = 1640, hl = (x, y) => [x0 + (x1 - x0) * x, wy + y];
+    const hull = `M${x0},${wy - 10} Q${x0 + 40},${wy + 120} ${x0 + 220},${wy + 150} L${x1 - 260},${wy + 150} Q${x1 - 60},${wy + 140} ${x1},${wy + 10} Q${x1 - 120},${wy - 40} ${x1 - 400},${wy - 34} L${x0 + 160},${wy - 34} Q${x0 + 40},${wy - 34} ${x0},${wy - 10} Z`;
+    let s = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="position:absolute;inset:0">
+     <rect x="0" y="${wy}" width="${W}" height="${H - wy}" fill="#101a22"/>
+     <path d="${hull}" fill="#3d5560" stroke="#ECE7DC" stroke-width="4" data-d="0.2"/>
+     <rect x="${x0 + 820}" y="${wy - 90}" width="150" height="60" rx="8" fill="#3d5560" stroke="#ECE7DC" stroke-width="4" data-d="0.35"/>
+     <rect x="${x0 + 1060}" y="${wy - 130}" width="18" height="100" fill="#3d5560" stroke="#ECE7DC" stroke-width="3" data-d="0.45"/>
+     <rect x="${x0 + 260}" y="${wy + 20}" width="480" height="110" fill="none" stroke="#E8A33D" stroke-width="4" stroke-dasharray="14 10" data-d="0.6"/>
+     <text x="${x0 + 500}" y="${wy + 88}" text-anchor="middle" font-size="34" fill="#E8A33D" data-d="0.65">CARGO HOLD</text>
+     <line x1="0" y1="${wy}" x2="${W}" y2="${wy}" stroke="#7A8089" stroke-width="3" stroke-dasharray="20 12" data-d="0.15"/>
+     <text x="110" y="${wy - 18}" font-size="26" fill="#7A8089" style="font-family:Plex;letter-spacing:.2em" data-d="0.15">WATERLINE</text>`;
+    (o.labels || []).forEach((l, i) => { const [px, py] = hl(l.x, l.y); const tx = l.tx ?? px, ty = l.ty ?? py - 150;
+      s += `<g data-d="${0.8 + i * 0.25}"><line x1="${px}" y1="${py}" x2="${tx}" y2="${ty + 12}" stroke="#D3212D" stroke-width="3"/><circle cx="${px}" cy="${py}" r="9" fill="#D3212D"/>
+      <text x="${tx}" y="${ty}" text-anchor="middle" font-size="34" fill="#ECE7DC">${l.t}</text>${l.s ? `<text x="${tx}" y="${ty - 42}" text-anchor="middle" font-size="22" fill="#7A8089" style="font-family:Plex;letter-spacing:.16em">${l.s}</text>` : ""}</g>`; });
+    s += `</svg>`;
+    return page(s + header(o.kicker, o.title) + (o.footer ? footer(o.footer) : "")); },
+
   // ---------- maps ----------
   map_es: () => page(mapSvg({ bounds: [[-93.5, 16.5], [-86.5, 12.6]], highlight: { 222: "#5a1217" },
     cities: [{ ll: [-89.19, 13.69], name: "SAN SALVADOR", d: 0.5 }],
