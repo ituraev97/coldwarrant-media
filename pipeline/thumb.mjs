@@ -8,7 +8,7 @@ const require = createRequire(import.meta.url); const { chromium } = require("pl
 const NM = path.resolve("node_modules"); const cfg = JSON.parse(fs.readFileSync(process.argv[2])); const out = process.argv[3];
 fs.mkdirSync(out, { recursive: true });
 const r = (s) => s.replace(/<r>/g, '<span style="color:#D3212D">').replace(/<\/r>/g, "</span>");
-const CSS = `@font-face{font-family:Anton;src:url(file://${NM}/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+const CSS = `@font-face{font-family:Anton;src:url(data:font/woff2;base64,${fs.readFileSync(`${NM}/@fontsource/anton/files/anton-latin-400-normal.woff2`).toString("base64")})}
 *{margin:0;padding:0;box-sizing:border-box}body{background:#000}
 .t{position:relative;width:1280px;height:720px;overflow:hidden;background:#0A0A0B;color:#ECE7DC}
 .ph{position:absolute;right:-120px;top:-40px;width:1000px;height:800px;background-image:url(data:image/jpeg;base64,${fs.readFileSync(cfg.image).toString("base64")});background-repeat:no-repeat;background-position:${cfg.pos || "50% 30%"};background-size:${cfg.zoom || 118}%}

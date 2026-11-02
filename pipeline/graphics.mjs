@@ -13,6 +13,8 @@ const world = JSON.parse(fs.readFileSync(`${NM}/world-atlas/countries-50m.json`)
 const states = JSON.parse(fs.readFileSync(`${NM}/us-atlas/states-10m.json`));
 const countries = topo.feature(world, world.objects.countries).features;
 const usStates = topo.feature(states, states.objects.states).features;
+const countiesTopo = JSON.parse(fs.readFileSync(`${NM}/us-atlas/counties-10m.json`));
+const usCounties = topo.feature(countiesTopo, countiesTopo.objects.counties).features;
 const W = 1920, H = 1080;
 
 const FONTS = `
@@ -62,7 +64,7 @@ function page(body) {
 
 // ---------- map helpers ----------
 const byId = (id) => countries.find((f) => +f.id === id);
-function mapSvg({ bounds, highlight = {}, dim = [], cities = [], arcs = [], labels = [], usHighlight = [], useUS = false, pad = 80, topPad = 0 }) {
+function mapSvg({ bounds, highlight = {}, dim = [], cities = [], arcs = [], labels = [], usHighlight = [], useUS = false, useCounties = false, pad = 80, topPad = 0 }) {
   let proj, feats;
   if (useUS) {
     proj = d3.geoAlbersUsa().fitExtent([[pad, pad + 40], [W - pad, H - pad]], topo.feature(states, states.objects.states));
@@ -70,13 +72,13 @@ function mapSvg({ bounds, highlight = {}, dim = [], cities = [], arcs = [], labe
   } else {
     const box = { type: "MultiPoint", coordinates: bounds };
     proj = d3.geoMercator().fitExtent([[pad + (topPad ? 40 : 0), pad + topPad], [W - pad, H - pad - 40]], box);
-    feats = countries;
+    feats = useCounties ? usCounties : countries;  // useCounties: US county outlines (10m) for city-scale maps; highlight keys = FIPS strings
   }
   const g = d3.geoPath(proj);
   let s = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="position:absolute;inset:0">`;
   s += `<defs><filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`;
   for (const f of feats) {
-    const id = useUS ? f.id : +f.id;
+    const id = (useUS || useCounties) ? f.id : +f.id;
     const hl = useUS ? usHighlight.includes(id) : highlight[id];
     const fill = hl ? (useUS ? "#5a1217" : hl) : "#1c1c20";
     s += `<path d="${g(f)}" fill="${fill}" stroke="${hl ? "#D3212D" : "#34343a"}" stroke-width="${hl ? 2 : 1}" ${hl ? `data-d="${0.15}" data-dur="0.6"` : ""}/>`;
