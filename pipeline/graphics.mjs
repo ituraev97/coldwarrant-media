@@ -281,7 +281,7 @@ const B = {
       <div class="anton" style="font-size:220px;line-height:1">${c.num}</div>
       <div class="osw" style="font-size:36px">${c.desc}</div></div>`).join("")}
    </div>
-   ${o.total ? `<div class="osw a" data-d="1.2" style="position:absolute;left:110px;bottom:140px;font-size:56px;color:var(--amber)">${o.total}</div>` : ""}
+   ${o.total ? `<div class="osw a" data-d="1.2" style="position:absolute;left:110px;bottom:${o.footer ? 215 : 140}px;font-size:56px;color:var(--amber)">${o.total}</div>` : ""}
    ${o.footer ? footer(o.footer) : ""}`),
   cards3: (o) => page(`${header(o.kicker, o.title)}
    <div style="position:absolute;left:110px;right:110px;top:330px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px">
