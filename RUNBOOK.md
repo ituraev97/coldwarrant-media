@@ -90,3 +90,10 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 ## 9. Close the run
 - Commit to `main`: episodes/NNN-slug/{episode.py,sources.md,thumb.json}, updated `backlog.md` (status `done YYYY-MM-DD`), `used_clips.json`. (Push main normally; never commit video files to main.)
 - Message the owner (in Russian): episode title, publish times (ET and Tashkent), 1–2 line summary, that thumb_C is attached for YouTube Test & Compare, anything that needs his attention.
+
+## Notes from run 004 (2026-11-02)
+- Do the font step from §1 before `finish_ep.py`/`shorts.py`: without ~/.fonts TTFs, libass silently falls back to a generic font.
+- `node graphics.mjs` needs absolute paths for spec and out dir.
+- Run only ONE `encode.sh` at a time (two parallel 2-pass encodes share x265_2pass.log in the episode dir and corrupt each other). 2-pass takes ~2 h on 2 cores; a single-pass `-b:v 940k` with VBV (see run 004) takes ~35 min and lands ~76 MB.
+- Don't put footage of unidentified 2011 arrestees under lines about a named or charged person — use neutral shots (officers, port, graphics).
+- Map graphic: `useCounties: true` draws US county outlines (FIPS keys) for city-scale maps.
