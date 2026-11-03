@@ -9,7 +9,7 @@ Never use DVIDS videos titled "Lethal Kinetic Strike" or any footage showing peo
 | 002 | The Longest Drug Tunnel Ever Found (Baja Metro / Otay Mesa tunnels) | "drug tunnel" → 16 | done 2026-10-31 |
 | 003 | Cocaine at Sea: The Coast Guard vs. the Narco-Subs | "semi-submersible" → 33, "cocaine offload" → 52 (exclude strike videos) | done 2026-11-01 |
 | 004 | Rancho San Pedro: The Night 1,300 Officers Hit the L.A. Harbor | "Rancho San Pedro" → 3 parts + LA gang b-roll | done 2026-11-02 |
-| 005 | Fentanyl at San Ysidro: How It Crosses the Busiest Border in the West | "fentanyl" → 31, "San Ysidro" → 65 | todo |
+| 005 | Fentanyl at San Ysidro: How It Crosses the Busiest Border in the West | "fentanyl" → 31, "San Ysidro" → 65 | done 2026-11-03 |
 | 006 | The Sureños: L.A.'s Southern Alliance and Project Southbound | "Project Southbound" → 5, "Project Shadowfire" → 4 | todo |
 | 007 | Human Smuggling at Sea | "human smuggling" → 27 | todo |
 | 008 | The Mexican Mafia: The Prison Gang That Taxes L.A.'s Streets (Canta Ranas case, 2016) | Canta Ranas → 1 + LA gang b-roll — verify ≥ 6 | todo |
