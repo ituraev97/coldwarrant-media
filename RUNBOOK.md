@@ -97,3 +97,11 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - Run only ONE `encode.sh` at a time (two parallel 2-pass encodes share x265_2pass.log in the episode dir and corrupt each other). 2-pass takes ~2 h on 2 cores; a single-pass `-b:v 940k` with VBV (see run 004) takes ~35 min and lands ~76 MB.
 - Don't put footage of unidentified 2011 arrestees under lines about a named or charged person — use neutral shots (officers, port, graphics).
 - Map graphic: `useCounties: true` draws US county outlines (FIPS keys) for city-scale maps.
+
+## Notes from run 005 (2026-11-03)
+- Commit main (backlog, used_clips, episode files) BEFORE the §7 orphan step: `git rm -rqf .` deletes uncommitted edits to tracked files.
+- Don't `pkill -f build_ep.py` / `pgrep -f ...` from a shell whose own command line contains the pattern — it kills the calling shell. Use `ps aux | grep "[b]uild_ep"`.
+- `node graphics.mjs` re-renders every graphic (~5 min for ~37) — run it with nohup, not in a 2-min foreground call. Check map labels on the last frame before building (labels near the frame edge need `anchor:"end"`).
+- Single-pass encode that worked: `-c:v libx265 -preset fast -b:v 860k -maxrate 1300k -bufsize 2600k` → 11:40 episode = 76 MB in ~35 min.
+- Independent fact-check agent caught a real mismatch (footage-led narration vs. source text). Write narration from the source, then pick footage; footage descriptions on DVIDS are not always matched by press releases.
+- Footage tags must describe what is on screen (e.g. National Guard at a port ≠ "Border Patrol").
