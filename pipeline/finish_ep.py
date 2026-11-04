@@ -174,7 +174,10 @@ os.makedirs("nat", exist_ok=True)
 lst = open("nat/list.txt", "w")
 for k, sg in enumerate(T["segs"]):
     out = f"nat/{k:03d}.wav"; src = sg["src"]
-    if src.startswith("g:") or src.startswith("img:"):
+    has_a = (not (src.startswith("g:") or src.startswith("img:"))) and subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", f"{CLIPS}/{src}.mp4"],
+        capture_output=True, text=True).stdout.strip() != ""
+    if not has_a:  # graphics, photos, or clips without an audio track (e.g. DVIDS 456019) -> silence
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono", "-t", f"{sg['d']:.3f}", out])
     else:
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(sg["ss"]), "-i", f"{CLIPS}/{src}.mp4", "-t", f"{sg['d']:.3f}",
