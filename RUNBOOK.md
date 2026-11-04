@@ -105,3 +105,10 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - Single-pass encode that worked: `-c:v libx265 -preset fast -b:v 860k -maxrate 1300k -bufsize 2600k` → 11:40 episode = 76 MB in ~35 min.
 - Independent fact-check agent caught a real mismatch (footage-led narration vs. source text). Write narration from the source, then pick footage; footage descriptions on DVIDS are not always matched by press releases.
 - Footage tags must describe what is on screen (e.g. National Guard at a port ≠ "Border Patrol").
+
+## Notes from run 006 (2026-11-04)
+- Some DVIDS clips have NO audio track (e.g. 456019, Shadowfire Tennessee). finish_ep.py now falls back to silence for those (fixed in main).
+- Launch long jobs with `setsid nohup ... < /dev/null &` — a plain `nohup ... &` build was killed mid-run when the shell/container was interrupted, and build_ep.py does not resume (it re-renders every segment, ~25 min).
+- Don't write `EP=... && setsid nohup cmd &` and then use `$EP` in the same command: the whole `&&` chain goes to the background, so `$EP` is empty in the foreground. Set variables with `;` first.
+- On a detached HEAD after a fresh clone, push with `git push origin HEAD:main`, then `git checkout -B main <sha>` before the §7 orphan step.
+- Fact-check agent flagged (and we fixed): quotes with an added subject, "according to the DEA" for what was an indictment allegation, ICE official titles, and arrest footage under lines about named defendants — tag those shots "ILLUSTRATIVE · NOT THE DEFENDANTS IN THIS CASE" or use graphics.
