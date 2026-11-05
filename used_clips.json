@@ -2441,6 +2441,11 @@
 },
 {
 "clip": 545682,
+"start": 25,
+"episode": "007"
+},
+{
+"clip": 545682,
 "start": 40,
 "episode": "007"
 },
@@ -2501,7 +2506,12 @@
 },
 {
 "clip": 1026262,
-"start": 224,
+"start": 205,
+"episode": "007"
+},
+{
+"clip": 1026262,
+"start": 285,
 "episode": "007"
 },
 {
@@ -2516,17 +2526,22 @@
 },
 {
 "clip": 861048,
-"start": 28,
+"start": 23,
 "episode": "007"
 },
 {
 "clip": 861048,
-"start": 32,
+"start": 30,
 "episode": "007"
 },
 {
 "clip": 861048,
 "start": 0,
+"episode": "007"
+},
+{
+"clip": 861048,
+"start": 16,
 "episode": "007"
 },
 {
@@ -2551,7 +2566,12 @@
 },
 {
 "clip": 1009312,
-"start": 12,
+"start": 9,
+"episode": "007"
+},
+{
+"clip": 1009312,
+"start": 15,
 "episode": "007"
 },
 {
@@ -2596,17 +2616,17 @@
 },
 {
 "clip": 1007294,
-"start": 23,
-"episode": "007"
-},
-{
-"clip": 1007294,
 "start": 30,
 "episode": "007"
 },
 {
 "clip": 1007294,
-"start": 52,
+"start": 48,
+"episode": "007"
+},
+{
+"clip": 1007294,
+"start": 62,
 "episode": "007"
 },
 {
@@ -2621,7 +2641,7 @@
 },
 {
 "clip": 950728,
-"start": 2.5,
+"start": 10.2,
 "episode": "007"
 },
 {
