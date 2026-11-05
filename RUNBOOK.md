@@ -6,7 +6,7 @@ Read this whole file before starting. Episode 001 (`episodes/001-ms13/`) is the 
 ## 0. Context
 - Channel bible: Projects doc `claude/cold-warrant-bible.md` (rules, brand, schedule). Read it first.
 - Metricool brand "COLD WARRANT": blogId **7731358**. Publish timezone **America/New_York**.
-- Schedule per US day: Shorts 09:00, 11:00, 15:00, 17:00, 21:00 ET; long episode 12:00 ET.
+- Schedule per US day: Shorts 09:00, 11:00, 13:00, 15:00, 17:00 ET; long episode 12:00 ET. (21:00 slot dropped 2026-11-06 — weakest in stats.)
 - Do NOT set isAiGeneratedContent (owner's decision; we use only real public-domain footage, a generic TTS narrator and code-generated music — no realistic AI imagery).
 
 ## 1. Setup (fresh container)
@@ -65,6 +65,12 @@ cd $P && node thumb.mjs $EP/thumb.json $EP   # thumb_A (main) + thumb_C (alterna
 - Ken Burns only on still photos, and only via zoompan on a 4×-supersampled canvas (already in build_ep.py).
 - Narration speed 1.06 (default in tts_ep.py). Do not go back to 0.94 — it felt slow.
 - Before upload, scrub the transitions from intro→hold on 3 graphics and 3 footage cuts at full size: anything that jumps or wobbles is a blocker.
+
+## Shorts selection rule (owner, 2026-11-06 — based on channel stats)
+- Every Short = an ACTION moment on real footage (boarding, interdiction, raid, tunnel/seizure reveal, pursuit) + a concrete NUMBER in title and hook (arrests, tons, pounds, officers, years, dollars).
+- Winners so far (~1,100–1,400 views each): "267 Arrests, One Gang", "Coast Guard Jumps Onto a Moving Narco-Sub", "12,000 Pounds of Cocaine in One Semi-Sub", "32 Tons of Marijuana Under the Border".
+- Losers (11–135 views): explainers about names, history or structure — "What Does MS-13 Actually Mean?", "MS-13 Had a Board of Directors", "62 Killed in One Day — How El Salvador Responded". Don't make these.
+- Title = number + action, ≤ 70 chars. Choose META["shorts"] line ranges whose footage shows that action.
 
 ## 6. QA (do not skip)
 - Contact sheet of the long video every ~8 s: no gore, no unreadable overlaps, no black frames, subtitles inside frame.
