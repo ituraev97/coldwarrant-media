@@ -255,6 +255,6 @@ META = dict(
         dict(id="s2", lines=[18, 24], hook="THE CAPTAIN<br>[GOT 18 YEARS]"),
         dict(id="s3", lines=[40, 45], hook="40 ON BOARD<br>[1 SURVIVOR]"),
         dict(id="s4", lines=[32, 35], hook="THE FOG<br>[AT BLACK'S BEACH]"),
-        dict(id="s5", lines=[51, 56], hook="THE MONA PASSAGE<br>[11 DEAD]"),
+        dict(id="s5", lines=[51, 55], hook="THE MONA PASSAGE<br>[11 DEAD]"),
     ],
 )
