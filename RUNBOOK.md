@@ -112,3 +112,12 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - Don't write `EP=... && setsid nohup cmd &` and then use `$EP` in the same command: the whole `&&` chain goes to the background, so `$EP` is empty in the foreground. Set variables with `;` first.
 - On a detached HEAD after a fresh clone, push with `git push origin HEAD:main`, then `git checkout -B main <sha>` before the §7 orphan step.
 - Fact-check agent flagged (and we fixed): quotes with an added subject, "according to the DEA" for what was an indictment allegation, ICE official titles, and arrest footage under lines about named defendants — tag those shots "ILLUSTRATIVE · NOT THE DEFENDANTS IN THIS CASE" or use graphics.
+
+## Notes from run 007 (2026-11-05)
+- CBP AMO DVIDS packages (e.g. 1007294) have short dip-to-black transitions between shots. Before picking start times, run `ffmpeg -i clip.mp4 -vf "scale=320:-2,blackdetect=d=0.05:pix_th=0.06" -an -f null -` on each source and keep every shot range clear of them. Also run blackdetect on video_raw.mp4 before encoding.
+- Vertical (pillarboxed) DVIDS clips (829480, 952919) look bad full-frame; skip them or use `crop=` like 1026857.
+- Any edit to a graphic's text changes its gfx key: re-run make_gspec.py and render the new keys BEFORE build_ep.py (it crashes mid-build otherwise).
+- To fix one shot after a build, re-render only that `seg/NNN.mp4` with the same frame count, re-concat `seg/list.txt`, update timing.json `ss`, then re-run finish_ep.py (nat sound). Saves a 45-min rebuild.
+- `ps | grep -E "[f]fmpeg" | xargs kill` also matches your own shell if "ffmpeg" appears anywhere in that command (heredocs included). Kill by explicit PID in a separate call.
+- Keep shots ≤ 6 s: when a line gets longer after fact-check edits, add a third shot.
+- Ep 006 long video posted with Metricool warning "Could not upload video thumbnail" (channel likely needs phone verification for custom thumbnails).
