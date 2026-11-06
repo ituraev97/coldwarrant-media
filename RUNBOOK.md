@@ -27,6 +27,7 @@ for s,d in [('anton/files/anton-latin-400-normal.woff2','Anton-Regular.ttf'),('o
 Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 
 ## 2. Pick the case
+- FIRST (owner rule 2026-11-06): search & competitor research — vidIQ keyword_research (research + rising) and outliers (long + short) for the top backlog candidates; WebSearch fallback if vidIQ is not connected. Save `research/YYYY-MM-DD.md` (keywords, outliers, chosen case + why, 3 title candidates). The case, the long title (number + action + main keyword), description lines 1–2, tags and Shorts titles all come from this research. New cases with demand may be added to backlog.md if they pass the footage rule.
 - Target date = tomorrow's date in America/New_York at run time. First call Metricool getScheduledPosts for blogId 7731358 around that date: if a YouTube long video is already scheduled for it, do not produce anything — just report.
 - Take the first `todo` row in `backlog.md`. Before committing to it, check footage: DVIDS search API (`https://api.dvidshub.net/search?api_key=KEY&q=...&type[]=video`) must give at least 6 relevant public-domain videos (ICE/HSI, FBI, DEA, CBP, Coast Guard, DOJ). If not, mark the row `skip (footage)` and take the next.
 - Never reuse a clip time range listed in `used_clips.json` (each clip id + start second used before). Different moments of the same clip are fine, but prefer new clips.
