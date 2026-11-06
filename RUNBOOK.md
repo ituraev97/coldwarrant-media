@@ -127,3 +127,10 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - `ps | grep -E "[f]fmpeg" | xargs kill` also matches your own shell if "ffmpeg" appears anywhere in that command (heredocs included). Kill by explicit PID in a separate call.
 - Keep shots ≤ 6 s: when a line gets longer after fact-check edits, add a third shot.
 - Ep 006 long video posted with Metricool warning "Could not upload video thumbnail" (channel likely needs phone verification for custom thumbnails).
+
+## Notes from run 008 (2026-11-06)
+- Case numbering: when a backlog row is skipped, the next episode still gets the next CASE FILE number (backlog row 009 → CASE FILE 008, folder `episodes/008-project-wildfire`).
+- DVIDS contact sheets: read the timestamps as h:mm:ss (2:48 = 168 s) — several picks were off by misreading. Check each pick against the clip duration before building.
+- build_ep.py takes only ~12 min for a 12:47 episode now; single-pass x265 at `-b:v 800k -maxrate 1250k -bufsize 2500k` → 75 MB in ~30 min.
+- Fact-check agent caught: comparing gang-only and total arrest counts in one sentence, "credited" vs. what the release says, judges' quotes attributed to the wrong judge type, and an unnamed arrestee labeled MS-13 from a DVIDS slate only (now: "ICE's video describes…", no face shots).
+- Graphics start from a dark frame for ~4 frames — blackdetect flags these at every graphic start; that is expected, not a defect.
