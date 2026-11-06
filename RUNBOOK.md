@@ -71,6 +71,13 @@ cd $P && node thumb.mjs $EP/thumb.json $EP   # thumb_A (main) + thumb_C (alterna
 - Winners so far (~1,100–1,400 views each): "267 Arrests, One Gang", "Coast Guard Jumps Onto a Moving Narco-Sub", "12,000 Pounds of Cocaine in One Semi-Sub", "32 Tons of Marijuana Under the Border".
 - Losers (11–135 views): explainers about names, history or structure — "What Does MS-13 Actually Mean?", "MS-13 Had a Board of Directors", "62 Killed in One Day — How El Salvador Responded". Don't make these.
 - Title = number + action, ≤ 70 chars. Choose META["shorts"] line ranges whose footage shows that action.
+- LENGTH (owner, 2026-11-06, vidIQ niche data): YouTube Shorts = 20–35 s (2–4 lines). Start on the action shot, number spoken and on screen in the first second; no graphics-only lines inside a Short. Niche breakouts are 9–31 s pure action (Coast Guard boarding 0:09–0:31 → 165K–2.4M views); our 40–50 s Shorts held viewers only 6–20 s.
+- TikTok (only if the brand has TikTok connected in Metricool — COLD WARRANT has none as of 2026-11-06): separate cuts of 61–90 s (TikTok rewards videos over 1 minute). Do NOT trim those to YouTube length.
+
+## Long-video packaging (vidIQ niche data, 2026-11-06)
+- Our long videos got 3–12 views each; Shorts brought 17.5K views but only 3 views came from "related video". Long titles must use the same number + action formula as winning Shorts, front-loaded: e.g. "976 Gang Arrests in Six Weeks: Project Wildfire", "DEA … — 41 Arrested & 11 Tons Seized" (niche breakouts 12K–36K views on 1K-sub channels), or a person-hook: "The Customs Officer Who Weighed One Pallet — and Stopped $210M in Cocaine" (only if true and sourced).
+- Search demand worth targeting with real, sourced cases: "how every cartel boss died / was caught" (~26K searches/mo, competition 48), "sinaloa cartel history" (~4K, competition 27), "chapo guzman" (+155%), "mafia vs cartel" (low competition).
+- Competitor channels like FBISecretUS / Operation Crime Files win with this packaging but appear to use invented cases — copy the packaging, never the fabrication.
 
 ## 6. QA (do not skip)
 - Contact sheet of the long video every ~8 s: no gore, no unreadable overlaps, no black frames, subtitles inside frame.
