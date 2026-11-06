@@ -264,10 +264,10 @@ META = dict(
     credit=("Footage: U.S. Immigration and Customs Enforcement (ICE/HSI) via DVIDS — public domain."
             r"\NAppearance of U.S. government visual information does not imply or constitute endorsement."),
     shorts=[
-        dict(id="s1", lines=[1, 5], hook="976 GANG ARRESTS<br>[282 CITIES]", title="976 Gang Arrests in 282 Cities in Six Weeks"),
-        dict(id="s2", lines=[51, 55], hook="1,378 ARRESTS<br>[SIX WEEKS]", title="1,378 Arrests in Six Weeks: ICE's Biggest Gang Surge"),
-        dict(id="s3", lines=[64, 67], hook="475 ARRESTS<br>[MS-13 TARGETED]", title="475 Arrests: The MS-13 Crackdown on Long Island"),
-        dict(id="s4", lines=[14, 19], hook="263 GANG ARRESTS<br>[71 CITIES]", title="263 Gang Members Arrested in 71 Cities"),
-        dict(id="s5", lines=[28, 32], hook="215 AGENCIES<br>[ONE GANG SWEEP]", title="215 Agencies Join One Six-Week Gang Sweep"),
+        dict(id="s1", lines=[1, 4], hook="976 GANG ARRESTS<br>[282 CITIES]", title="976 Gang Arrests in 282 Cities in Six Weeks"),
+        dict(id="s2", lines=[51, 52], hook="1,378 ARRESTS<br>[SIX WEEKS]", title="1,378 Arrests in Six Weeks: ICE's Biggest Gang Surge"),
+        dict(id="s3", lines=[64, 65], hook="475 ARRESTS<br>[MS-13 TARGETED]", title="475 Arrests: The MS-13 Crackdown on Long Island"),
+        dict(id="s4", lines=[16, 18], hook="263 GANG ARRESTS<br>[71 CITIES]", title="263 Gang Members Arrested in 71 Cities"),
+        dict(id="s5", lines=[28, 31], hook="215 AGENCIES<br>[ONE GANG SWEEP]", title="215 Agencies Join One Six-Week Gang Sweep"),
     ],
 )
