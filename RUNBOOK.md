@@ -142,3 +142,11 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - build_ep.py takes only ~12 min for a 12:47 episode now; single-pass x265 at `-b:v 800k -maxrate 1250k -bufsize 2500k` → 75 MB in ~30 min.
 - Fact-check agent caught: comparing gang-only and total arrest counts in one sentence, "credited" vs. what the release says, judges' quotes attributed to the wrong judge type, and an unnamed arrestee labeled MS-13 from a DVIDS slate only (now: "ICE's video describes…", no face shots).
 - Graphics start from a dark frame for ~4 frames — blackdetect flags these at every graphic start; that is expected, not a defect.
+
+## Notes from run 009 (2026-11-07)
+- §2 research now uses the free YouTube Data API script (Projects doc `claude/yt_research.py`) + Metricool + WebSearch — NOT vidIQ (owner rule 2026-11-06). youtube.com transcripts are blocked from the cloud (ProxyError): analyse hooks from titles/descriptions/thumbnails.
+- `list` graphic: with 6 items, or with a `<br>` inside an item, the last line overlaps the footer. Keep ≤ 5 single-line items; check f0072.jpg of every list before building.
+- Never rewrite video_raw.mp4 (segment fix + re-concat) while shorts.py or the encode is reading it — the Shorts came out corrupted; re-run them after the fix.
+- A `while ps aux | grep -q "[g]raphics.mjs"` loop never ends when the same shell command line contains "graphics.mjs" (it matches itself). Run graphics with setsid nohup and poll in separate calls.
+- Shorts must not contain graphics-only lines: put the key number in the footage line's `tag` (lower third) instead of a stat card when that line is inside a Short.
+- 998143 (HITRON b-roll) has a dark fade ~210–217 s; 974720 has black at 16–18 s and 32–36 s and a night/fire shot at 28–31 s.
