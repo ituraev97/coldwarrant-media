@@ -19,3 +19,4 @@ Never use DVIDS videos titled "Lethal Kinetic Strike" or any footage showing peo
 | 012 | Operation Diablo Express: Inside a Sinaloa Cartel Takedown | "Diablo Express" → 1 — verify ≥ 6 before using | todo |
 | 013 | Operation Summer Heat: The FBI's Violent-Crime Surge (2025–2026) | "Summer Heat" → 174 hits, 5+ FBI field-office b-roll (Columbia, Baltimore, New Orleans ×2, Denver) — 6 Nov 2026 | todo |
 | 014 | Guns Going South: DHS vs. Cartel Arms Smuggling (Laredo / Nogales, Operation Plaza Spike) | "cartel" → 13 relevant, "Laredo" → 12, "Nogales" → 16 — verify ≥ 6 on topic | todo |
+| 015 | The Record Haul: USCGC Hamilton's $473M Offload and the Coast Guard's Record 2025 (Hamilton, Stone, Munro, FY2025) | "Hamilton offload" → 11, "Pacific Viper" → 358, "cocaine offload Port Everglades" → 52 — 7 Nov 2026 | done 2026-11-07 (published as CASE FILE 009) |

@@ -1,0 +1,49 @@
+# CASE FILE 009 — sources (claim → URL)
+
+## Hamilton record offload (Aug. 25, 2025)
+- 76,140 lbs offloaded at Port Everglades, $473M, largest drug offload in Coast Guard history; ~61,740 lbs cocaine + ~14,400 lbs marijuana; 19 interdictions in Eastern Pacific and Caribbean; ~23 million potential lethal doses; Hamilton = Legend-class national security cutter homeported in Charleston, SC, with embarked HITRON and UAS crews; Vigilant (Caribbean interdictions), Diligence (interdiction near Jamaica); LEDET 408 on USS Cole, LEDET 404 on HNLMS Friesland, LEDET 108 on USS Minneapolis-Saint Paul; maritime patrol aircraft detected many vessels; JIATF-South (Key West, under SOUTHCOM) detects and monitors, control shifts to Coast Guard when interdiction imminent; ~80% interdictions at sea; PANEX prosecutor-led, multi-agency; Rear Adm. Adam Chamie quote "a significant victory in the fight against transnational criminal organizations"; Capt. John B. McWhite: 11 go-fasts interdicted, 34 suspected traffickers detained, record 47,000 lbs cocaine, "unparalleled results in our nation's fight against transnational criminal drug organizations"; Operation Pacific Viper → https://www.news.uscg.mil/Press-Releases/Article/4285029/coast-guard-achieves-historic-milestone-with-offload-over-76140-lbs-in-illegal/
+- Same facts (secondary) → https://www.hstoday.us/subject-matter-areas/maritime-security/coast-guard-sets-record-with-historic-76000-pound-drug-offload-at-port-everglades/
+- 19 vessels caught off the Galapagos (Ecuador), Venezuela, Mexico, Dominican Republic, Jamaica, Aruba; boarded by teams after maritime patrol aircraft spotted them; Coast Guard has 43,000+ active duty, 8,000 reservists, 30,000 auxiliary → AP via WTOP https://wtop.com/national/2025/08/the-coast-guard-seized-a-record-76000-pounds-of-drugs-this-summer-off-central-and-south-america
+- Seized over four months; three Coast Guard cutters, two U.S. naval ships, a Dutch navy frigate, Coast Guard helicopters, DHS and CBP; Port Everglades chosen because of access to enough law enforcement agencies; drugs used as evidence to prosecute and later destroyed; smugglers detained and will face prosecution; Chamie: "These men and women put themselves in harm's way time and again to stop the bad guys"; Hamilton 47,000+ lbs a Coast Guard record for a single cutter's deployment → WUSF https://www.wusf.org/courts-law/2025-08-25/coast-guard-unloads-record-haul-of-cocaine-marijuana-in-port-everglades
+- Chamie: 23 million potentially lethal doses, "enough to fatally overdose the entire population of the state of Florida"; Rear Adm. Chase Sargeant (USN), deputy director JIATF-South: "winning the war on drugs"; May 2025 bale fields (May 5: 9,993 lbs 475 mi SW of Colima; May 6: 14,559 lbs from three bale fields 575 mi SW of Acapulco; May 10: 3,984 lbs 660 mi S of Acapulco) → CBS News Miami https://www.cbsnews.com/amp/news/coast-guard-offload-76000-pounds-cocaine-port-everglades
+  - NOTE: CBS gives May 10 as "660 miles south of Acapulco"; on screen "S of Acapulco".
+- Footage: Hamilton offload, Aug. 25, 2025, "largest cocaine offload to date in Coast Guard history" → https://www.dvidshub.net/video/974721
+- Hamilton June 26, 2025: two go-fasts SE of the Galapagos, detected by maritime patrol aircraft, HITRON tactical support, >4,475 lbs cocaine → https://www.dvidshub.net/video/974642
+
+## UNODC supply data
+- Global cocaine production 3,708 tons in 2023, a record; Colombia production +53% in 2023; Colombia >67% of world coca crops; ~25 million users in 2023, up from 17 million a decade earlier → Anadolu Agency on UNODC World Drug Report 2025 https://www.aa.com.tr/en/americas/global-cocaine-trade-hits-record-highs-driven-by-colombian-surge-unodc/3614816
+
+## HITRON / interdiction method
+- HITRON 1,000th interdiction on Aug. 25, 2025 (announced Sept. 10, 2025) → https://content.govdelivery.com/accounts/USDHSCG/bulletins/3f202d2
+- HITRON based in Jacksonville, Fla.; deploys armed helicopters aboard cutters; reached its 1,000th interdiction (b-roll Jan. 23, 2026; contains training footage) → https://www.dvidshub.net/video/998143
+- HITRON team aboard HNLMS Friesland fires warning shots at suspected smuggling vessel off Venezuela, June 15, 2025 → https://www.dvidshub.net/video/968865
+- Dec. 2, 2025: HITRON aircrew disables non-compliant go-fast; >20,000 lbs; largest single at-sea seizure in over 18 years → https://www.dvidshub.net/video/989073
+- Munro: go-fast on known smuggling route; two pursuit boats, ScanEagle, embarked MH-65 HITRON; warning shots and disabling fire; six suspected narco-terrorists detained; 22,052 lbs cocaine; largest single maritime drug seizure in 18 years and largest in HITRON history; departed Alameda Nov. 3, 2025; 119-day deployment; 26,000+ miles; Operation Pacific Viper >200,000 lbs since early August; Munro named for SM1 Douglas Munro, only Coast Guardsman awarded the Medal of Honor → https://news.uscg.mil/Press-Releases/Article/4426962/coast-guard-cutter-munro-crew-returns-home-after-119-day-multi-mission-patrol-m/
+- Dec. 2025 seizure date / >20,000 lbs / 18-year record (secondary) → https://www.cbsnews.com/news/coast-guard-seizes-cocaine-single-boat-record-pacific-ocean
+- Dec. 2, 2025: "Coast Guard Cutter Munro interdicts suspected drug vessel in Eastern Pacific" (same date as HITRON clip 989073) → https://www.dvidshub.net/video/989074
+- Munro returns to Alameda March 1, 2026 → https://www.dvidshub.net/video/998037
+- Stone boarding Sept. 11, 2025, ~250 mi off Ecuador → https://www.dvidshub.net/video/987086
+- Seneca boarding Jan. 31, 2026, Operation Pacific Viper → https://www.dvidshub.net/video/996221
+
+## Stone record (Nov. 19, 2025)
+- ~49,010 lbs, >$362M, Port Everglades, 15 interdictions in Eastern Pacific; largest amount of cocaine seized by a single cutter in one patrol; Capt. Anne O'Connell: "I am extremely proud of the crew's incredible performance during this deployment."; PANEX, HSTF Tampa, "testimonial and drug evidence"; 418-ft Legend-class national security cutters → Coast Guard Southeast District release via Seapower https://seapowermagazine.org/coast-guard-continues-to-break-records-offloading-over-362-million-in-illicit-drugs-interdicted-in-eastern-pacific-ocean/?print=pdf ; footage description → https://www.dvidshub.net/video/987107
+
+## Fiscal year 2025 record
+- Nearly 510,000 lbs of cocaine in FY2025, largest in Service history, >3× annual average of 167,000 lbs; Adm. Kevin Lunday, acting commandant: "We own the sea" → USCG release (Nov. 6, 2025) via GlobalSecurity https://www.globalsecurity.org/security/library/news/2025/11/sec-251106-uscg01.htm
+- Operation Pacific Viper 200,000 lbs milestone (Feb. 5, 2026) → https://content.govdelivery.com/accounts/USDHSCG/bulletins/407f2aa
+- SOUTHCOM: 12 months to Sept. 30, 2025, >1 million lbs cocaine seized or disrupted; est. $11.34B revenue denied → https://www.dvidshub.net/video/984210
+
+## M/V Gatun (March 2007)
+- Seized Sunday (March 18, 2007), spotted the day before by C-130; ~20 mi SW of Isla de Coiba, Panama; Panamanian-flagged; ~42,845 lbs in two containers; cutters Hamilton (San Diego) and Sherman (Alameda); 14 Panamanian and Mexican crew arrested; largest maritime cocaine seizure to date; previous records Lina Maria 30,109 lbs (Sept. 17, 2004); Adm. Thad Allen credited good actionable intelligence and Operation Panama Express → DEA/USCG release March 21, 2007 (archived) https://webarchive.library.unt.edu/eot2008/20081004055948/http:/www.usdoj.gov/dea/pubs/states/newsrel/wdo032107.html
+- Footage "record seizure of 42,845 pounds of cocaine from the M/V Gatun by Cutters Hamilton and Sherman" → https://www.dvidshub.net/video/312741
+- NOTE: a Dec. 2007 Coast Guard media advisory (https://www.dvidshub.net/video/313093) gives "more than 33,500 pounds"; the script attributes the 42,800 figure to the DEA.
+
+## Court case (Steadfast, 2021)
+- Interdiction Jan. 14, 2021, international waters >200 mi south of Huatulco, Mexico; Cutter Steadfast detachment boarded; seven men aboard; crew caught trying to throw cocaine bales overboard; allegedly 760 kg; Mexican defendants claimed tricked into a "drug trip"; Ecuadorian defendants claimed adrift and rescued; cooperating co-conspirator testified family kidnapped, cellphone/GPS showed crew at sea days before; jury convicted five; 10-year mandatory minimum up to life; Panama Express Strike Force (OCDETF): CGIS, DEA, FBI, HSI, NCIS, JIATF-South; press release Aug. 23, 2022 → https://www.justice.gov/usao-mdfl/pr/jury-convicts-five-traffickers-attempting-smuggle-more-20-million-cocaine-international
+
+## Footage (all public domain via DVIDS)
+974721, 974720, 974642 (Hamilton / USCG 2025) · 968865 (HITRON / Friesland) · 989073 (HITRON Dec. 2025) · 987086 (Stone) · 996221 (Seneca) · 998143 (HITRON b-roll incl. training) · 1006861 (Tahoma HITRON, May 2026) · 974904 (JIATF-South) · 998037 (Munro return) · 312741 (Gatun 2007)
+
+## Fact-check (independent agent, 2026-11-07) — fixes applied
+- "cooperating co-defendant" → seventh crew member testifying for the defense; HITRON 1,000th dated Aug. 2025; "every number is a record" → 3 records + largest-in-18-years; Gatun → "initially reported" and "largest in Coast Guard history at the time"; dropped unsupported 2007/Gatun link to the Munro seizure; "four months" → "one summer" (USCG dates the 19 interdictions June 26–Aug. 18, 2025); bale fields marked as separate cases; 80% wording per release; Lunday quote shown as excerpt; Allen quote wording; Stone location limited to ~250 mi off Ecuador; "surge" → "stepped up operations"; training-footage tag no longer covers Hamilton operational footage.
+- Verified by agent: all Hamilton/Stone/Munro/FY25/SOUTHCOM/UNODC/Gatun/Steadfast figures and quotes listed above. DVIDS descriptions checked separately via the DVIDS API (974642, 989073, 1006861, 968865, 998143, 987086, 996221, 998037, 312741).
