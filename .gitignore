@@ -14,3 +14,4 @@ episodes/*/thumb_*.jpg
 episodes/*/shorts/
 pipeline/package-lock.json
 episodes/*/x265_2pass.log*
+episodes/*/*.log
