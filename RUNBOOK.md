@@ -150,3 +150,9 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - A `while ps aux | grep -q "[g]raphics.mjs"` loop never ends when the same shell command line contains "graphics.mjs" (it matches itself). Run graphics with setsid nohup and poll in separate calls.
 - Shorts must not contain graphics-only lines: put the key number in the footage line's `tag` (lower third) instead of a stat card when that line is inside a Short.
 - 998143 (HITRON b-roll) has a dark fade ~210–217 s; 974720 has black at 16–18 s and 32–36 s and a night/fire shot at 28–31 s.
+
+## Notes from run 010 (2026-11-08)
+- Money/finance cases have little action footage on DVIDS. Best cash footage: 709501 (HSI Honolulu cash counting 122–127 s, cash pile 244–249 s, evidence bags 250–284 s; black at 285 s). Tag it "ILLUSTRATIVE … NOT THE … CASE". Shorts still need action: pair the case with a seizure (988986 cocaine bricks, 759057 81 vehicles) or raid b-roll (860902 HSI SRT Chicago).
+- 988986 is only 15.7 s: lines over it must total < 15 s or shots repeat.
+- Fact-check agent caught: quotes attributed to "the AP" that AP attributed to Garland / the U.S. attorney; linking named bankers to an unnamed network; "each deposit triggered a CTR" applied to the whole $474M; combined penalties that only add up with other regulators. Always check who said it inside a news story.
+- Map graphic: a `labels` entry and a city label at the same spot overlap — move the country label ~3° away and use anchor:"end" on the city.
