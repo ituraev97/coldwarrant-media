@@ -169,3 +169,12 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - 988986 is only 15.7 s: lines over it must total < 15 s or shots repeat.
 - Fact-check agent caught: quotes attributed to "the AP" that AP attributed to Garland / the U.S. attorney; linking named bankers to an unnamed network; "each deposit triggered a CTR" applied to the whole $474M; combined penalties that only add up with other regulators. Always check who said it inside a news story.
 - Map graphic: a `labels` entry and a city label at the same spot overlap — move the country label ~3° away and use anchor:"end" on the city.
+
+## Notes from run 011 (2026-11-09)
+- fbi.gov refuses fetching from the cloud (WebFetch client_error; curl blocked as bot-check circumvention — don't try). Use DEA/DOJ releases, FBI-written DVIDS descriptions, and news stories that quote the FBI release; say so in sources.md.
+- faster-whisper can be pip-installed but its models come from huggingface.co, which the proxy blocks — interview soundbites can't be transcribed here; don't quote interview clips you can't transcribe.
+- FBI DVIDS helicopter footage (1022910) has a blue frame border: use `crop="iw*0.74:ih*0.74:iw*0.13:ih*0.13"`; it also contains a child photo at 36–44 s — never let a shot run past 35 s.
+- Shot lengths = (line audio + gap) / number of shots. Validate every shot BEFORE building: start + length < clip end, no overlap with other shots of the same clip, no black windows (script in this run: check against blackdetect ranges). 1006212 (FBI KC Red Card) is mostly 3–7 s islands between black gaps; 973778 is pillarboxed after ~65 s.
+- Dark night footage (1006212 at 112–116 s) is flagged by blackdetect on video_raw after grading — treat as black and replace.
+- Thumbnail: Anton commas get hidden under the next line (".86" line-height). Put the number in its own block span with margin-bottom (see episodes/011 thumb.json).
+- Fact-check agent caught: "the FBI made all those arrests" (partners did), truncated quotes that change meaning (Tapp "…ineffective at maintaining public safety"), a map mixing scopes (one surge vs. a summer total), "guns" for "illegally possessed weapons", and one-sided use of a critic's quote.
