@@ -195,9 +195,7 @@ LINES = [
 
 # spoken -> display replacements for subtitles (longest first where they overlap)
 DISPLAY = [
- ("more than two hundred seventy thousand dollars", "more than $270,000"), ("ninety-five", "95"), ("seventy-six", "76"), ("thirty-three agencies", "33 agencies"), ("thirty-three kilograms", "33 kilograms"), ("one point two kilograms", "1.2 kilograms"),
- ("thirty-eight", "38"), ("thirteen guns", "13 guns"), ("eleven fugitives", "11 fugitives"), ("twenty-seven other", "27 other"), ("Sixteen guns", "16 guns"), ("Five pounds", "5 pounds"), ("Fifteen of", "15 of"), ("six-year", "six-year"), ("nineteen thirty-six", "1936"),
- ("U S Attorney", "U.S. Attorney"), ("U S Marshals", "U.S. Marshals"), ("A T F", "ATF"),
+ ("more than two hundred seventy thousand dollars", "more than $270,000"),
  ("Eight thousand nine hundred twenty-seven", "8,927"), ("eight thousand nine hundred twenty-seven", "8,927"),
  ("Eight thousand six hundred twenty-nine", "8,629"), ("more than six thousand five hundred", "more than 6,500"),
  ("Two thousand two hundred eighty-one", "2,281"), ("Forty-four thousand five hundred sixty-nine", "44,569"),
@@ -218,6 +216,10 @@ DISPLAY = [
  ("June twenty-fourth", "June 24"), ("June second", "June 2"), ("June first", "June 1"), ("September twentieth", "September 20"), ("August thirty-first", "August 31"),
  ("two thousand five", "2005"), ("twenty twenty-six", "2026"), ("twenty twenty-five", "2025"),
  ("two point oh", "2.0"), ("zero one one", "011"), ("Troop Nola", "Troop NOLA"), ("Del Man-zo", "DelManzo"),
+ ("ninety-five", "95"), ("seventy-six", "76"), ("thirty-three agencies", "33 agencies"), ("thirty-three kilograms", "33 kilograms"), ("one point two kilograms", "1.2 kilograms"),
+ ("thirty-eight", "38"), ("thirteen guns", "13 guns"), ("eleven fugitives", "11 fugitives"), ("twenty-seven other", "27 other"), ("Sixteen guns", "16 guns"), ("Five pounds", "5 pounds"), ("Fifteen of", "15 of"), ("nineteen thirty-six", "1936"),
+ ("More than one hundred", "More than 100"), ("More than six thousand five hundred", "More than 6,500"), ("More than thirty", "More than 30"),
+ ("U S Attorney", "U.S. Attorney"), ("U S Marshals", "U.S. Marshals"), ("A T F", "ATF"),
  ("N B C ten", "NBC 10"), ("F B I", "FBI"), ("D E A", "DEA"),
 ]
 

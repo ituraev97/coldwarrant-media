@@ -111,28 +111,28 @@ local police.
 Director Kash Patel put the goal in one sentence.
 
 29
-00:01:14,645 --> 00:01:17,685
+00:01:14,645 --> 00:01:17,803
 In Baton Rouge, according to the FBI, local,
 
 30
-00:01:17,685 --> 00:01:20,587
+00:01:17,803 --> 00:01:20,817
 state and federal officers went after four
 
 31
-00:01:20,587 --> 00:01:23,695
+00:01:20,817 --> 00:01:24,047
 violent gangs, believed to be responsible for
 
 32
-00:01:23,695 --> 00:01:26,528
+00:01:24,047 --> 00:01:26,989
 much of the city's violent crime and drug
 
 33
-00:01:26,528 --> 00:01:27,357
+00:01:26,989 --> 00:01:27,850
 trafficking.
 
 34
-00:01:27,357 --> 00:01:29,429
-More than one hundred arrests.
+00:01:27,850 --> 00:01:29,429
+More than 100 arrests.
 
 35
 00:01:29,879 --> 00:01:33,442
@@ -219,20 +219,20 @@ months-long, proactive operation, run by all
 55 field offices against alleged violent offenders.
 
 56
-00:02:34,540 --> 00:02:35,599
+00:02:34,540 --> 00:02:35,798
 8,629 arrests.
 
 57
-00:02:35,599 --> 00:02:38,852
-More than six thousand five hundred of them
+00:02:35,798 --> 00:02:39,571
+More than 6,500 of them under the bureau's
 
 58
-00:02:38,852 --> 00:02:42,634
-under the bureau's violent crime and gang program.
+00:02:39,571 --> 00:02:42,355
+violent crime and gang program.
 
 59
-00:02:42,634 --> 00:02:46,039
-More than thirty fugitives wanted for murder.
+00:02:42,355 --> 00:02:46,039
+More than 30 fugitives wanted for murder.
 
 60
 00:02:46,489 --> 00:02:48,423
@@ -627,19 +627,19 @@ Since the FBI joined the case:
 guns recovered.
 
 158
-00:07:23,328 --> 00:07:27,219
-In New England, FBI Boston counted one hundred
+00:07:23,328 --> 00:07:27,637
+In New England, FBI Boston counted 176 arrests.
 
 159
-00:07:27,219 --> 00:07:29,249
-76 arrests. One of them:
+00:07:27,637 --> 00:07:28,737
+One of them:
 
 160
-00:07:29,249 --> 00:07:32,886
+00:07:28,737 --> 00:07:32,680
 a Rhode Island fugitive who had disappeared
 
 161
-00:07:32,886 --> 00:07:35,339
+00:07:32,680 --> 00:07:35,339
 during his own trial in 2005.
 
 162
