@@ -80,6 +80,19 @@ cd $P && node thumb.mjs $EP/thumb.json $EP   # thumb_A (main) + thumb_C (alterna
 - Search demand worth targeting with real, sourced cases: "how every cartel boss died / was caught" (~26K searches/mo, competition 48), "sinaloa cartel history" (~4K, competition 27), "chapo guzman" (+155%), "mafia vs cartel" (low competition).
 - Competitor channels like FBISecretUS / Operation Crime Files win with this packaging but appear to use invented cases — copy the packaging, never the fabrication.
 
+## Performance rules
+Weekly review (Mondays, Metricool YTVP02/17/06/08, last 28 days). Each rule is backed by ≥ 3 of our videos. Do not change schedules, AI-label settings or the owner's content rules here — only recommend.
+1. Shorts = an action moment on real footage. Action Shorts: median 1,206 views (n=17: boardings, seizures, raids, tunnel reveals, undercover buys); history / definition / structure / quote Shorts: median 194 (n=10). Never make the second kind.
+2. Lead the Short title with the number or the action verb ("267 Arrests…", "12,000 Pounds…", "Coast Guard Jumps…", "Undercover, They Bought 90 Guns", "1,300 Officers vs…") — all top-5 Shorts (1,271–1,433) open this way.
+3. Never title a Short as a question or a definition ("What Does…", "Who Actually…", "How Deportations Spread…", "…Wasn't Born in…", "…Had a Board of Directors"): 5 videos, 76–358 views.
+4. Put the day's strongest action+number Short in the 09:00 ET slot: all 5 Shorts that ran at 09:00 got 1,206–1,433 views (slot median 1,250 vs 425–756 for 11/15/17).
+5. Long titles must not start with a place, gang name or program name: 5/5 such long videos ("MS-13: …", "Rancho San Pedro: …", "Narco-Subs: …", "Fentanyl at San Ysidro: …", "The Longest Smuggling Tunnel … : 36 Years…") got 3–12 views. Use the searched question / number + action / "How a Cartel…" formulas (§2 research).
+6. Shorts retention: average view duration of all 27 Shorts is 6–20 s (winners 12–19 s). Keep Shorts 20–35 s with the number on screen and spoken in second 1; the payoff must land before ~15 s.
+7. Same case, different angle: a seizure angle beats the person/sentence angle on the same footage ("77 Pounds of Fentanyl in One Car" 1,250 vs "A Teacher, 77 Pounds…, 87 Months" 84; "Coast Guard Jumps Onto a Moving Narco-Sub" 1,431 vs "Caught Twice on a Narco-Sub" 77; "The Longest Smuggling Tunnel…" 1,225 vs "The 'Store' Hiding a Drug Tunnel" 80). Lead with the seizure/action, never with the defendant.
+
+Changelog
+- 2026-11-09: section created from 32 videos (5 long, 27 Shorts) published 2026-10-29 → 2026-11-04 (Metricool returns nothing newer yet — reporting lag; episodes 006–010 and the template-tagged Shorts of 11-07/11-08 are not in the data). Recommendation for the owner (not applied): the 13:00 slot has only one data point (76 views, an explainer) — re-check next Monday.
+
 ## 6. QA (do not skip)
 - Contact sheet of the long video every ~8 s: no gore, no unreadable overlaps, no black frames, subtitles inside frame.
 - `ffmpeg -i long.mp4 -af ebur128 -f null -` → integrated ≈ −14 LUFS.
