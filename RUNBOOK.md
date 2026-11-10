@@ -178,3 +178,11 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - Dark night footage (1006212 at 112–116 s) is flagged by blackdetect on video_raw after grading — treat as black and replace.
 - Thumbnail: Anton commas get hidden under the next line (".86" line-height). Put the number in its own block span with margin-bottom (see episodes/011 thumb.json).
 - Fact-check agent caught: "the FBI made all those arrests" (partners did), truncated quotes that change meaning (Tapp "…ineffective at maintaining public safety"), a map mixing scopes (one surge vs. a summer total), "guns" for "illegally possessed weapons", and one-sided use of a critic's quote.
+
+## Notes from run 012 (2026-11-10)
+- Map/graphic element delays (`d`) must be ≤ ~2.0 s: graphics.mjs renders only the 2.4 s intro + hold frame, so labels with d=2.8–3.4 never appear (Philadelphia/Rotterdam were missing on the first render). Check the LAST frame of every map.
+- Timeline items: keep `t` ≤ ~22 chars and `y` single-line ("FEB–MAY 2026" wrapped and overlapped the axis).
+- 692217 (CBP press conference, 32 min, 700 MB at 720p) makes build_ep slow (~20 s per line overall). Don't put officials' faces from it under lines quoting other people (fact-check: McSwain's quote was from a July statement, not the June 21 conference).
+- 891551 at ~245–260 s is an out-of-focus in-cab monitor — avoid.
+- Fact-check agent caught: payment attributed to a named crewman that the affidavit doesn't support, a quote placed at the wrong event, "two officers" when one was a cadet, "court filings" for a leaked affidavit, "never accused" for MSC (→ "have not accused… not charged"), and a related pending case (Gogic, EDNY) that the ending must not ignore.
+- Short line ranges must not include graphic-only lines: swap the graphic for footage in the script before building (rebuild costs ~20 min).
