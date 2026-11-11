@@ -1,0 +1,243 @@
+# CASE FILE 013 — 3,000 Pounds of Meth Found in One Semi Truck: How CBP Finds It
+# Each entry: (vo_text, shots, opts)  — same format as episodes/001-ms13/episode.py
+# shot: ("clip_id", start_sec, {opts}) | ("g:<graphic_name>", 0, {opts})
+C = lambda i, s, **k: (str(i), s, k)
+G = lambda name, **k: ("g:" + name, 0, k)
+
+OTAY20 = ("CBP · OTAY MESA COMMERCIAL FACILITY · OCT. 2020", "THE SEIZED PACKAGES · SOURCE: CBP VIA DVIDS")
+OTAYB = ("OTAY MESA COMMERCIAL FACILITY, SAN DIEGO", "MARCH 2020 · CBP VIA DVIDS")
+NOG16 = ("ILLUSTRATIVE · CBP COCAINE SEIZURE, NOGALES, ARIZ.", "MAY 2016 · NOT THE CASES IN THIS FILE")
+SL16 = ("ILLUSTRATIVE · CBP METH & HEROIN SEIZURE, SAN LUIS, ARIZ.", "MAY 2016 · NOT THE CASES IN THIS FILE")
+NOGN = ("ILLUSTRATIVE · CBP HEROIN SEIZURE, NOGALES, ARIZ.", "MAY 2016 · NOT THE CASES IN THIS FILE")
+MAR23 = ("PORT OF NOGALES · MARIPOSA CARGO FACILITY", "2023 · CBP VIA DVIDS")
+MARX = ("CBP OFFICER REVIEWS A TRUCK SCAN · NOGALES", "2023 · CBP VIA DVIDS")
+MAR20 = ("MARIPOSA PORT OF ENTRY, NOGALES, ARIZ.", "MARCH 2020 · CBP VIA DVIDS")
+K9 = ("ILLUSTRATIVE · CBP CANINE TEAM, SAN YSIDRO", "2019 · CBP VIA DVIDS")
+LEP = ("CBP DRIVE-THROUGH SCANNER · EL PASO", "2024 · CBP VIA DVIDS")
+LAB = ("CBP LABORATORY, CHICAGO", "2024 · CBP VIA DVIDS")
+PILLS = ("ILLUSTRATIVE · FENTANYL PILLS SEIZED AT NOGALES", "NOV. 2023 · NOT THE CASES IN THIS FILE")
+
+PORTS = dict(bounds=[[-119.0, 35.2], [-95.5, 24.6]], topPad=170, highlight={"484": "#2a2a30"},
+             labels=[dict(ll=[-106.0, 33.6], t="UNITED STATES", size=30), dict(ll=[-104.5, 27.6], t="MEXICO", size=30)])
+
+LINES = [
+ # ---------------- COLD OPEN ----------------
+ ("Three thousand pounds of meth. One semi truck.",
+  [C(769187, 0.2, vert=1)], dict(tag=OTAY20)),
+ ("October ninth, twenty twenty. A tractor-trailer pulls into the Oh-tie Mesa commercial crossing in San Diego. On paper, it's carrying medical supplies.",
+  [C(744721, 11.5), C(744721, 24), C(744721, 59)], dict(tag=OTAYB)),
+ ("Customs officers open it up and count one thousand eight hundred sixteen packages, mixed in with the boxes. About three thousand fourteen pounds of methamphetamine, plus heroin and fentanyl. More than seven million dollars, by the government's estimate.",
+  [C(769187, 5.0, vert=1), C(563558, 58), C(563558, 75)], dict(tag=("CBP · OTAY MESA PACKAGES, OCT. 2020 → ILLUSTRATIVE SEIZURE, SAN LUIS 2016", "SOURCE: CBP VIA DVIDS"))),
+ ("Every day, long lines of trucks roll north across the border. Most of them are exactly what their paperwork says. So how do officers find the one that isn't? And how often do they miss?",
+  [C(907568, 10), C(907568, 52), C(872073, 192)], dict(tag=MAR23)),
+ ("This is the case file on drugs hidden in semi trucks.",
+  [G("title", case="013", title='3,000 LBS <span class="red">ONE TRUCK</span>', sub="DRUGS HIDDEN IN SEMI TRUCKS", size=170)], dict(gap=2.6)),
+
+ # ---------------- I: THE MEDICAL SUPPLIES ----------------
+ ("Start at the gate.",
+  [G("chapter", case="013", n="I", t="THE MEDICAL SUPPLIES")], {}),
+ ("Oh-tie Mesa is San Diego's commercial port of entry. Cargo trucks from Tijuana line up here, and each one stops at a booth, where an officer checks the driver and the paperwork.",
+  [C(744721, 125), C(744721, 179), C(744721, 206)], dict(tag=OTAYB)),
+ ("On that Friday in October, at about nine forty-five in the morning, a driver arrived with a load manifested as medical supplies.",
+  [C(744721, 163), C(744721, 196)], dict(tag=OTAYB)),
+ ("Officers sent the truck to secondary inspection. There, according to Customs and Border Protection, an imaging system showed something wrong in the trailer, and a drug-sniffing dog alerted.",
+  [C(872064, 247), C(728919, 126), C(728919, 140)], dict(tag=("ILLUSTRATIVE · CBP SCANNER AND CANINE TEAMS", "NOGALES 2023 · SAN YSIDRO 2019 · NOT THIS CASE"))),
+ ("Inside, among spray bottles and pipette tools, officers found the packages.",
+  [C(769187, 10.6, vert=1), C(744721, 117)], dict(tag=("CBP · OTAY MESA PACKAGES, OCT. 2020 → OTAY MESA DOCK, MARCH 2020", "SOURCE: CBP VIA DVIDS"))),
+ ("The count: about three thousand fourteen pounds of meth, sixty-four pounds of heroin, twenty-nine pounds of fentanyl powder, and almost thirty-seven pounds of fentanyl pills.",
+  [G("cards3", kicker="OTAY MESA · OCT. 9, 2020 · 1,816 PACKAGES", title="ONE TRAILER",
+     cards=[dict(h="3,014 LB", t="methamphetamine"), dict(h="64 LB", t="heroin"), dict(h="~66 LB", t="fentanyl", s="29 lb powder · ~37 lb pills")],
+     footer="SOURCES: DEA · CBP, OCT. 11, 2020")], {}),
+ ("C B P called it the second-largest methamphetamine bust on the southwest border in the agency's history.",
+  [G("stat", a="#2", b="LARGEST METH BUST ON THE SOUTHWEST BORDER", c="IN CBP HISTORY, AS OF OCT. 2020 · SOURCE: DEA / CBP")], {}),
+ ("The driver, a forty-seven-year-old Mexican citizen, was arrested, and turned over to a joint team of Homeland Security Investigations and the D E A to face charges. Charges are allegations; he was presumed innocent unless proven guilty.",
+  [C(872064, 100), C(872064, 140), C(872064, 160)], dict(tag=("ILLUSTRATIVE · CBP CARGO LANES, NOGALES", "2023 · NOT THIS CASE · DRIVER NOT SHOWN"))),
+ ("The D E A's special agent in charge in San Diego, John Callery, said the seizure kept more than seven million dollars of deadly drugs from entering the country.",
+  [G("quote", q="“This massive seizure is testament of what law enforcement agencies can do when we combine forces.”", w="JOHN W. CALLERY · DEA SPECIAL AGENT IN CHARGE, SAN DIEGO · OCT. 2020")], dict(gap=0.8)),
+
+ # ---------------- II: THE SAME TRICK ----------------
+ ("Then it happened again.",
+  [G("chapter", case="013", n="II", t="THE SAME TRICK")], {}),
+ ("May fifteenth, twenty twenty-one. Same commercial facility. Same time of morning, about nine forty-five. Another tractor-trailer, manifested, again, as medical supplies.",
+  [C(744721, 30), C(744721, 41), C(744721, 98)], dict(tag=OTAYB)),
+ ("This time, a roving team of officers picked the truck out while it was still waiting in line.",
+  [C(872064, 182), C(872073, 130)], dict(tag=("ILLUSTRATIVE · CBP OFFICERS WORK THE TRUCK LINE", "NOGALES 2023 · NOT THIS CASE"))),
+ ("The X-ray showed anomalies. A dog alerted to one pallet. Officers unloaded the shipment and found one hundred twenty packages, mixed in with the legitimate goods.",
+  [C(744721, 104), C(744721, 110.5), C(563558, 25)], dict(tag=("ILLUSTRATIVE · UNLOADING AT OTAY MESA (2020) · SAN LUIS SEIZURE (2016)", "NOT THE MAY 2021 SEIZURE"))),
+ ("About two thousand four hundred twenty-five pounds of meth. Roughly five and a half million dollars.",
+  [G("stat", a="2,425 LB", b="METH · HIDDEN IN MEDICAL SUPPLIES · AGAIN", c="OTAY MESA · MAY 15, 2021 · SOURCE: CBP")], {}),
+ ("The acting director of field operations in San Diego, Anne Maricich, put it this way.",
+  [C(744721, 222), C(907568, 252)], dict(tag=OTAYB)),
+ ("Most of what officers see every day, she said, is legitimate cargo. But transnational criminal organizations will attempt any avenue they can think of.",
+  [G("quote", q="“…transnational criminal organizations will attempt any avenue they can think of.”", w="ANNE MARICICH · ACTING DIRECTOR OF FIELD OPERATIONS, CBP SAN DIEGO · MAY 2021")], dict(gap=0.8)),
+ ("A twenty-nine-year-old Mexican man was arrested and handed to Homeland Security Investigations. Charges are allegations. Every defendant is presumed innocent unless proven guilty.",
+  [C(744721, 140), C(744721, 186), C(872064, 60)], dict(tag=("ILLUSTRATIVE · CBP CARGO LANES · OTAY MESA 2020 / NOGALES 2023", "DRIVER NOT SHOWN · CBP VIA DVIDS"))),
+
+ # ---------------- III: UNDER THE CUCUMBERS ----------------
+ ("Further east, in Arizona, a record had already been set.",
+  [G("chapter", case="013", n="III", t="UNDER THE CUCUMBERS")], {}),
+ ("Oh-tie Mesa. Calexico. Nogales. Pharr. Four commercial crossings, and five cases in this file.",
+  [G("map", map=dict(PORTS, cities=[
+       dict(ll=[-116.94, 32.55], name="OTAY MESA", sub="2020 · 2021", anchor="end", dy=-34, d=0.3, size=30),
+       dict(ll=[-115.49, 32.67], name="CALEXICO", sub="2026", dy=-34, d=0.7, size=30),
+       dict(ll=[-110.94, 31.34], name="NOGALES", sub="2019", dy=40, d=1.1, size=30, color="#D3212D"),
+       dict(ll=[-98.18, 26.09], name="PHARR", sub="2025", anchor="end", dy=-34, d=1.5, size=30)]),
+     kicker="U.S.–MEXICO BORDER · COMMERCIAL PORTS OF ENTRY", title="FOUR CROSSINGS")], {}),
+ ("Nogales, Arizona. At the Mariposa cargo crossing, tractor-trailers line up to clear customs, many of them hauling fresh produce north from Mexico.",
+  [C(907568, 17), C(907568, 70), C(907568, 98)], dict(tag=MAR23)),
+ ("On a Saturday at the end of January, twenty nineteen, a truck driver brought in a trailer loaded with cucumbers.",
+  [C(744730, 76), C(744730, 128)], dict(tag=MAR20)),
+ ("Two hundred fifty-four pounds of fentanyl were riding in that trailer. At secondary inspection, an officer scanning it saw anomalies in the floor, and a canine team alerted.",
+  [C(728919, 133), C(872064, 525), C(728919, 82)], dict(tag=("ILLUSTRATIVE · TRUCK SCAN REVIEW (NOGALES 2023) · CANINE (SAN YSIDRO 2019)", "NOT THE 2019 SEIZURE"))),
+ ("Under the cucumbers was a hidden floor compartment. Inside: four hundred sixteen packages.",
+  [C(563534, 126), C(563534, 131)], dict(tag=NOG16)),
+ ("Ninety-four of them held the fentanyl, mostly powder, with some pills. The rest was methamphetamine, about three hundred ninety-five pounds.",
+  [C(917814, 6), C(917814, 19), C(563558, 45)], dict(tag=PILLS)),
+ ("Why does that matter? According to Homeland Security Investigations' special agent in charge, Juan Mariscal, one kilogram of fentanyl can produce about a million fatal doses. This load was about one hundred fourteen kilograms. The Nogales port director, Michael Humphries, said an amount the size of a few grains of salt can kill a person.",
+  [C(917814, 26), C(917814, 34), C(917814, 41), C(917814, 84)], dict(tag=PILLS)),
+ ("At the time, it was the largest fentanyl seizure in C B P history. NBC News reported it was more than twice the previous record: one hundred eighteen pounds, found in Nebraska in twenty seventeen.",
+  [G("stat", a="254 LB", b="FENTANYL · ONE TRUCK · A CBP RECORD AT THE TIME", c="NOGALES, ARIZ. · JAN. 2019 · PREVIOUS RECORD 118 LB (NEBRASKA, 2017) · SOURCES: NBC NEWS · ARIZONA DAILY STAR")], {}),
+ ("For scale: Arizona's ports of entry had seized twenty pounds of fentanyl in all of fiscal twenty sixteen, and one hundred fifty-five pounds in fiscal twenty eighteen. One trailer beat both years.",
+  [G("cards3", kicker="FENTANYL SEIZED AT ARIZONA PORTS OF ENTRY", title="ONE TRUCK vs. A YEAR",
+     cards=[dict(h="20 LB", t="fiscal 2016"), dict(h="155 LB", t="fiscal 2018"), dict(h="254 LB", t="one trailer", s="January 2019")],
+     footer="SOURCE: ARIZONA DAILY STAR, JAN. 31, 2019")], {}),
+ ("In twenty seventeen, according to the C D C, more than twenty-eight thousand deaths in the United States involved synthetic opioids other than methadone, a category that includes fentanyl.",
+  [G("stat", a="28,000+", b="U.S. DEATHS INVOLVING SYNTHETIC OPIOIDS · 2017", c="OTHER THAN METHADONE · CDC DATA, AS CITED BY THE ARIZONA DAILY STAR")], {}),
+ ("The driver was twenty-six. According to the criminal complaint, he told officers he didn't know the drugs were there. He said he had picked up the load in the morning, checked the trailer, and found nothing unusual. He was being paid, the complaint says, about thirty-six dollars for the delivery.",
+  [G("doc", header="CRIMINAL COMPLAINT · AS REPORTED BY THE ARIZONA DAILY STAR", title="HE SAYS HE DIDN'T KNOW", tsize=110,
+     body="Driver, 26 · hauling cucumbers to Rio Rico, Ariz.<br>Told officers he did not know about the drugs.<br>Says he inspected the trailer · original seal intact.<br>Paid about $36 for the delivery.",
+     source="SOURCE: ARIZONA DAILY STAR, JAN. 31, 2019", stamp="CHARGED")], {}),
+ ("He didn't own the trailer. He told officers he suspected a well-dressed stranger who had loaded it, or the owners of the cucumbers.",
+  [C(744730, 25), C(744730, 112)], dict(tag=("ILLUSTRATIVE · CARGO BOOTHS, MARIPOSA PORT OF ENTRY", "2020 · NOT THIS CASE · DRIVER NOT SHOWN"))),
+ ("He was charged with possession with intent to distribute. A charge is only an accusation; he was presumed innocent unless proven guilty. Mariscal said the size of the shipment and how it was concealed pointed to something bigger.",
+  [C(563582, 155), C(563582, 165), C(563582, 180)], dict(tag=NOGN)),
+ ("A well-organized smuggling operation, he suggested. Bigger than any one truck.",
+  [G("stat", a="WELL-ORGANIZED", b="SIZE AND CONCEALMENT POINT TO A WELL-ORGANIZED SMUGGLING OPERATION", c="JUAN MARISCAL, HSI SPECIAL AGENT IN CHARGE · AS PARAPHRASED BY THE ARIZONA DAILY STAR · JAN. 2019")], dict(gap=0.8)),
+
+ ("Humphries made another point that day. Most hard narcotics C B P seizes, he said, are caught at the ports of entry. In his opinion, smugglers prefer vehicles with hidden compartments they can track, rather than crossing between the ports.",
+  [C(872064, 590), C(907568, 160), C(907568, 196)], dict(tag=MAR23)),
+ # ---------------- IV: THE MACHINES AND THE DOGS ----------------
+ ("How do they pick the one truck?",
+  [G("chapter", case="013", n="IV", t="THE MACHINES AND THE DOGS")], {}),
+ ("Three tools come up in every one of these cases. An officer who decides a load is worth a second look. An X-ray or gamma-ray image of the trailer. And a dog.",
+  [G("list", kicker="IN EVERY CASE IN THIS FILE", title="HOW A LOAD GETS FOUND",
+     items=["An officer refers the truck", "X-ray or gamma-ray image", "A dog alerts", "Unload · open · count"],
+     footer="SOURCES: CBP · DEA · USAO S.D. CAL.")], {}),
+ ("At Nogales, C B P uses a multi-energy portal, a drive-through scanner. Trucks roll through it, and the image goes to an officer's screen.",
+  [C(907568, 278), C(907568, 291), C(872064, 529)], dict(tag=("MULTI-ENERGY PORTAL · MARIPOSA CARGO FACILITY", "NOGALES · 2023 · CBP VIA DVIDS"))),
+ ("What the officer is looking for is an anomaly. Something in the image that doesn't match the paperwork, like the floors in these cases.",
+  [C(936107, 120), C(936107, 124), C(936107, 128)], dict(tag=LEP)),
+ ("Then the dogs. C B P canine teams work the lines of vehicles. The dogs are trained to find narcotics, people, money and weapons.",
+  [C(728919, 23), C(728919, 64), C(728919, 145)], dict(tag=K9)),
+ ("At El Paso, smaller low-energy portals scan passenger cars while they drive through, and the images go straight to officers inside.",
+  [C(936107, 36), C(936107, 101), C(936107, 132)], dict(tag=LEP)),
+ ("But here is the number that matters. According to the Congressional Research Service, as of fiscal twenty twenty-four, C B P was using these scanners on about fifteen percent of arriving commercial trucks.",
+  [C(872073, 375), C(872073, 390), C(872073, 405)], dict(tag=MAR23)),
+ ("Fifteen percent of trucks. Ninety-eight percent of rail cars. One percent of passenger vehicles.",
+  [G("cards3", kicker="SHARE SCANNED WITH NON-INTRUSIVE INSPECTION · FY2024", title="WHO GETS X-RAYED",
+     cards=[dict(h="~15%", t="commercial trucks"), dict(h="~98%", t="rail cars"), dict(h="~1%", t="passenger vehicles")],
+     footer="SOURCE: CONGRESSIONAL RESEARCH SERVICE, IN12601, SEPT. 2025")], {}),
+ ("Congress has asked for more. A law passed for fiscal twenty twenty-one required Homeland Security to draw up a plan, with costs, for inspecting one hundred percent of commercial and passenger vehicle traffic.",
+  [C(872073, 300), C(872064, 255), C(872073, 230)], dict(tag=MAR23)),
+ ("Congress has been paying for more. In fiscal twenty nineteen it gave C B P five hundred seventy million dollars for scanning equipment. But by December twenty twenty-four, of one hundred fifty large fixed systems, fifty had been installed, and forty-three were still in storage.",
+  [G("cards3", kicker="LARGE-SCALE FIXED SCANNERS · AS OF DEC. 2024", title="150 PLANNED",
+     cards=[dict(h="50", t="deployed and installed"), dict(h="43", t="still in storage"), dict(h="$570M", t="appropriated", s="fiscal 2019")],
+     footer="SOURCE: CRS IN12601, CITING A JUNE 2025 DHS INSPECTOR GENERAL REPORT")], {}),
+ ("So most of the time, the first line of defense is still an officer's judgment, and a dog's nose.",
+  [C(728919, 103), C(728919, 112)], dict(tag=K9)),
+
+ # ---------------- V: PEPPERS AND CUCUMBERS ----------------
+ ("Then Texas.",
+  [G("chapter", case="013", n="V", t="PEPPERS AND CUCUMBERS")], {}),
+ ("April eleventh, twenty twenty-five. The cargo facility at the Pharr International Bridge, in South Texas, near McAllen.",
+  [C(744730, 140), C(744730, 186)], dict(tag=("ILLUSTRATIVE · CARGO DOCKS, MARIPOSA PORT OF ENTRY", "2020 · NOT PHARR"))),
+ ("Sixteen hundred pounds of meth, in a load of peppers. A tractor-trailer comes in from Mexico, and the paperwork says fresh bell peppers and cucumbers.",
+  [C(744730, 144), C(744730, 151)], dict(tag=("ILLUSTRATIVE · CBP INSPECTS A PRODUCE LOAD, NOGALES", "2020 · NOT THE PHARR SEIZURE"))),
+ ("Officers refer it for inspection, run it through the scanner, and bring in a canine team. Concealed inside the trailer: three hundred packages.",
+  [C(872064, 284), C(563558, 12), C(563558, 30)], dict(tag=SL16)),
+ ("The final weight: one thousand six hundred thirty-five pounds of methamphetamine. C B P valued it at about fourteen point six million dollars.",
+  [C(563558, 64), C(563558, 100)], dict(tag=("1,635 LB OF METH · PHARR, TEXAS · APRIL 11, 2025", "EST. $14.6 MILLION · SOURCE: CBP · FOOTAGE ILLUSTRATIVE (SAN LUIS, 2016)"))),
+ ("The port director, Carlos Rodriguez, said officers were using all tools and resources to keep these narcotics from reaching America's streets. Homeland Security Investigations opened a criminal case.",
+  [C(563558, 200), C(563558, 215), C(563558, 247)], dict(tag=SL16)),
+
+ # ---------------- VI: UNDER THE REBAR ----------------
+ ("And this summer, California again.",
+  [G("chapter", case="013", n="VI", t="UNDER THE REBAR")], {}),
+ ("July twenty twenty-six. The Calexico port of entry, across from Mexicali. A commercial truck pulls a flatbed trailer loaded with two hundred sixty-nine bundles of ree-bar.",
+  [C(872073, 22), C(872073, 61), C(872064, 15)], dict(tag=("ILLUSTRATIVE · COMMERCIAL TRUCKS AT A CBP CARGO PORT", "NOGALES 2023 · NOT CALEXICO"))),
+ ("The X-ray showed anomalies in the wooden floorboards of the trailer. A dog alerted.",
+  [C(872064, 533), C(728919, 150)], dict(tag=("ILLUSTRATIVE · SCAN REVIEW AND CANINE TEAM", "NOGALES 2023 · SAN YSIDRO 2019 · NOT THIS CASE"))),
+ ("Three hundred sixty-six packages. Officers unloaded the ree-bar, unscrewed the planks, and found the floor stuffed with them.",
+  [C(563534, 140), C(563534, 172), C(563534, 177.5)], dict(tag=NOG16)),
+ ("One thousand two pounds of cocaine. More than twenty million dollars.",
+  [C(563534, 148)], dict(tag=("1,002 LB OF COCAINE · CALEXICO · JULY 2026", "EST. $20M+ · SOURCE: USAO S.D. CAL. / DEA · FOOTAGE ILLUSTRATIVE (NOGALES, 2016)"))),
+ ("Federal prosecutors called it a tremendous amount of drugs, even by the standards of their district.",
+  [C(563534, 155), C(563534, 162)], dict(tag=("“A TREMENDOUS AMOUNT OF DRUGS, EVEN BY THE STANDARDS OF THIS DISTRICT”", "FEDERAL PROSECUTORS, S.D. CAL. · JULY 2026 · FOOTAGE ILLUSTRATIVE"), gap=0.8)),
+ ("The driver, a forty-four-year-old man and the truck's only occupant, was charged with importing cocaine. He pleaded not guilty. The charge carries a ten-year mandatory minimum. He is presumed innocent unless proven guilty.",
+  [G("doc", header="U.S. ATTORNEY'S OFFICE · SOUTHERN DISTRICT OF CALIFORNIA", title="IMPORTATION OF COCAINE", tsize=100,
+     body="Driver, 44 · only occupant · entered from Mexicali.<br>Pleaded not guilty at arraignment, July 28, 2026.<br>21 U.S.C. §§ 952, 960 · 10-year minimum · up to life.<br>A charge is an accusation · presumed innocent.",
+     source="SOURCES: DEA / USAO S.D. CAL., JULY 29, 2026 · FREIGHTWAVES, AUG. 1, 2026", stamp="PENDING")], {}),
+ ("The case belongs to the California Homeland Security Task Force, part of a Justice Department initiative called Operation Take Back America.",
+  [C(872073, 34), C(872073, 75)], dict(tag=("ILLUSTRATIVE · CBP CARGO PORT, NOGALES", "2023 · NOT CALEXICO"))),
+ ("And at the time, it was only the second-biggest cocaine seizure in that district this year. The biggest, in May, was more than a ton, linked to a tunnel under the border.",
+  [C(1002496, 160), C(1002496, 270)], dict(tag=LAB)),
+
+ ("According to authorities, as reported by FreightWaves, that one ran nineteen hundred thirty-three feet, from Tijuana to a store near Oh-tie Mesa. About fifty-five feet deep, with rails, ventilation and electricity. Its exit was under a storage-room floor, hidden by a hydraulic lift. Four people were charged.",
+  [G("doc", header="SOUTHERN DISTRICT OF CALIFORNIA · MAY 2026", title="THE TUNNEL", tsize=130,
+     body="1,933 feet · Tijuana → a store near Otay Mesa.<br>About 55 feet deep · rails, ventilation, electricity.<br>Exit under a storage-room floor · hidden by a hydraulic lift.<br>~2,270 lb of suspected cocaine · 4 charged.",
+     source="SOURCE: FREIGHTWAVES, AUG. 1, 2026, CITING THE U.S. ATTORNEY'S OFFICE", stamp="CHARGED")], {}),
+ ("Seized loads like these end up in C B P's laboratories, where chemists sort, weigh and test what was found, so it can be used as evidence.",
+  [C(1002496, 10), C(1002496, 63), C(1002496, 290)], dict(tag=LAB)),
+ # ---------------- CLOSE ----------------
+ ("Four crossings. Five loads.",
+  [C(917814, 50)], dict(tag=PILLS)),
+ ("Peppers and cucumbers in Pharr: one thousand six hundred thirty-five pounds of meth. Rebar in Calexico: one thousand two pounds of cocaine.",
+  [C(872064, 293), C(563534, 182)], dict(tag=("CASES IN THIS FILE · PHARR 2025 · CALEXICO 2026", "FOOTAGE ILLUSTRATIVE · CBP VIA DVIDS"))),
+ ("Cucumbers in Nogales: two hundred fifty-four pounds of fentanyl. Medical supplies in Oh-tie Mesa, twice: more than three thousand pounds of meth, then about twenty-four hundred more.",
+  [C(917814, 66), C(563582, 190), C(563582, 199)], dict(tag=("CASES IN THIS FILE · NOGALES 2019 · OTAY MESA 2020 / 2021", "FOOTAGE ILLUSTRATIVE · CBP VIA DVIDS"))),
+ ("Every one of them was found the same way. A second look, an image, and a dog. And nationwide, as of fiscal twenty twenty-four, most arriving trucks never go through a scanner at all.",
+  [C(872073, 270), C(872064, 562)], dict(tag=MAR23)),
+ ("These are the loads that got caught. Nobody can count the ones that didn't.",
+  [C(872064, 575)], dict(tag=("BORDER PATROL ALONG THE BORDER WALL, NOGALES", "2023 · CBP VIA DVIDS"))),
+ ("Case file zero one three. Closed for now.",
+  [G("end", case="013", label="3,000 LBS · ONE TRUCK")], dict(gap=3.0)),
+]
+
+DISPLAY = [
+ ("Three thousand pounds", "3,000 pounds"), ("twenty-four hundred", "2,400"), ("Sixteen hundred pounds", "1,600 pounds"), ("Two hundred fifty-four pounds", "254 pounds"), ("Three hundred sixty-six packages", "366 packages"), ("more than three thousand pounds", "more than 3,000 pounds"),
+ ("one thousand eight hundred sixteen", "1,816"), ("About three thousand fourteen pounds", "About 3,014 pounds"), ("about three thousand fourteen pounds", "about 3,014 pounds"),
+ ("More than seven million dollars", "More than $7 million"), ("more than seven million dollars", "more than $7 million"),
+ ("sixty-four pounds", "64 pounds"), ("twenty-nine pounds", "29 pounds"), ("thirty-seven pounds", "37 pounds"),
+ ("forty-seven-year-old", "47-year-old"), ("twenty-nine-year-old", "29-year-old"), ("forty-four-year-old", "44-year-old"), ("twenty-six", "26"),
+ ("nine forty-five", "9:45"), ("October ninth", "October 9"), ("May fifteenth", "May 15"), ("April eleventh", "April 11"),
+ ("one hundred twenty packages", "120 packages"), ("About two thousand four hundred twenty-five pounds", "About 2,425 pounds"),
+ ("five and a half million dollars", "$5.5 million"), ("Oh-tie Mesa", "Otay Mesa"), ("Oh-tie", "Otay"), ("ree-bar", "rebar"),
+ ("Seven hundred miles", "700 miles"), ("four hundred sixteen", "416"), ("Ninety-four", "94"),
+ ("Two hundred fifty-four pounds", "254 pounds"), ("two hundred fifty-four pounds", "254 pounds"), ("three hundred ninety-five pounds", "395 pounds"),
+ ("one hundred eighteen pounds", "118 pounds"), ("twenty pounds", "20 pounds"), ("one hundred fifty-five pounds", "155 pounds"),
+ ("thirty-six dollars", "$36"), ("fifteen percent", "15 percent"), ("Fifteen percent", "15 percent"), ("Ninety-eight percent", "98 percent"), ("One percent", "1 percent"),
+ ("five hundred seventy million dollars", "$570 million"), ("one hundred fifty", "150"), ("fifty had", "50 had"), ("forty-three", "43"),
+ ("three hundred packages", "300 packages"), ("One thousand six hundred thirty-five pounds", "1,635 pounds"), ("one thousand six hundred thirty-five pounds", "1,635 pounds"),
+ ("fourteen point six million dollars", "$14.6 million"),
+ ("two hundred sixty-nine", "269"), ("Three hundred sixty-six", "366"), ("One thousand two pounds", "1,002 pounds"), ("one thousand two pounds", "1,002 pounds"),
+ ("twenty million dollars", "$20 million"), ("ten-year", "10-year"),
+ ("fiscal twenty twenty-four", "fiscal 2024"), ("fiscal twenty nineteen", "fiscal 2019"), ("fiscal twenty twenty-one", "fiscal 2021"), ("fiscal twenty sixteen", "fiscal 2016"), ("fiscal twenty eighteen", "fiscal 2018"),
+ ("December twenty twenty-four", "December 2024"), ("July twenty twenty-six", "July 2026"),
+ ("twenty twenty-one", "2021"), ("one hundred fourteen kilograms", "114 kilograms"), ("twenty-eight thousand", "28,000"), ("one hundred percent", "100 percent"), ("nineteen hundred thirty-three feet", "1,933 feet"), ("fifty-five feet", "55 feet"), ("C D C", "CDC"), ("twenty twenty-five", "2025"), ("twenty twenty", "2020"), ("twenty nineteen", "2019"), ("twenty seventeen", "2017"),
+ ("zero one three", "013"), ("C B P", "CBP"), ("D E A", "DEA"),
+]
+
+META = dict(
+    case="013", label="3,000 LBS · ONE TRUCK",
+    title="3,000 Pounds of Meth Found in One Semi Truck",
+    imgs={},
+    credit=("Footage: U.S. Customs and Border Protection via DVIDS — public domain."
+            r"\NAppearance of U.S. government visual information does not imply or constitute endorsement."),
+    shorts=[
+        dict(id="s1", lines=[1, 3], hook="3,014 LB OF METH<br>[ONE SEMI TRUCK]", title="3,014 Pounds of Meth Found in One Semi Truck", template="before→after seizure reveal"),
+        dict(id="s2", lines=[27, 29], hook="254 LB OF FENTANYL<br>[UNDER CUCUMBERS]", title="254 Pounds of Fentanyl Hidden Under a Load of Cucumbers", template="single action moment (dog alert → hidden floor)"),
+        dict(id="s3", lines=[59, 61], hook="“A TREMENDOUS AMOUNT”<br>[1,002 LB OF COCAINE]", title="1,002 Pounds of Cocaine Hidden in a Trailer's Floorboards", template="verbatim quote"),
+        dict(id="s4", lines=[67, 69], hook="5 TRUCKS · 4 CROSSINGS<br>[8,800+ LB OF DRUGS]", title="5 Semi Trucks, 8,800+ Pounds of Drugs Hidden at the Border", template="countdown / ranking"),
+        dict(id="s5", lines=[52, 54], hook="1,635 LB OF METH<br>[IN A PEPPER TRUCK]", title="1,635 Pounds of Meth Hidden in a Truck of Peppers", template="before→after seizure reveal (produce load)"),
+    ],
+)

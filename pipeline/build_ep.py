@@ -58,6 +58,9 @@ def render(idx, shot, d):
         if o.get("crop"): pre = f"crop={o['crop']},"
         # RULE: no artificial zoom/drift on footage (integer-pixel crops/scales make it shake); keep the camera's own motion
         vf = (f"{pre}fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},setsar=1,{GRADE}")
+        if o.get("vert"):  # vertical phone footage: sharp centre column over a blurred, darkened fill (no motion added)
+            vf = (f"fps={FPS},split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=30:2,eq=brightness=-0.2:saturation=0.7[bg];"
+                  f"[b]scale=-2:{H}:flags=lanczos[fg];[bg][fg]overlay=(W-w)/2:0,setsar=1,{GRADE}")
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", f"{ss}", "-i", clip, "-t", f"{d + 0.2:.3f}", "-vf", vf,
              "-frames:v", str(n), "-an"] + ENC + [out])
     return out, n / FPS

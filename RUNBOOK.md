@@ -186,3 +186,9 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - 891551 at ~245–260 s is an out-of-focus in-cab monitor — avoid.
 - Fact-check agent caught: payment attributed to a named crewman that the affidavit doesn't support, a quote placed at the wrong event, "two officers" when one was a cadet, "court filings" for a leaked affidavit, "never accused" for MSC (→ "have not accused… not charged"), and a related pending case (Gogic, EDNY) that the ending must not ignore.
 - Short line ranges must not include graphic-only lines: swap the graphic for footage in the script before building (rebuild costs ~20 min).
+
+## Notes from run 013 (2026-11-11)
+- Contact-sheet timestamps misread AGAIN (744730 "2:30" = 150 s, picked 170 → wrong shots). After the build, make a per-shot midpoint sheet labeled `L<line> <clip>@<start>` from timing.json segs and check every shot matches its line before encoding; fix single segments in place (same frame count) and re-concat.
+- New shot option `vert=1` (build_ep.py): vertical phone footage (e.g. 769187, CBP Otay Mesa 2020 meth packages, 720×1280) is shown sharp in the centre over a blurred fill; shorts.py now fills the whole Short with that centre column during those segments.
+- Only ONE build_ep.py at a time: a `timeout` foreground test run left a second build alive and both wrote the same segments. Check `ps -eo pid,lstart,cmd | grep "[b]uild_ep"` after launching.
+- Fact-check agent caught: "four cases" when Otay Mesa had two, a paraphrase shown in quote marks (Mariscal), illustrative footage tagged as "cases in this file", a stale "this year", "Mexican national" vs "Mexican male", an invented "not in the desert between them", and missing presumption-of-innocence lines for charged drivers.
