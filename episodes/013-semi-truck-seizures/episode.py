@@ -115,7 +115,7 @@ LINES = [
   [G("stat", a="WELL-ORGANIZED", b="SIZE AND CONCEALMENT POINT TO A WELL-ORGANIZED SMUGGLING OPERATION", c="JUAN MARISCAL, HSI SPECIAL AGENT IN CHARGE · AS PARAPHRASED BY THE ARIZONA DAILY STAR · JAN. 2019")], dict(gap=0.8)),
 
  ("Humphries made another point that day. Most hard narcotics C B P seizes, he said, are caught at the ports of entry. In his opinion, smugglers prefer vehicles with hidden compartments they can track, rather than crossing between the ports.",
-  [C(872064, 590), C(907568, 160), C(907568, 196)], dict(tag=MAR23)),
+  [C(872064, 580), C(907568, 160), C(907568, 196)], dict(tag=MAR23)),
  # ---------------- IV: THE MACHINES AND THE DOGS ----------------
  ("How do they pick the one truck?",
   [G("chapter", case="013", n="IV", t="THE MACHINES AND THE DOGS")], {}),
@@ -204,6 +204,7 @@ LINES = [
 ]
 
 DISPLAY = [
+ ("twenty twenty-six", "2026"), ("twenty twenty-five", "2025"), ("twenty twenty-four", "2024"), ("twenty twenty-one", "2021"),
  ("Three thousand pounds", "3,000 pounds"), ("twenty-four hundred", "2,400"), ("Sixteen hundred pounds", "1,600 pounds"), ("Two hundred fifty-four pounds", "254 pounds"), ("Three hundred sixty-six packages", "366 packages"), ("more than three thousand pounds", "more than 3,000 pounds"),
  ("one thousand eight hundred sixteen", "1,816"), ("About three thousand fourteen pounds", "About 3,014 pounds"), ("about three thousand fourteen pounds", "about 3,014 pounds"),
  ("More than seven million dollars", "More than $7 million"), ("more than seven million dollars", "more than $7 million"),
