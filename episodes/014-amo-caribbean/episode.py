@@ -62,7 +62,7 @@ LINES = [
  ("North of San Juan, the yola stopped. Agents pulled alongside and went aboard.",
   [C(1008245, 81.9), C(1008245, 84.0), C(1008245, 67.0)], dict(tag=BHB)),
  ("Agents recovered the bales, along with electronic devices. Five bales in all: about one hundred seventy-eight kilos, or three hundred ninety-one pounds of cocaine.",
-  [C(1008245, 110.5), C(1008245, 118.0), C(1008245, 133.2)], dict(tag=BHB)),
+  [C(1008245, 122.1), C(1008245, 118.0), C(1008245, 133.2)], dict(tag=BHB)),
  ("In a search of the boat, agents also found empty plastic containers and other packages they could not yet identify.",
   [C(1008245, 72.0), C(1008245, 88.0)], dict(tag=BHB)),
  ("Three men, all nationals of the Dominican Republic, were taken into custody, and handed to Homeland Security Task Force investigators with the drugs. Any charges are allegations; they are presumed innocent unless proven guilty.",
@@ -72,7 +72,7 @@ LINES = [
 
  # ---------------- II: THE BRIDGE ----------------
  ("C B P said the case reflects a wider Caribbean trafficking route that feeds drugs toward the United States, with South Florida as a major hub. That same week, authorities reported seizing about nine hundred pounds of cocaine in Miami, in a separate case.",
-  [C(1010409, 520), C(1010409, 545), C(512126, 130), C(512126, 330)], dict(tag=("ILLUSTRATIVE · CBP AMO AIRCRAFT", "2017–2026 · CBP VIA DVIDS"))),
+  [C(1010409, 240), C(1010409, 545), C(512126, 130), C(512126, 330)], dict(tag=("ILLUSTRATIVE · CBP AMO AIRCRAFT", "2017–2026 · CBP VIA DVIDS"))),
  ("Why here?",
   [G("chapter", case="014", n="II", t="THE BRIDGE")], {}),
  ("Look at the map. Puerto Rico sits far closer to Venezuela, Colombia and the Dominican Republic than to Florida.",
@@ -144,7 +144,7 @@ LINES = [
  ("One Coast Guard captain called it the safest way to stop a boat moving at high speed on the open ocean.",
   [G("quote", q="“…the safest way to disable these vessels at high speed on the open ocean.”", w="CAPT. DAN BROADHURST · COMMANDING OFFICER, COAST GUARD HITRON · MYCG, MAY 2026")], dict(gap=0.6)),
  ("C B P's own marine agents use disabling fire too. In a video dated September twenty twenty-five, C B P showed its agents stopping a smuggling vessel off Puerto Rico this way; sixteen Dominican nationals on board were arrested.",
-  [C(987448, 39.3, pb=1), C(987448, 45.0, pb=1), C(987448, 51.2, pb=1)], dict(tag=MACEDA)),
+  [C(987448, 39.3, pb=1), C(987448, 51.2, pb=1), C(512126, 50)], dict(tag=("CBP MARINE UNIT · OFF PUERTO RICO, SEPT. 2025 → ILLUSTRATIVE AMO VIDEO", "CBP VIA DVIDS"))),
 
  # ---------------- V: BALES IN THE WATER ----------------
  ("When the boats can't run, the cargo goes over the side.",
@@ -158,7 +158,7 @@ LINES = [
  ("Dumping the load is the oldest trick on the water. In July twenty twenty, a go-fast crew threw its cargo overboard in the Caribbean. Fifty-five bales were recovered: thirteen hundred seventy-five kilos.",
   [C(760607, 21), C(760607, 26), C(760607, 31)], dict(tag=OFF20B)),
  ("And in October twenty twenty-six, crews from C B P's Pon-say marine unit stopped another yola, south of the town of Gwy-a-nee-ya.",
-  [C(795143, 54), C(795143, 108), C(795143, 120)], dict(tag=CIV)),
+  [C(795143, 36), C(795143, 108), C(795143, 120)], dict(tag=CIV)),
  ("Three Venezuelan nationals were on board, with one thousand three hundred nine pounds of cocaine. Estimated value: nine point four million dollars.",
   [G("stat", a="1,309 LB", b="COCAINE · ONE YOLA · SOUTH OF GUAYANILLA", c="OCT. 7 · 3 VENEZUELAN NATIONALS ON BOARD · EST. $9.4 MILLION · SOURCE: CBP STATEMENT AS PUBLISHED BY WORLD BORDER CONGRESS, OCT. 30, 2026")], {}),
  ("Four cases around one island, in one year. On the map, they surround it.",
@@ -189,9 +189,9 @@ LINES = [
 
  # ---------------- CLOSE ----------------
  ("Back to the night north of San Juan.",
-  [C(1008245, 37.0)], dict(tag=("AGENTS' VIDEO · MAY 14, 2026", "NORTH OF SAN JUAN · CBP VIA DVIDS"))),
+  [C(1008245, 76.2)], dict(tag=("AGENTS' VIDEO · MAY 14, 2026", "NORTH OF SAN JUAN · CBP VIA DVIDS"))),
  ("Three hundred ninety-one pounds, stopped by a helicopter. Fourteen hundred eighteen pounds in twenty fuel cans. Thirteen hundred nine off Gwy-a-nee-ya. Seven hundred eighty-nine pounds pulled from the sea and a barge.",
-  [C(1008245, 42.0), C(512126, 46), C(859902, 30), C(762246, 27)], dict(tag=("THE 2026 CASES", "FOOTAGE: MAY 14 CASE + ILLUSTRATIVE (2017–2022) · CBP / USCG VIA DVIDS"))),
+  [C(1008245, 93.0), C(512126, 46), C(859902, 30), C(762246, 27)], dict(tag=("THE 2026 CASES", "FOOTAGE: MAY 14 CASE + ILLUSTRATIVE (2017–2022) · CBP / USCG VIA DVIDS"))),
  ("About thirty-nine hundred pounds of cocaine, from just four cases in this file involving Air and Marine Operations, around one island, in one year.",
   [C(768299, 0.5), C(768299, 85)], dict(tag=OFFX)),
  ("After the October seizure, the branch director said Air and Marine Operations remains committed to protecting Puerto Rico's maritime borders. Those are the boats that got caught. Nobody can count the ones that didn't.",
