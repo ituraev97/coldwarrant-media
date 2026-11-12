@@ -177,6 +177,7 @@ for k, sg in enumerate(T["segs"]):
     has_a = (not (src.startswith("g:") or src.startswith("img:"))) and subprocess.run(
         ["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", f"{CLIPS}/{src}.mp4"],
         capture_output=True, text=True).stdout.strip() != ""
+    if src in [str(x) for x in META.get("mute_nat", [])]: has_a = False  # e.g. clips whose audio may contain gunfire
     if not has_a:  # graphics, photos, or clips without an audio track (e.g. DVIDS 456019) -> silence
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono", "-t", f"{sg['d']:.3f}", out])
     else:
