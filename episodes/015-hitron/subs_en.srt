@@ -1,0 +1,951 @@
+1
+00:00:01,000 --> 00:00:02,127
+Four drug boats.
+
+2
+00:00:02,127 --> 00:00:04,030
+One Coast Guard helicopter.
+
+3
+00:00:04,030 --> 00:00:07,341
+And one rule for the marksman in the open door:
+
+4
+00:00:07,341 --> 00:00:09,384
+shoot until the engines stop.
+
+5
+00:00:09,834 --> 00:00:13,240
+February 2025, about 110 miles south of the
+
+6
+00:00:13,240 --> 00:00:14,666
+Galápagos Islands.
+
+7
+00:00:14,666 --> 00:00:17,994
+A drone launched from a Coast Guard cutter
+
+8
+00:00:17,994 --> 00:00:21,400
+picks up the boats, running together across
+
+9
+00:00:21,400 --> 00:00:22,271
+open water.
+
+10
+00:00:22,721 --> 00:00:25,814
+The Coast Guard's own account calls it four
+
+11
+00:00:25,814 --> 00:00:27,252
+boats in 15 minutes.
+
+12
+00:00:27,252 --> 00:00:29,554
+Nearly 11,000 pounds of cocaine.
+
+13
+00:00:29,554 --> 00:00:32,215
+Eight suspected smugglers in custody.
+
+14
+00:00:32,665 --> 00:00:35,376
+How does a helicopter stop a speedboat in the
+
+15
+00:00:35,376 --> 00:00:36,582
+middle of the ocean?
+
+16
+00:00:36,582 --> 00:00:39,233
+And why does the Coast Guard keep a squadron
+
+17
+00:00:39,233 --> 00:00:40,921
+of aerial marksmen to do it?
+
+18
+00:00:41,371 --> 00:00:43,926
+This is the case file on the Coast Guard's
+
+19
+00:00:43,926 --> 00:00:45,083
+helicopter snipers.
+
+20
+00:00:47,683 --> 00:00:48,877
+Start on the ship.
+
+21
+00:00:49,327 --> 00:00:52,767
+In the winter of 2024 into 2025, the Coast
+
+22
+00:00:52,767 --> 00:00:56,452
+Guard cutter Stone was on a long counter-drug
+
+23
+00:00:56,452 --> 00:00:59,891
+patrol in the Eastern Pacific, off Mexico,
+
+24
+00:00:59,891 --> 00:01:02,021
+Ecuador and the Galápagos.
+
+25
+00:01:02,471 --> 00:01:04,831
+It had already been a busy trip.
+
+26
+00:01:04,831 --> 00:01:08,151
+Three days before Christmas, Stone's crew had
+
+27
+00:01:08,151 --> 00:01:11,249
+seized about 12,220 pounds of cocaine in a
+
+28
+00:01:11,249 --> 00:01:12,135
+single case.
+
+29
+00:01:12,585 --> 00:01:15,182
+On board, the ship carried a drone, and a
+
+30
+00:01:15,182 --> 00:01:18,034
+helicopter crew from a small Coast Guard unit
+
+31
+00:01:18,034 --> 00:01:18,921
+called HITRON.
+
+32
+00:01:19,371 --> 00:01:22,326
+The drone did a lot of the hunting.
+
+33
+00:01:22,326 --> 00:01:26,125
+On January 30, about 715 miles off Mexico, it
+
+34
+00:01:26,125 --> 00:01:29,840
+found a suspicious boat carrying about 3,800
+
+35
+00:01:29,840 --> 00:01:31,360
+pounds of cocaine.
+
+36
+00:01:31,810 --> 00:01:35,284
+The next day, 630 miles out, it found another.
+
+37
+00:01:35,284 --> 00:01:38,683
+Its infrared camera picks the boat out on the
+
+38
+00:01:38,683 --> 00:01:39,514
+dark water.
+
+39
+00:01:39,514 --> 00:01:42,989
+More than 2,500 pounds of cocaine were seized.
+
+40
+00:01:43,439 --> 00:01:46,418
+By February, the ship and the helicopter crew
+
+41
+00:01:46,418 --> 00:01:48,405
+had worked six cases together.
+
+42
+00:01:48,405 --> 00:01:51,252
+They had gone through a tough certification
+
+43
+00:01:51,252 --> 00:01:54,365
+side by side, and built trust the ordinary way:
+
+44
+00:01:54,365 --> 00:01:56,815
+board games, swim calls, port visits.
+
+45
+00:01:57,265 --> 00:01:59,883
+On February 19, the operations officer,
+
+46
+00:01:59,883 --> 00:02:02,501
+Lieutenant Commander Steven Naylor, was
+
+47
+00:02:02,501 --> 00:02:05,119
+watching the drone's feed in the ship's
+
+48
+00:02:05,119 --> 00:02:08,072
+command center, when a go-fast boat appeared
+
+49
+00:02:08,072 --> 00:02:09,012
+on the screen.
+
+50
+00:02:09,012 --> 00:02:10,086
+Then three more.
+
+51
+00:02:10,536 --> 00:02:13,175
+Stone had three small boats to put boarding
+
+52
+00:02:13,175 --> 00:02:14,526
+teams on four targets.
+
+53
+00:02:14,526 --> 00:02:17,533
+So two of the teams would have to share one boat.
+
+54
+00:02:17,983 --> 00:02:20,558
+The commanding officer, Captain Jonathan
+
+55
+00:02:20,558 --> 00:02:22,424
+Carter, kept the goal modest.
+
+56
+00:02:22,424 --> 00:02:25,578
+One boat, he told the crew, would count as a win.
+
+57
+00:02:26,378 --> 00:02:29,071
+To understand what happened next, you need to
+
+58
+00:02:29,071 --> 00:02:30,986
+know who was in that helicopter.
+
+59
+00:02:31,436 --> 00:02:34,093
+HITRON stands for Helicopter Interdiction
+
+60
+00:02:34,093 --> 00:02:35,259
+Tactical Squadron.
+
+61
+00:02:35,259 --> 00:02:38,175
+It is based in Jacksonville, Florida, and the
+
+62
+00:02:38,175 --> 00:02:40,638
+Coast Guard calls it its only airborne
+
+63
+00:02:40,638 --> 00:02:41,804
+use-of-force unit.
+
+64
+00:02:42,254 --> 00:02:45,738
+Its crews fly MH-65 Dolphin helicopters, and
+
+65
+00:02:45,738 --> 00:02:49,222
+they deploy for weeks at a time aboard Coast
+
+66
+00:02:49,222 --> 00:02:51,598
+Guard cutters, far out at sea.
+
+67
+00:02:52,048 --> 00:02:54,891
+On a case, three people in that helicopter
+
+68
+00:02:54,891 --> 00:02:55,703
+matter most.
+
+69
+00:02:55,703 --> 00:02:56,786
+One pilot flies.
+
+70
+00:02:56,786 --> 00:03:00,170
+A second pilot coordinates and tracks the targets.
+
+71
+00:03:00,170 --> 00:03:03,013
+And in the door sits a precision marksman.
+
+72
+00:03:03,463 --> 00:03:05,760
+The usual sequence goes like this.
+
+73
+00:03:05,760 --> 00:03:07,179
+First, warning shots.
+
+74
+00:03:07,179 --> 00:03:10,084
+If the boat keeps going, the marksman fires
+
+75
+00:03:10,084 --> 00:03:12,786
+again, this time to disable its engines.
+
+76
+00:03:13,236 --> 00:03:16,065
+Once the boat is stopped, a boarding team from
+
+77
+00:03:16,065 --> 00:03:18,832
+the cutter moves in, and the helicopter stays
+
+78
+00:03:18,832 --> 00:03:20,553
+overhead to watch over them.
+
+79
+00:03:21,003 --> 00:03:23,718
+HITRON's commanding officer, Captain Dan
+
+80
+00:03:23,718 --> 00:03:26,569
+Broadhurst, describes the job in a way you
+
+81
+00:03:26,569 --> 00:03:27,723
+might not expect.
+
+82
+00:03:28,523 --> 00:03:31,452
+The squadron runs its own shooting program.
+
+83
+00:03:31,452 --> 00:03:34,449
+One marksman joined with only basic firearms
+
+84
+00:03:34,449 --> 00:03:37,718
+experience, and went on to become an instructor.
+
+85
+00:03:38,168 --> 00:03:40,855
+One precision marksman, Petty Officer First
+
+86
+00:03:40,855 --> 00:03:43,604
+Class Taylor Wolf, explained the difference:
+
+87
+00:03:43,604 --> 00:03:46,416
+we're shooting from an aerial platform, which
+
+88
+00:03:46,416 --> 00:03:48,728
+is very different than anywhere else.
+
+89
+00:03:49,178 --> 00:03:51,112
+The pilots come from everywhere.
+
+90
+00:03:51,112 --> 00:03:53,649
+One of them, Lieutenant Andy Gilliam, flew
+
+91
+00:03:53,649 --> 00:03:56,187
+Black Hawks in the Army before joining the
+
+92
+00:03:56,187 --> 00:03:58,665
+Coast Guard through its direct commission
+
+93
+00:03:58,665 --> 00:03:59,631
+aviator program.
+
+94
+00:04:00,081 --> 00:04:01,553
+Back to the four boats.
+
+95
+00:04:02,003 --> 00:04:04,901
+The plan was called Operation Shoot and Move.
+
+96
+00:04:04,901 --> 00:04:07,670
+The helicopter would disable the boats from
+
+97
+00:04:07,670 --> 00:04:10,568
+behind, and Stone's small boats would follow,
+
+98
+00:04:10,568 --> 00:04:12,499
+putting boarding teams aboard.
+
+99
+00:04:12,949 --> 00:04:14,305
+It did not go to plan.
+
+100
+00:04:14,305 --> 00:04:17,140
+The smugglers circled, dumped their cargo into
+
+101
+00:04:17,140 --> 00:04:18,496
+the sea, and split up.
+
+102
+00:04:18,946 --> 00:04:21,596
+They scattered like ants, said the pilot
+
+103
+00:04:21,596 --> 00:04:22,523
+tracking them.
+
+104
+00:04:22,523 --> 00:04:25,305
+The other pilot, Lieutenant Commander Adam
+
+105
+00:04:25,305 --> 00:04:27,358
+Ownbey, said plan B was simple:
+
+106
+00:04:27,358 --> 00:04:28,484
+you make it work.
+
+107
+00:04:28,484 --> 00:04:29,677
+Embrace the chaos.
+
+108
+00:04:30,127 --> 00:04:32,949
+In the door, the precision marksman, Petty
+
+109
+00:04:32,949 --> 00:04:35,771
+Officer Second Class Ryan Teal, worked the
+
+110
+00:04:35,771 --> 00:04:36,779
+mounted weapon.
+
+111
+00:04:36,779 --> 00:04:39,535
+Every one of those boats had two engines.
+
+112
+00:04:39,985 --> 00:04:41,734
+Teal described his rule.
+
+113
+00:04:42,534 --> 00:04:46,150
+For the first time on a case, he had to reload.
+
+114
+00:04:46,150 --> 00:04:49,611
+By his own estimate, he fired either 33 or 36
+
+115
+00:04:49,611 --> 00:04:50,150
+rounds.
+
+116
+00:04:50,600 --> 00:04:53,444
+The fourth boat stopped and its crew complied.
+
+117
+00:04:53,444 --> 00:04:55,854
+But a communications mix-up delayed the
+
+118
+00:04:55,854 --> 00:04:58,574
+boarding team, so the helicopter stayed with
+
+119
+00:04:58,574 --> 00:05:00,861
+it, until it was running low on fuel.
+
+120
+00:05:01,311 --> 00:05:04,122
+When it was over, Naylor and Carter confirmed
+
+121
+00:05:04,122 --> 00:05:06,557
+the result the simplest way they could.
+
+122
+00:05:06,557 --> 00:05:08,181
+Each held up four fingers.
+
+123
+00:05:08,631 --> 00:05:10,227
+Naylor admitted it afterward:
+
+124
+00:05:10,227 --> 00:05:12,705
+honestly, none of us thought it would happen.
+
+125
+00:05:13,155 --> 00:05:15,213
+The Coast Guard's tally:
+
+126
+00:05:15,213 --> 00:05:19,157
+four go-fast boats, eight suspected smugglers,
+
+127
+00:05:19,157 --> 00:05:22,158
+and about 10,885 pounds of cocaine.
+
+128
+00:05:22,608 --> 00:05:25,299
+Stone's patrol still was not over.
+
+129
+00:05:25,299 --> 00:05:28,861
+On March 10, about 270 miles southeast of the
+
+130
+00:05:28,861 --> 00:05:32,423
+Galápagos, the ship's HITRON crew spotted one
+
+131
+00:05:32,423 --> 00:05:34,085
+more suspicious boat.
+
+132
+00:05:34,535 --> 00:05:38,140
+On the helicopter's camera, it runs, throwing
+
+133
+00:05:38,140 --> 00:05:39,342
+up a long wake.
+
+134
+00:05:39,342 --> 00:05:41,584
+Stone's crew interdicted it:
+
+135
+00:05:41,584 --> 00:05:44,628
+about 3,980 pounds of cocaine, and two
+
+136
+00:05:44,628 --> 00:05:46,951
+suspected smugglers detained.
+
+137
+00:05:47,401 --> 00:05:50,608
+In August 2026, at a ceremony in Washington,
+
+138
+00:05:50,608 --> 00:05:53,961
+the White House drug policy office gave HITRON
+
+139
+00:05:53,961 --> 00:05:57,023
+and Stone's crew its Maritime Interdiction
+
+140
+00:05:57,023 --> 00:05:59,647
+Award, for that one day in February.
+
+141
+00:06:00,097 --> 00:06:03,126
+That day was one case among more than a thousand.
+
+142
+00:06:03,576 --> 00:06:05,944
+The squadron dates back to 1999.
+
+143
+00:06:05,944 --> 00:06:09,199
+That August, a Jacksonville HITRON crew made
+
+144
+00:06:09,199 --> 00:06:12,455
+its first drug interdiction, by shooting out
+
+145
+00:06:12,455 --> 00:06:15,267
+the outboard motors of a go-fast boat.
+
+146
+00:06:15,717 --> 00:06:18,750
+By its twentieth year, it counted more than
+
+147
+00:06:18,750 --> 00:06:21,854
+500 interdictions, and more than $20 billion
+
+148
+00:06:21,854 --> 00:06:23,759
+worth of narcotics stopped.
+
+149
+00:06:24,209 --> 00:06:27,267
+The thousandth came on August 25, 2025,
+
+150
+00:06:27,267 --> 00:06:30,874
+working with the cutter Midgett in the Eastern
+
+151
+00:06:30,874 --> 00:06:31,501
+Pacific:
+
+152
+00:06:31,501 --> 00:06:34,950
+about 3,606 pounds of suspected cocaine, and
+
+153
+00:06:34,950 --> 00:06:37,773
+six suspected smugglers apprehended.
+
+154
+00:06:37,773 --> 00:06:41,066
+The boat would not comply, and the aircrew
+
+155
+00:06:41,066 --> 00:06:42,791
+used force to stop it.
+
+156
+00:06:43,241 --> 00:06:45,110
+It was a record stretch.
+
+157
+00:06:45,110 --> 00:06:48,694
+From October 2024 to that September, the Coast
+
+158
+00:06:48,694 --> 00:06:51,888
+Guard says, HITRON crews interdicted $3.3
+
+159
+00:06:51,888 --> 00:06:55,472
+billion in drugs, about three times the unit's
+
+160
+00:06:55,472 --> 00:06:57,342
+historic annual average.
+
+161
+00:06:57,792 --> 00:06:59,911
+Then came the cutter Munro.
+
+162
+00:06:59,911 --> 00:07:03,522
+It left Alameda, California, in November 2025.
+
+163
+00:07:03,522 --> 00:07:06,975
+Somewhere in the Eastern Pacific, its HITRON
+
+164
+00:07:06,975 --> 00:07:10,507
+aircrew used warning shots and disabling fire
+
+165
+00:07:10,507 --> 00:07:12,469
+to stop one go-fast boat.
+
+166
+00:07:12,919 --> 00:07:13,673
+On board:
+
+167
+00:07:13,673 --> 00:07:15,767
+22,052 pounds of cocaine.
+
+168
+00:07:15,767 --> 00:07:19,453
+The Coast Guard called it the single largest
+
+169
+00:07:19,453 --> 00:07:22,301
+maritime drug seizure in 18 years.
+
+170
+00:07:22,301 --> 00:07:25,485
+Six suspected smugglers were detained.
+
+171
+00:07:25,935 --> 00:07:29,178
+By then the Coast Guard had launched Operation
+
+172
+00:07:29,178 --> 00:07:31,787
+Pacific Viper in the Eastern Pacific.
+
+173
+00:07:31,787 --> 00:07:34,959
+By its own count, the operation was averaging
+
+174
+00:07:34,959 --> 00:07:37,497
+about 1,600 pounds of cocaine a day.
+
+175
+00:07:37,947 --> 00:07:41,019
+To mark the year, HITRON painted one of its
+
+176
+00:07:41,019 --> 00:07:42,305
+helicopters black.
+
+177
+00:07:42,305 --> 00:07:45,520
+The Coast Guard calls it the Blackfin scheme,
+
+178
+00:07:45,520 --> 00:07:48,378
+for the unit's role in seizing more than
+
+179
+00:07:48,378 --> 00:07:50,235
+511,000 pounds of cocaine.
+
+180
+00:07:50,685 --> 00:07:52,802
+The method has not changed.
+
+181
+00:07:52,802 --> 00:07:54,291
+Here it is in 2026.
+
+182
+00:07:54,741 --> 00:07:57,561
+Most of these chases start long before the
+
+183
+00:07:57,561 --> 00:07:58,972
+helicopter takes off.
+
+184
+00:07:58,972 --> 00:08:01,658
+A joint task force in Key West, Florida,
+
+185
+00:08:01,658 --> 00:08:03,605
+watches the smuggling routes.
+
+186
+00:08:03,605 --> 00:08:06,627
+Once an interdiction is close, control shifts
+
+187
+00:08:06,627 --> 00:08:07,903
+to the Coast Guard.
+
+188
+00:08:08,353 --> 00:08:08,786
+May 8.
+
+189
+00:08:08,786 --> 00:08:11,890
+About 90 miles off Cartagena, Colombia, the
+
+190
+00:08:11,890 --> 00:08:14,921
+crew of the cutter Tahoma went after three
+
+191
+00:08:14,921 --> 00:08:18,025
+suspected smuggling boats at once, with two
+
+192
+00:08:18,025 --> 00:08:20,407
+small boats and a HITRON aircrew.
+
+193
+00:08:20,857 --> 00:08:23,564
+Two of the boats stopped when Coast Guard
+
+194
+00:08:23,564 --> 00:08:24,819
+crews told them to.
+
+195
+00:08:24,819 --> 00:08:27,790
+The third kept going, and the helicopter crew
+
+196
+00:08:27,790 --> 00:08:30,563
+used precision sniper fire on its engines.
+
+197
+00:08:31,013 --> 00:08:34,293
+The suspected smugglers aboard jumped into the sea.
+
+198
+00:08:34,293 --> 00:08:36,994
+The aircrew dropped flotation devices, and
+
+199
+00:08:36,994 --> 00:08:39,888
+they were rescued, with no injuries reported.
+
+200
+00:08:40,338 --> 00:08:43,935
+About 6,085 pounds of cocaine, worth nearly
+
+201
+00:08:43,935 --> 00:08:45,107
+$45.8 million.
+
+202
+00:08:45,107 --> 00:08:48,704
+Commander Nolan Cuevas, Tahoma's commanding
+
+203
+00:08:48,704 --> 00:08:52,469
+officer, called interdicting three vessels at
+
+204
+00:08:52,469 --> 00:08:55,314
+once a testament to the unwavering
+
+205
+00:08:55,314 --> 00:08:58,493
+professionalism of the crews involved.
+
+206
+00:08:58,943 --> 00:09:03,316
+Six days later, at Port Everglades, Florida,
+
+207
+00:09:03,316 --> 00:09:07,788
+Tahoma's crew offloaded about 8,185 pounds of
+
+208
+00:09:07,788 --> 00:09:11,465
+narcotics, worth about $61.6 million.
+
+209
+00:09:11,915 --> 00:09:16,099
+And in November 2026, Tahoma was back at the
+
+210
+00:09:16,099 --> 00:09:19,617
+same pier, with another 3,622 pounds.
+
+211
+00:09:20,067 --> 00:09:23,202
+Every one of these chases ends in the same two
+
+212
+00:09:23,202 --> 00:09:23,679
+places.
+
+213
+00:09:23,679 --> 00:09:25,315
+A pier, and a courtroom.
+
+214
+00:09:25,765 --> 00:09:29,380
+Stone's patrol ended in March 2025.
+
+215
+00:09:29,380 --> 00:09:33,203
+At Port Everglades, Florida, its crew
+
+216
+00:09:33,203 --> 00:09:37,645
+offloaded about 45,600 pounds of narcotics,
+
+217
+00:09:37,645 --> 00:09:40,847
+worth more than $517.5 million.
+
+218
+00:09:41,297 --> 00:09:44,249
+It was the haul from 14 interdictions.
+
+219
+00:09:44,249 --> 00:09:47,278
+35 suspected smugglers were transferred
+
+220
+00:09:47,278 --> 00:09:51,239
+ashore, to face federal prosecution in U.S. courts.
+
+221
+00:09:51,689 --> 00:09:53,506
+None of them is named here.
+
+222
+00:09:53,506 --> 00:09:56,534
+A charge is an accusation, and anyone charged
+
+223
+00:09:56,534 --> 00:09:59,966
+is presumed innocent unless proven guilty in court.
+
+224
+00:10:00,416 --> 00:10:02,358
+Stone was not alone out there.
+
+225
+00:10:02,358 --> 00:10:05,271
+The cutter Mohawk worked the same waters, and
+
+226
+00:10:05,271 --> 00:10:07,796
+its commanding officer, Commander David
+
+227
+00:10:07,796 --> 00:10:09,803
+Ratner, summed up the strategy.
+
+228
+00:10:10,253 --> 00:10:11,277
+In his words.
+
+229
+00:10:12,077 --> 00:10:14,251
+Captain Carter credited the partnership
+
+230
+00:10:14,251 --> 00:10:16,258
+between the ship and the helicopter.
+
+231
+00:10:17,058 --> 00:10:20,148
+Since 1999, the method has barely changed.
+
+232
+00:10:20,148 --> 00:10:22,796
+Find the boat from the air. Warn it.
+
+233
+00:10:22,796 --> 00:10:25,591
+And if it runs, take away its engines.
+
+234
+00:10:26,041 --> 00:10:29,419
+HITRON passed 1,000 interdictions in 2025.
+
+235
+00:10:29,419 --> 00:10:31,189
+The boats keep coming.
+
+236
+00:10:31,189 --> 00:10:33,039
+So does the helicopter.
+
+237
+00:10:33,489 --> 00:10:34,941
+Case file 015.
+
+238
+00:10:34,941 --> 00:10:36,497
+Closed for now.
