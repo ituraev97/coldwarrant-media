@@ -37,6 +37,14 @@ Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 - Shorts: never two Shorts in a day with the same opening word or pattern (identical "N Arrests in …" titles lost reach on 8–9 Nov). Text ends with "Full case on the channel."
 - Research/analytics: YouTube Data API (claude/yt_research.py, --days 7) + Metricool + WebSearch. No vidIQ.
 
+## Narration rhythm & anti-"AI voice" rules (owner 2026-11-14 — mandatory)
+Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the default gap) and every line had the same speed — a metronome rhythm that viewers hear as "AI voice".
+- Split long sentences into separate LINES at natural breath points (a reveal, a number, a colon) so the pause lands where a narrator would breathe.
+- Vary the gap per line with opts `gap`: 0.25–0.35 inside one thought, 0.5–0.7 between sentences, 0.9–1.3 before a reveal, after a key number and before each chapter card. Never more than 3 consecutive lines with the same gap.
+- Vary speed per line with opts `speed` (tts_ep.py reads it): 1.06–1.10 for background/context, 0.96–1.00 for the reveal line and the line after a big number, 0.94 for the last line of the cold open. Average must stay ≈ 1.04–1.06.
+- Script style — cut the AI tells: no staccato triads as a habit ("Four boats. One helicopter. One rule." — at most once per episode, in the cold open), no slogan endings ("The boats keep coming. So does the helicopter."), no "This is the story of…", "Little did they know", "But here's the thing", "In a world where", "What happened next…". Vary sentence openers (not 20%+ starting with "The"). Prefer concrete verbs, quotes from court documents and agency statements, and plain connective speech ("So", "By then", "That's when") the way a human narrator talks.
+- Listen-check before build: render the cold open + one chapter, check the pause histogram (no single gap value > 30% of pauses) and fix.
+
 ## 2. Pick the case
 - FIRST (owner rule 2026-11-06): search & competitor research — vidIQ keyword_research (research + rising) and outliers (long + short) for the top backlog candidates; WebSearch fallback if vidIQ is not connected. Save `research/YYYY-MM-DD.md` (keywords, outliers, chosen case + why, 3 title candidates). The case, the long title (number + action + main keyword), description lines 1–2, tags and Shorts titles all come from this research. New cases with demand may be added to backlog.md if they pass the footage rule.
 - Target date = tomorrow's date in America/New_York at run time. First call Metricool getScheduledPosts for blogId 7731358 around that date: if a YouTube long video is already scheduled for it, do not produce anything — just report.
