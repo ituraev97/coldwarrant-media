@@ -46,6 +46,15 @@ Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the
 - Script style — cut the AI tells: no staccato triads as a habit ("Four boats. One helicopter. One rule." — at most once per episode, in the cold open), no slogan endings ("The boats keep coming. So does the helicopter."), no "This is the story of…", "Little did they know", "But here's the thing", "In a world where", "What happened next…". Vary sentence openers (not 20%+ starting with "The"). Prefer concrete verbs, quotes from court documents and agency statements, and plain connective speech ("So", "By then", "That's when") the way a human narrator talks.
 - Listen-check before build: render the cold open + one chapter, check the pause histogram (no single gap value > 30% of pauses) and fix.
 
+## Thumbnails v2 & click/retention rules (owner 2026-11-14: "aggressive, maximally bright")
+- Generator: `node pipeline/thumb2.mjs <ep>/thumb2.json <ep>` → thumb_A/B/C.jpg (A = main, B and C for YouTube Test & Compare). The old thumb.mjs is retired.
+- Recipe (see the reference spec in the header of thumb2.mjs): full-bleed real frame or federal-agency photo, colour pushed hard (the CSS filter does saturate 1.75 / contrast 1.28), subject big and sharp — pick the sharpest frame where the subject fills ≥ 25% of the crop; huge Anton text with a thick black stroke: line 1 = the number or the verb in yellow #FFD400 or red #FF2A2A, line 2 = white/yellow; ≤ 3–4 words total; red circle (and arrow) on the key detail — the boat, the haul, the hidden compartment, the defendant's face. Text goes to the side opposite the subject ("side":"right" when the subject is on the left). Logo small in a corner, bottom-right 220×90 always empty (duration badge).
+- Three different angles per video: A = number + noun ("4 BOATS / 15 MINUTES"), B = action or verbatim quote ("SHOOT / THE ENGINES"), C = haul/money ("11,000 LB / OF COCAINE"). Add an inset (federal-agency mugshot or seizure photo, white frame, red label like SENTENCED / 20 YEARS) when the case has one. "NEW" tag only if the press release is ≤ 7 days old.
+- Every word must be true and in the video; no gore, no weapon pointed at the camera, no fake "BREAKING" or invented images. LOOK at all three at full size and at 168×94 before upload.
+- First 5 seconds of the long video = the thumbnail's promise: open on the same shot/number, no logo sting or title card before 0:30 (the g:title card comes after the cold open).
+- Pinned question: send Metricool `firstCommentText` on the long video with one sharp question about the case ("Was 20 years enough?"); if Metricool rejects it for YouTube, schedule without it and say so.
+- Description: first line = title promise + main keywords, then chapters, sources; end with 3 hashtags (#truecrime #fbi + one case keyword).
+
 ## 2. Pick the case
 - FIRST (owner rule 2026-11-06): search & competitor research — vidIQ keyword_research (research + rising) and outliers (long + short) for the top backlog candidates; WebSearch fallback if vidIQ is not connected. Save `research/YYYY-MM-DD.md` (keywords, outliers, chosen case + why, 3 title candidates). The case, the long title (number + action + main keyword), description lines 1–2, tags and Shorts titles all come from this research. New cases with demand may be added to backlog.md if they pass the footage rule.
 - Target date = tomorrow's date in America/New_York at run time. First call Metricool getScheduledPosts for blogId 7731358 around that date: if a YouTube long video is already scheduled for it, do not produce anything — just report.
@@ -77,7 +86,7 @@ python3 $P/build_ep.py $EP $CL          # ~40–60 min on 2 cores — run in bac
 python3 $P/finish_ep.py $EP $CL
 bash $P/encode.sh $EP $EP/long.mp4 95   # must stay < 100 MB (GitHub file limit)
 python3 $P/shorts.py $EP $EP/shorts
-cd $P && node thumb.mjs $EP/thumb.json $EP   # thumb_A (main) + thumb_C (alternative for Test & Compare)
+cd $P && node thumb2.mjs $EP/thumb2.json $EP   # thumb_A (main) + thumb_B + thumb_C (Test & Compare) — see "Thumbnails v2"
 ```
 
 ## Motion & pacing rules (owner feedback after ep. 001 — mandatory)

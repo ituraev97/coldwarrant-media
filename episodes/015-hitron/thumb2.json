@@ -1,0 +1,54 @@
+{
+ "image": "/home/claude/work/thumb/f_998143_173.jpg",
+ "pos": "33% 88%",
+ "zoom": 160,
+ "A": {
+  "side": "right",
+  "l1": "4 BOATS",
+  "l2": "15 MINUTES",
+  "s1": 200,
+  "c1": "y",
+  "c2": "w",
+  "circle": {
+   "x": 440,
+   "y": 515,
+   "r": 120
+  },
+  "arrow": {
+   "x": 800,
+   "y": 515,
+   "rot": 180
+  }
+ },
+ "B": {
+  "side": "right",
+  "l1": "SHOOT",
+  "l2": "THE ENGINES",
+  "s1": 215,
+  "c1": "r",
+  "c2": "y",
+  "circle": {
+   "x": 440,
+   "y": 515,
+   "r": 120
+  },
+  "arrow": {
+   "x": 800,
+   "y": 515,
+   "rot": 180
+  }
+ },
+ "C": {
+  "side": "right",
+  "l1": "11,000 LB",
+  "l2": "OF COCAINE",
+  "s1": 180,
+  "c1": "w",
+  "c2": "y",
+  "circle": {
+   "x": 440,
+   "y": 515,
+   "r": 120
+  }
+ }
+}
