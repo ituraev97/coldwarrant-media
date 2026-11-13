@@ -41,7 +41,8 @@ Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the default gap) and every line had the same speed — a metronome rhythm that viewers hear as "AI voice".
 - Split long sentences into separate LINES at natural breath points (a reveal, a number, a colon) so the pause lands where a narrator would breathe.
 - Vary the gap per line with opts `gap`: 0.25–0.35 inside one thought, 0.5–0.7 between sentences, 0.9–1.3 before a reveal, after a key number and before each chapter card. Never more than 3 consecutive lines with the same gap.
-- Vary speed per line with opts `speed` (tts_ep.py reads it): 1.06–1.10 for background/context, 0.96–1.00 for the reveal line and the line after a big number, 0.94 for the last line of the cold open. Average must stay ≈ 1.04–1.06.
+- VOICE (owner 2026-11-14, chose sample D): Kokoro blend `bm_george:0.5+am_onyx:0.5` — default in tts_ep.py; never am_michael (shared with 3 other channels). Pace: tts_ep.py multiplies every line speed by TTS_SCALE=1.15 (owner: "faster"); the cold-open sample with real pauses ran 40 s, same as the old voice.
+- Vary speed per line with opts `speed` (relative, × 1.15 in tts_ep.py): 1.06–1.10 for background/context, 0.96–1.00 for the reveal line and the line after a big number, 0.94 for the last line of the cold open. Default 1.04.
 - Script style — cut the AI tells: no staccato triads as a habit ("Four boats. One helicopter. One rule." — at most once per episode, in the cold open), no slogan endings ("The boats keep coming. So does the helicopter."), no "This is the story of…", "Little did they know", "But here's the thing", "In a world where", "What happened next…". Vary sentence openers (not 20%+ starting with "The"). Prefer concrete verbs, quotes from court documents and agency statements, and plain connective speech ("So", "By then", "That's when") the way a human narrator talks.
 - Listen-check before build: render the cold open + one chapter, check the pause histogram (no single gap value > 30% of pauses) and fix.
 
@@ -69,7 +70,7 @@ Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the
 ```bash
 EP=/home/claude/coldwarrant-media/episodes/NNN-slug; CL=/home/claude/clips; P=/home/claude/coldwarrant-media/pipeline
 # download clips: GET https://api.dvidshub.net/asset?api_key=KEY&id=video:ID -> files[] (720p) -> $CL/ID.mp4
-python3 $P/tts_ep.py $EP am_michael
+python3 $P/tts_ep.py $EP   # voice bm_george:0.5+am_onyx:0.5, scale 1.15 (defaults)
 python3 $P/make_gspec.py $EP
 cd $P && node graphics.mjs $EP/gspec.json $EP/gfx
 python3 $P/build_ep.py $EP $CL          # ~40–60 min on 2 cores — run in background
@@ -83,7 +84,7 @@ cd $P && node thumb.mjs $EP/thumb.json $EP   # thumb_A (main) + thumb_C (alterna
 - No artificial zoom/drift/shake on video footage. Use the camera's own motion only. (Per-frame scale/crop rounds to whole pixels and makes the picture twitch.)
 - Graphics: animate in, then hold perfectly still until the cut. Never start a zoom or pan after the intro animation ends.
 - Ken Burns only on still photos, and only via zoompan on a 4×-supersampled canvas (already in build_ep.py).
-- Narration speed 1.06 (default in tts_ep.py). Do not go back to 0.94 — it felt slow.
+- Narration pace: see "Narration rhythm" (blend voice, per-line speed × 1.15). Do not slow it down.
 - Before upload, scrub the transitions from intro→hold on 3 graphics and 3 footage cuts at full size: anything that jumps or wobbles is a blocker.
 
 ## Shorts selection rule (owner, 2026-11-06 — based on channel stats)
