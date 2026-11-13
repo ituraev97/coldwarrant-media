@@ -26,6 +26,17 @@ for s,d in [('anton/files/anton-latin-400-normal.woff2','Anton-Regular.ttf'),('o
 ```
 Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 
+## Fresh-case format (owner decision 2026-11-14 — overrides older case-picking notes)
+- Source of topics = official newsrooms of the LAST 7 DAYS (14 max): justice.gov/news + USAO pages, fbi.gov/news, dea.gov, ice.gov/news, cbp.gov/newsroom, news.uscg.mil. backlog.md is a fallback only.
+- "One case, one person": a protagonist (prefer sentenced/convicted; freshly charged only with "charged/alleged" + presumption-of-innocence line), told chronologically: who they were → the scheme → the detail that exposed it → takedown → court → what it means.
+- Long video 15–20 min (2,600–3,200 words at speed 1.06).
+- Why: Studio → Trends for our audience shows fresh DOJ/FBI cases with a person (California Reports "FBI ARRESTS 11 Over $17.4M" 147K in 10 min; "He Outran the Air Force With $1 Billion of Cocaine" 177K; "Killer Cop…" 55K). Our operation-statistics long videos got 1–23 views.
+- Visuals: agency press-release images/documents/press-conference video + DVIDS clips of the same agency or kind of operation. Anything not of this exact event gets an on-screen "FILE FOOTAGE" label and is never presented as the event. Faces only from U.S. federal-agency releases (public domain); never local-police/news/social photos, minors or victims.
+- Footage rule for fresh cases: ≥ 6 usable clips of the agency/operation type (not necessarily of the event itself).
+- Title in Trends style: person/action + big number + twist, ≤ 70 chars, every word true and sourced. Thumbnail: federal-agency photo of the person or the seizure + 2–3 big words + red circle/arrow on the key detail.
+- Shorts: never two Shorts in a day with the same opening word or pattern (identical "N Arrests in …" titles lost reach on 8–9 Nov). Text ends with "Full case on the channel."
+- Research/analytics: YouTube Data API (claude/yt_research.py, --days 7) + Metricool + WebSearch. No vidIQ.
+
 ## 2. Pick the case
 - FIRST (owner rule 2026-11-06): search & competitor research — vidIQ keyword_research (research + rising) and outliers (long + short) for the top backlog candidates; WebSearch fallback if vidIQ is not connected. Save `research/YYYY-MM-DD.md` (keywords, outliers, chosen case + why, 3 title candidates). The case, the long title (number + action + main keyword), description lines 1–2, tags and Shorts titles all come from this research. New cases with demand may be added to backlog.md if they pass the footage rule.
 - Target date = tomorrow's date in America/New_York at run time. First call Metricool getScheduledPosts for blogId 7731358 around that date: if a YouTube long video is already scheduled for it, do not produce anything — just report.
