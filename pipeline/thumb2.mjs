@@ -3,6 +3,7 @@
 // thumb2.json: {"image":"/abs/frame.jpg","pos":"50% 50%","zoom":100,
 //   "A":{"l1":"4 BOATS","l2":"15 MINUTES","c1":"y","c2":"w","circle":{"x":980,"y":330,"r":120},"arrow":{"x":760,"y":560,"rot":-35},
 //        "inset":{"image":"/abs/mugshot_or_haul.jpg","x":930,"y":40,"w":300,"h":360,"label":"SENTENCED"},"tag":"NEW"}, "B":{...}, "C":{...}}
+// Circle/arrow: only around a clearly meaningful, fully visible object (owner 2026-11-14) — otherwise leave them out.
 // Rules: ≤ 3 words total visible at small size, nothing in the bottom-right 220x90 (duration badge), every word true,
 // no gore/blood/bodies, no weapon pointed at camera, faces only from U.S. federal-agency releases. "NEW" tag only if the case is ≤ 7 days old.
 import fs from "fs"; import path from "path"; import { createRequire } from "module";
