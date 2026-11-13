@@ -29,7 +29,7 @@ Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 ## Fresh-case format (owner decision 2026-11-14 — overrides older case-picking notes)
 - Source of topics = official newsrooms of the LAST 7 DAYS (14 max): justice.gov/news + USAO pages, fbi.gov/news, dea.gov, ice.gov/news, cbp.gov/newsroom, news.uscg.mil. backlog.md is a fallback only.
 - "One case, one person": a protagonist (prefer sentenced/convicted; freshly charged only with "charged/alleged" + presumption-of-innocence line), told chronologically: who they were → the scheme → the detail that exposed it → takedown → court → what it means.
-- Long video 15–20 min (2,600–3,200 words at speed 1.06).
+- Long video 15–20 min (2,800–3,400 words at the channel pace — see "Narration rhythm"; check total speech seconds after TTS).
 - Why: Studio → Trends for our audience shows fresh DOJ/FBI cases with a person (California Reports "FBI ARRESTS 11 Over $17.4M" 147K in 10 min; "He Outran the Air Force With $1 Billion of Cocaine" 177K; "Killer Cop…" 55K). Our operation-statistics long videos got 1–23 views.
 - Visuals: agency press-release images/documents/press-conference video + DVIDS clips of the same agency or kind of operation. Anything not of this exact event gets an on-screen "FILE FOOTAGE" label and is never presented as the event. Faces only from U.S. federal-agency releases (public domain); never local-police/news/social photos, minors or victims.
 - Footage rule for fresh cases: ≥ 6 usable clips of the agency/operation type (not necessarily of the event itself).
@@ -60,7 +60,7 @@ Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the
 
 ## 4. Script → `episodes/NNN-slug/episode.py`
 - Copy the structure of `episodes/001-ms13/episode.py`: `LINES = [(spoken_text, shots, opts), ...]`, `DISPLAY` (spoken → on-screen spelling), `META` (case, label, title, imgs, credit, shorts).
-- 1,600–1,900 words → 10–12 min at narration speed 1.06 (TTS_SPEED). Episode must stay ≥ 10:00. Cold open (≤40 s, the most dramatic verified moment + the question) → `g:title` → 5–6 chapters (`g:chapter` with n, t, case) → close + `g:end`.
+- Length: see "Fresh-case format" (15–20 min). Episode must stay ≥ 15:00 unless the case is thin (then ≥ 10:00 and say so in the report). Cold open (≤40 s, the most dramatic verified moment + the question) → `g:title` → 5–6 chapters (`g:chapter` with n, t, case) → close + `g:end`.
 - Write numbers/years as words in spoken text (Kokoro), add digit forms to DISPLAY. Respell hard names for TTS and map them back in DISPLAY (check with `Kokoro(...).tokenizer.phonemize(word,"en-us")`).
 - Shots: 2–3 per line, each 2.5–6 s. ~25–35% of screen time should be our own graphics (maps, stats, documents, timelines, lists) — this is what makes the channel original.
 - Graphics available in `pipeline/graphics.mjs`: title{case,title,sub}, chapter{case,n,t}, stat{a,b,c}, quote{q,w}, doc{header,title,body,stamp,source}, list{kicker,title,items,footer}, phases{kicker,title,left,right,active,total,footer}, cards3{kicker,title,cards}, timeline{kicker,title,events}, map{map:{bounds|useUS,highlight,cities,arcs,labels,topPad},kicker,title,footer}, end{case,label}.
