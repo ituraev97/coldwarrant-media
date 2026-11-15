@@ -1,0 +1,61 @@
+{
+ "image": "/home/claude/work/thumb/B_bg.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "layout": "news",
+  "split": 46,
+  "left": {
+   "image": "/home/claude/work/thumb/face_A.jpg",
+   "pos": "50% 30%",
+   "zoom": 100
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/A_right.jpg",
+   "pos": "70% 40%",
+   "zoom": 190
+  },
+  "tag": "SENTENCED",
+  "l1": "EL MENCHO'S BROTHER",
+  "l2": "22.5 YEARS",
+  "s1": 104,
+  "s2": 118
+ },
+ "B": {
+  "side": "right",
+  "image": "/home/claude/work/thumb/B_bg.jpg",
+  "l1": "270",
+  "l2": "MONTHS",
+  "s1": 250,
+  "s2": 150,
+  "c1": "r",
+  "c2": "w",
+  "inset": {
+   "image": "/home/claude/work/thumb/face.jpg",
+   "x": 70,
+   "y": 120,
+   "w": 330,
+   "h": 430,
+   "label": "TONY MONTANA"
+  }
+ },
+ "C": {
+  "side": "right",
+  "image": "/home/claude/work/thumb/C_bg.jpg",
+  "pos": "50% 60%",
+  "l1": "EL MENCHO'S",
+  "l2": "BROTHER",
+  "s1": 150,
+  "s2": 150,
+  "c1": "y",
+  "c2": "w",
+  "inset": {
+   "image": "/home/claude/work/thumb/face.jpg",
+   "x": 70,
+   "y": 110,
+   "w": 330,
+   "h": 430,
+   "label": "SENTENCED"
+  }
+ }
+}

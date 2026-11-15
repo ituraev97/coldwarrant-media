@@ -44,6 +44,13 @@ for sh in E.META.get("shorts", []):
             ev.append(f"Dialogue: 1,{ts(s)},{ts(e - 0.01)},Cap,,0,0,0,,{{\\an5\\pos(540,1390)\\fscx92\\fscy92\\t(0,90,\\fscx100\\fscy100)}}{c.upper()}")
             s = e
     ev.append(f"Dialogue: 3,{ts(D - 2.4)},{ts(D)},CTA,,0,0,0,,{{\\an5\\pos(540,1600)\\fad(200,0)}}FULL CASE FILE ON THE CHANNEL")
+    # "FILE FOOTAGE" badge on archive shots (line/shot opt lab=1), same rule as the long video
+    flat = [(i, x) for i, L in enumerate(E.LINES) for x in L[1]]
+    for (li, x), g in zip(flat, T.get("segs", [])):
+        if x[0].startswith(("g:", "img:")) or not (E.LINES[li][2].get("lab") or (len(x) > 2 and x[2].get("lab"))): continue
+        a0, b0 = max(0, g["t"] - t0), min(D, g["t"] + g["d"] - t0)
+        if b0 <= a0: continue
+        ev.append(f"Dialogue: 4,{ts(a0)},{ts(b0)},Brand,,0,0,0,,{{\\an9\\pos(1050,600)\\fs40\\bord3\\3c&H000000&\\1c&HFFFFFF&}}FILE FOOTAGE")
     ass = f"{OUT}/{sh['id']}.ass"; open(ass, "w", encoding="utf-8").write(HEAD + "\n".join(ev) + "\n")
     # vertical source footage (shot opt vert=1) fills the whole Short instead of a tiny pillarboxed column
     vert = set(str(x[0]) for L in E.LINES for x in L[1] if len(x) > 2 and isinstance(x[2], dict) and x[2].get("vert"))

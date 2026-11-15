@@ -81,6 +81,21 @@ for i, (txt, shots, o) in enumerate(LINES):
         add(a0, b0, "Big", r"{\an5\pos(960,470)\fad(100,300)\t(0,350,\fscx100\fscy100)\fscx115\fscy115}" + t1, 3)
         add(a0 + 0.25, b0, "BigSub", r"{\an5\pos(960,600)\fad(250,300)}" + t2, 3)
 
+# "FILE FOOTAGE" badge (owner rule 2026-11-14): line opt lab=1 (or shot opt lab=1) -> persistent top-right badge over every
+# footage shot of that line (not graphics/photos), so archive video is never presented as the event itself.
+flat = [(i, sh) for i, (_, shots, _o) in enumerate(LINES) for sh in shots]
+iv = []
+for (i, sh), sg in zip(flat, T.get("segs", [])):
+    if sh[0].startswith(("g:", "img:")): continue
+    if LINES[i][2].get("lab") or (len(sh) > 2 and sh[2].get("lab")):
+        if iv and abs(iv[-1][1] - sg["t"]) < 0.05: iv[-1][1] = sg["t"] + sg["d"]
+        else: iv.append([sg["t"], sg["t"] + sg["d"]])
+for a0, b0 in iv:
+    box = r"{\an9\pos(1812,62)\bord0\shad0\1c&H000000&\1a&H40&\p1}m 0 0 l 300 0 l 300 54 l 0 54{\p0}"
+    add(a0, b0 - 0.02, "Tag", box, 4)
+    add(a0, b0 - 0.02, "Tag", r"{\an9\pos(1520,62)\bord0\shad0\c&H2D21D3&\p1}m 0 0 l 8 0 l 8 54 l 0 54{\p0}", 4)
+    add(a0, b0 - 0.02, "Tag", r"{\an9\pos(1790,68)\fs32\fsp3}FILE FOOTAGE", 5)
+
 # description credit at the very end
 e = TOTAL - 4.0
 add(e + 0.6, TOTAL, "Credit", r"{\fad(400,0)}" + META.get("credit", "Footage via DVIDS — public domain. Appearance does not imply endorsement."), 5)
