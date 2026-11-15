@@ -237,3 +237,13 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - 955958/955959/955960/955961 (Stone drone/HITRON videos) are 4:3 pillarboxed → `pb=1`; 955961 is full-frame 16:9 after ~76.5 s (no pb).
 - The map graphic fits bounds by width: labels near the Galápagos cluster overlap easily — check the last frame and move ocean labels into empty water.
 - Fact-check agent caught: a quote placed before the event (Naylor said it afterward), "always the same" procedure (two boats stopped without shots), a one-person fact stated squad-wide, "first time in his career" vs "first case", "33–36" vs "33 or 36", "arrested" vs "suspects", "came home" to the offload port (homeport is Charleston), a tag that claimed Pacific Viper, and a Short title implying snipers fired in all 1,000 interdictions.
+
+## Notes from run 016 (2026-11-15)
+- New line/shot opt `lab=1`: finish_ep.py and shorts.py draw a persistent "FILE FOOTAGE" badge (top-right) over every footage shot of that line. Use it on all footage that is not of the case itself (fresh-case format, owner rule).
+- Fresh DOJ sentencing cases often have NO case video: build from the DOJ/DEA defendant photo (compose a 1920×1080 still with PIL: framed photo + name + "SENTENCED · N MONTHS" stamp, used via META imgs) + labeled file footage + graphics. Thumbnail images of drugs next to the defendant must carry a baked-in "FILE IMAGE · NOT HIS CASE" label (fact-check rule), placed outside the bottom-right duration area.
+- dea.gov and ofac.treasury.gov refuse curl from the cloud (proxy 403); the same DOJ release and photo live on justice.gov (/sites/default/files/YYYY-MM/<name>_photo.png, only ~166×222 px).
+- Map arcs use keys `from`/`to` (not a/b) — a wrong key crashes graphics.mjs mid-run. graphics.mjs re-renders everything: render only missing keys with a filtered gspec (keys whose gfx/<key>/f0072.jpg is missing).
+- stat graphic: a bare year like "1996" counts up and renders "1,996" — prefix "​" to disable the counter.
+- `big=` overlay text > ~16 characters overflows 1920 px — keep line 1 short, put the rest in line 2.
+- With few clips, write a shot allocator (allowed content ranges per clip + black + used_clips + overlaps) after TTS; the hand plan for 016 had 35 conflicts.
+- Single-pass x265 `-b:v 640k -maxrate 1000k -bufsize 2000k` + AAC 128k → 16:14 episode = 88.7 MB in ~22 min.
