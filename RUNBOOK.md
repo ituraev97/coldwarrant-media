@@ -55,6 +55,13 @@ Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the
 - Pinned question: send Metricool `firstCommentText` on the long video with one sharp question about the case ("Was 20 years enough?"); if Metricool rejects it for YouTube, schedule without it and say so.
 - Description: first line = title promise + main keywords, then chapters, sources; end with 3 hashtags (#truecrime #fbi + one case keyword).
 
+## Dubbing (other-language audio tracks) — owner 2026-11-15
+- Rules, languages and voices: Projects doc `claude/dubbing.md`; voice engine `claude/dub_tts.py` → /home/claude/dub_tts.py. Languages: es, pt, hi, fr, it, de, ru (never Uzbek). The English channel voice never changes.
+- Builder: `pipeline/dub_build.py` — `bed <ep>` (timing.json from vo/raw_NN.wav + music/FX/nat sound without English voice), `voice <ep> <lang>` (Edge TTS per line, offline fallback), `mix <ep> <lang>` (fits every line into its English slot, ducks music, −14 LUFS, exact video length). Needs <ep>/vo/raw_NN.wav (run pipeline/tts_ep.py if missing — deterministic) and <ep>/dub/<lang>/script.txt (one line per English line, same order).
+- TEMPO (owner 2026-11-15 "change the tempo if needed"): our English runs at ×1.15, translations are longer, so dubs use Edge rate +10% (hi +8%) and atempo up to ×1.18 per line (≈1.3 max overall); a line may push ≤ 2.5 s into the next pause. If a line still does not fit, shorten the translation, never cut facts.
+- Translation rules: own words, no new facts, numbers as words; English names in [[...]] for es/pt/fr/it/de; Russian and Hindi use their own established forms of names and places (Вашингтон, «Лицо со шрамом», वॉशिंगटन). Independent agent checks every line (numbers, names, meaning) before voicing.
+- Texts (script/title/description) go to episodes/NNN/dub/<lang>/ on main; audio never on main. The owner uploads tracks in YouTube Studio → Languages → Add dub (Metricool cannot).
+
 ## 2. Pick the case
 - FIRST (owner rule 2026-11-06): search & competitor research — vidIQ keyword_research (research + rising) and outliers (long + short) for the top backlog candidates; WebSearch fallback if vidIQ is not connected. Save `research/YYYY-MM-DD.md` (keywords, outliers, chosen case + why, 3 title candidates). The case, the long title (number + action + main keyword), description lines 1–2, tags and Shorts titles all come from this research. New cases with demand may be added to backlog.md if they pass the footage rule.
 - Target date = tomorrow's date in America/New_York at run time. First call Metricool getScheduledPosts for blogId 7731358 around that date: if a YouTube long video is already scheduled for it, do not produce anything — just report.
