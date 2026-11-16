@@ -253,7 +253,7 @@ const B = {
 
   end: (o) => page(`<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
     <div class="mono a" data-d="0.05" style="font-size:30px">CASE FILE ${o.case || "001"} · ${o.label || "MS-13"}</div>
-    <div class="stamp a" data-d="0.4" data-k="slam" data-base="rotate(-6deg)" style="font-size:120px;margin-top:40px;padding:20px 60px;border-width:14px">CLOSED</div>
+    <div class="stamp a" data-d="0.4" data-k="slam" data-base="rotate(-6deg)" style="font-size:120px;margin-top:40px;padding:20px 60px;border-width:14px">${o.stamp || "CLOSED"}</div>
     <div class="a" data-d="1.2" style="margin-top:80px"><span class="anton" style="font-size:64px">COLD</span> <span class="anton" style="font-size:64px;background:#D3212D;padding:0 14px">WARRANT</span></div>
     <div class="osw a" data-d="1.5" style="font-size:34px;color:var(--amber);margin-top:20px">SUBSCRIBE FOR THE NEXT CASE FILE</div></div>`),
 
