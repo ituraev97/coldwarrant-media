@@ -1,0 +1,64 @@
+{
+ "image": "/home/claude/work/thumb/f_24.5.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "layout": "news",
+  "split": 44,
+  "left": {
+   "image": "/home/claude/work/thumb/face_A.jpg",
+   "pos": "50% 30%",
+   "zoom": 100
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/f_24.5.jpg",
+   "pos": "50% 40%",
+   "zoom": 150
+  },
+  "tag": "FEDS SAY",
+  "l1": "$100K/MONTH",
+  "l2": "POLICE SECRETS",
+  "s1": 170,
+  "s2": 104
+ },
+ "B": {
+  "side": "right",
+  "image": "/home/claude/work/thumb/f_24.5.jpg",
+  "pos": "40% 60%",
+  "zoom": 130,
+  "l1": "“MODERN-DAY",
+  "l2": "EL CHAPO”",
+  "s1": 150,
+  "s2": 170,
+  "c1": "w",
+  "c2": "y",
+  "tag": "— FBI DIRECTOR",
+  "inset": {
+   "image": "/home/claude/work/thumb/face.jpg",
+   "x": 60,
+   "y": 110,
+   "w": 330,
+   "h": 400
+  }
+ },
+ "C": {
+  "side": "right",
+  "image": "/home/claude/work/thumb/f_22.jpg",
+  "pos": "50% 50%",
+  "zoom": 115,
+  "l1": "$15M",
+  "l2": "REWARD",
+  "s1": 260,
+  "s2": 170,
+  "c1": "y",
+  "c2": "w",
+  "inset": {
+   "image": "/home/claude/work/thumb/face.jpg",
+   "x": 60,
+   "y": 140,
+   "w": 330,
+   "h": 400,
+   "label": "ARRESTED"
+  }
+ }
+}
