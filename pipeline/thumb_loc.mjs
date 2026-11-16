@@ -20,8 +20,8 @@ const css = `@font-face{font-family:Anton;src:url(file://${NM}/anton/files/anton
 const b = await chromium.launch(); const pg = await b.newPage({ viewport:{width:1280,height:720} });
 for (const [k,o] of Object.entries(L)) {
   const f = o.font || "Anton", tw = o.font==="Teko" ? "font-weight:600;" : o.font==="Osw" ? "font-weight:700;" : "";
-  const html = `<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><div class="t"><div class="band"></div>
-   <div class="tag" style="font-family:${f};${tw}${o.tsize?`font-size:${o.tsize}px;`:""}">${o.tag}</div><div class="lab" style="font-family:${f};${tw}">${o.lab}</div>
+  const html = `<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body><div class="t"><div class="band" style="${o.band?`top:${o.band}px;background:linear-gradient(180deg,rgba(8,8,9,0) 0,rgba(8,8,9,.97) 34px,#080809 44px)`:""}"></div>
+   <div class="tag" style="font-family:${f};${tw}${o.tsize?`font-size:${o.tsize}px;`:""}">${o.tag}</div>${o.lab?`<div class="lab" style="font-family:${f};${tw}">${o.lab}</div>`:""}
    <div class="txt" style="font-family:${f};${tw}"><div style="font-size:${o.s1||104}px;color:#fff">${o.l1}</div><div style="font-size:${o.s2||118}px;color:#FFD400">${o.l2}</div></div></div></body></html>`;
   const tmp = path.resolve(`_${k}.html`); fs.writeFileSync(tmp, html); await pg.goto("file://"+tmp);
   await pg.evaluate(() => document.fonts.ready); await pg.waitForTimeout(300);

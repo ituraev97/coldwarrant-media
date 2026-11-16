@@ -1,0 +1,61 @@
+{
+"es": {
+"tag": "ACUSACIÓN",
+"l1": "$100 MIL AL MES",
+"l2": "POR SECRETOS POLICIALES",
+"s1": 150,
+"s2": 96,
+"band": 372
+},
+"pt": {
+"tag": "ACUSAÇÃO",
+"l1": "US$100 MIL/MÊS",
+"l2": "POR SEGREDOS DA POLÍCIA",
+"s1": 150,
+"s2": 96,
+"band": 372
+},
+"fr": {
+"tag": "ACCUSATION",
+"l1": "100 000 $/MOIS",
+"l2": "POUR DES SECRETS DE POLICE",
+"s1": 150,
+"s2": 90,
+"band": 372
+},
+"it": {
+"tag": "ACCUSA",
+"l1": "100MILA $ AL MESE",
+"l2": "PER SEGRETI DI POLIZIA",
+"s1": 140,
+"s2": 96,
+"band": 372
+},
+"de": {
+"tag": "ANKLAGE",
+"l1": "100.000 $ IM MONAT",
+"l2": "FÜR POLIZEI-GEHEIMNISSE",
+"s1": 136,
+"s2": 96,
+"band": 372
+},
+"ru": {
+"font": "Osw",
+"tag": "ОБВИНЕНИЕ",
+"l1": "$100 000 В МЕСЯЦ",
+"l2": "ЗА ТАЙНЫ ПОЛИЦИИ",
+"s1": 132,
+"s2": 112,
+"band": 372
+},
+"hi": {
+"font": "Teko",
+"tag": "आरोप",
+"l1": "$1 लाख हर महीने",
+"l2": "पुलिस के राज़ के लिए",
+"s1": 170,
+"s2": 140,
+"tsize": 84,
+"band": 372
+}
+}
