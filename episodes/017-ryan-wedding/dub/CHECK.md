@@ -1,0 +1,5 @@
+# Dub translation check — COLD WARRANT 017
+English: /home/claude/dub/017/tr/en.txt (153 lines). Translation: /home/claude/dub/017/tr/<lang>.txt (line N = English line N). Rules: /home/claude/dub/017/tr/BRIEF.md.
+Compare EVERY line against the English. Look for: wrong/missing numbers, dates, amounts, units; wrong names or places; meaning shifts (who did what, alleged vs. fact, hedges like "about", "prosecutors say", "according to", "reputed", "allegedly" dropped or added); anything added or lost; legal caveats intact; misaligned lines; ungrammatical or unnatural phrasing a native narrator would stumble on; digits left in text (only [[ABC7]] is allowed); in es/pt/fr/it/de, English names outside [[ ]] that a local voice would mangle; in ru/hi, any [[ ]] or Latin text.
+Note: "El Hefeh" in English = El Jefe. "Ontario International Airport" is in California.
+FIX the problems directly in the file with the Edit tool (keep 153 lines). Then report a short list: line number, what was wrong, what you changed. Keep lines tight — never make a line longer than needed.
