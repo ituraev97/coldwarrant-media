@@ -1,0 +1,46 @@
+# CASE FILE 018 — sources (claim → URL)
+
+Note: justice.gov pages were read through WebFetch (curl gets an Akamai bot check — not circumvented). Images (arrest photo, reward posters) downloaded directly from justice.gov/sites/default/files/2026-11/.
+
+## Primary
+1. **USAO S.D. Cal., Nov. 16, 2026 — "Alleged Guatemalan Cocaine Kingpin Arrested in San Diego…"** https://www.justice.gov/usao-sdca/pr/alleged-guatemalan-cocaine-kingpin-arrested-san-diego-homeland-security-task-force
+   - Montejo Saenz, 40, Guatemala; aliases Mosh, Kraken, Gladiator, Baraja, Solin, Ron Zacapa, Captain Morgan, Corralejo; case 18cr4701-DMS.
+   - Indictment Nov. 1, 2018: conspiracy to distribute cocaine intended for unlawful importation (21 USC 959/960/963); conspiracy to distribute cocaine on board a vessel (46 USC 70503(b), 70506); forfeiture. Conspiracy through Nov. 2018 in Colombia, Ecuador, Guatemala, Costa Rica, El Salvador, Mexico and elsewhere.
+   - "agents seized over 5,500 kilograms of cocaine and $3.7 million USD linked to Montejo Saenz."
+   - Max penalty life + $10M fine. State Dept reward up to $10M. OFAC designation March 2022 (EO 14059) with Los Huistas.
+   - "has been arrested in San Diego by members of the Homeland Security Task Force (HSTF)" — no date/place/circumstances given.
+   - Initial appearance Mon. Nov. 9, 2026, pleaded not guilty; detention hearing Nov. 17, 2026, 9 a.m., Magistrate Judge David D. Leshner.
+   - Molina-Lopez, 61, "Don Dario"/"Molis", 19cr0327-DMS, arrested April 2026, $10M reward (March 2022), motion hearing/trial setting Jan. 15, 2027, 10:30 a.m., Judge Dana M. Sabraw.
+   - Calderon-Calderon, 44, "El Teniente Jr.", 19cr2025-DMS-03, indicted May 31, 2019, reward up to $10M; organization "has links to narcoterrorist cartels in northwest Guatemala near the Guatemala-Mexico border".
+   - NRP + TOCRP: more than 105 brought to justice since 1986; more than $200 million paid.
+   - Agencies: HSI (attachés Guatemala City, Mexico City), DEA, CBP, FBI, USCG, OIA, OEO, JIATF-South, OFAC, State. HSTF San Diego also: ATF, USMS, DoD, USPIS, NCIS, IRS-CI, Interpol.
+   - Quotes: Gordon "Every drug kingpin has an expiration date. Today was his."; Murphy (HSI SD) "This arrest reflects the exceptional, sustained work of Homeland Security Investigations San Diego"; Nunnallee (DEA) "The successful capture of Montejo Saenz is a win for public safety".
+   - Images: montejo_saenz_rewards_posters.png ("CAPTURED"), saenz_arrest_photo_seq2.jpg (alt: "Defendant Axel Bladimir Montejo Saenz is arrested in San Diego"), molino-lopez_rewards_poster.png, calderon_rewards_posters.png. Photo shows three officers (one vest "POLICE U.S. CUSTOMS AND BORDER PROTECTION", two jackets "HSTF POLICE"), him in a gray hoodie, hands cuffed, chain at waist, in front of a jet.
+2. **USAO S.D. Cal., April 27, 2026 — Molina-Lopez arrested in San Diego.** https://www.justice.gov/usao-sdca/pr/alleged-guatemalan-drug-kingpin-10-million-reward-arrested-san-diego
+   - Initial appearance Fri. April 24, 2026, not guilty; indictment Jan. 29, 2019; same two charges incl. vessel count; Operation Guerrilla Unit, multi-year multi-country, led by HSI, HSI Attaché Guatemala City, USAO SD, also targeted suppliers; reward March 2022; arrest date/method not given.
+   - Gordon: "Cartel leaders don't get to write the end of their stories. We do,"
+3. **U.S. Treasury, March 18, 2022 (jy0666) — Los Huistas designation.** https://home.treasury.gov/news/press-releases/jy0666 (full text via https://fraser.stlouisfed.org/title/press-releases-united-states-department-treasury-6111/treasury-sanctions-guatemalas-los-huistas-drug-trafficking-organization-ties-mexican-cartels-611728/fulltext)
+   - Dominant criminal structure in Huehuetenango along the Guatemala–Mexico border; poppy cultivation Huehuetenango/San Marcos; precursor chemicals from China for meth; centralized and hierarchical; money laundering; uses Sinaloa Cartel and CJNG to move cocaine/meth/heroin to U.S.
+   - Molina López directly oversees all operations (multi-ton cocaine into Mexico); Samayoa Recinos co-led since at least 2012, cocaine from Huehuetenango into Chiapas, launders money; Montejo Sáenz son-in-law, "primary lieutenant who coordinates narcotics transport"; Salazar Flores, Samayoa's son-in-law, Central American Parliament member; Werner Darío Molina Montejo (son, supports father's business); Ervin René Moreno López (accountant for a company Molina controls); Roger Antulio Samayoa Montejo (son, lieutenant); Compradores y Exportadores Café Captzin, S.A., La Democracia, owned or controlled by Molina López.
+   - Drugs often laced with fentanyl → overdose risk; blocked property; removal possible with change in behavior.
+4. **USAO S.D. Cal., April 17, 2026 — Jorge Campos-Oliva sentenced to 10 years.** https://www.justice.gov/usao-sdca/pr/high-level-guatemalan-cocaine-trafficker-sentenced-10-years
+   - 48, Guatemala City-based DTO run with his brother (judge found organizer/leader); ≥ 2,000 kg 2017–2020 to Huehuetenango or southern Mexico, destined for U.S.; wiretaps "thousands of messages, including photos of cocaine bricks"; supplied Castillo-Hernandez who offered it to a Los Huistas leader; arrested Aug. 31, 2021, extradited Feb. 10, 2022; Judge Sabraw; 20cr2241-DMS; Guatemala sits between South American producers and Mexico-based cartels.
+5. **USAO S.D. Cal., June 16, 2025 — 13 Guatemalans (Calderón) indictment unsealed.** https://www.justice.gov/usao-sdca/pr/alleged-members-major-guatemalan-drug-trafficking-organization-indicted
+   - La Mesilla and Democracia, Huehuetenango, near the border; returned May 31, 2019; Edgar Yovani Calderon-Calderon admitted ≥ 550 kg, arrested Paris Jan. 2023, 87 months (May 30, 2025); June 13, 2025 agents received information Baldemar Calderon-Carrillo killed June 8, 2025 in shootout with Mexican authorities; "U.S. agents continue to obtain information confirming the details".
+6. **DOJ OPA, May 15, 2025 — Samayoa-Recinos and Salazar Flores.** https://www.justice.gov/opa/pr/leader-prolific-guatemalan-drug-trafficking-organization-and-guatemalan-politician-who
+   - Salazar Flores voluntarily returned May 14, appeared May 15 in D.C.; indicted May 2017 (conspiracy 2010–2017, Guatemala/Honduras/Mexico); Samayoa arrested in Mexico March 2025, extradited from Guatemala May 9, charged Aug. 2018; both unsealed March 2022; ~50 metric tons into Mexico 2010–2014; April 2014 Honduras seized 743 kg allegedly intended for them; warehouses in Guatemala City, farms owned by Samayoa on the border.
+
+## Secondary (attributed on screen)
+7. Prensa Libre, Nov. 10, 2026 — https://www.prensalibre.com/guatemala/justicia/capturan-a-mosh-yerno-de-el-botas-y-senalado-por-ee-uu-como-operador-de-los-huistas/ — capture reported; son-in-law of "el Botas" Molina López; from Santa Ana Huista per U.S. records; July 16, 2025 memo in "Metal" case with intercepted calls mentioning Mosh; Chicharra captured March 11, 2025 at a shopping center in Tuxtla Gutiérrez; Metal captured in Guatemala Aug. 31, 2021 and extradited.
+8. Infobae, Nov. 11, 2026 — https://www.infobae.com/guatemala/2026/11/11/trasciende-la-captura-de-mosh-senalado-por-estados-unidos-como-lugarteniente-del-cartel-guatemalteco-los-huistas/ — Ministerio Público confirmed detention, did not know circumstances because it took place abroad.
+9. CBS News, April 2026 — https://www.cbsnews.com/news/accused-drug-kingpin-captured-san-diego-los-huistas/ — U.S. Embassy announced on X; "Ninety percent of U.S.-bound cocaine passes through Central America and Mexico" per U.S. officials; Gordon: "the final chapter for a man alleged to be one of the world's most notorious and prolific cocaine traffickers".
+10. Executive Order 14159 (Jan. 20, 2025) established Homeland Security Task Forces — cited in DOJ OPA release on Wenshen Xu (Oct. 29, 2026): https://www.justice.gov/opa/pr/chinese-national-sentenced-12-years-prison-narcotics-trafficking-money-laundering-and
+11. Detention presumption: 18 U.S.C. § 3142(e)(3)(A)/(B) — rebuttable presumption for offenses under the Controlled Substances Import and Export Act / MDLEA with max ≥ 10 years.
+
+## File footage (DVIDS, public domain, all labeled FILE FOOTAGE · NOT THIS CASE)
+- 962843 Guatemalan sailors & U.S. Navy SWCC drug-interdiction exercise, Port San José, Guatemala, May 16, 2025 (U.S. Air Force).
+- 314347 CGC Bertholf intercepts two suspected smuggling boats 80 mi off Guatemala, July 8, 2009 — description: "suspected smugglers throwing bales overboard, Coast Guard intercepter boats closing in and the handcuffing of suspects".
+- 911825 CGC Waesche boarding team on a semi-submersible, Eastern Pacific, Nov. 2023; 999256 CGC Forward OTH boat approaches an SPSS, Feb. 24, 2026.
+- Offloads: 1012550 (Bear, June 26, 2026), 1002828 (Tampa, Apr. 16, 2026), 972021 (Tahoma, July 2025), 958225 (James, Apr. 9, 2025), 962790 (Calhoun, May 16, 2025), 1000233 (Forward, Mar. 19, 2026, vertical), 989317 (James, Dec. 8, 2025, vertical), 991450 (Stone, Nov. 19, 2025, vertical).
+- HSI: 950625 (HSI SRT warrant execution, Mission, Texas, Apr. 24, 2024), 935309 (HSI San Antonio SRT, Aug. 27, 2024).
+- Custody transfers: 956175 (extradition flight, Omaha, Feb. 2025), 1024394 (HSI/FBI Miami foreign transfer of custody, Sept. 20, 2026).

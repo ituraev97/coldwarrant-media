@@ -1,0 +1,41 @@
+{
+ "image": "/home/claude/work/thumb/arrest_up.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "layout": "news",
+  "split": 42,
+  "left": {"image": "/home/claude/work/thumb/mosh_stamp.jpg", "pos": "50% 40%", "zoom": 100},
+  "right": {"image": "/home/claude/work/thumb/arrest_up.jpg", "pos": "50% 35%", "zoom": 230},
+  "tag": "REWARD",
+  "l1": "$10 MILLION",
+  "l2": "ALREADY CAUGHT",
+  "s1": 160,
+  "s2": 110
+ },
+ "B": {
+  "layout": "news",
+  "split": 50,
+  "left": {"image": "/home/claude/work/thumb/dario_stamp.jpg", "pos": "50% 40%", "zoom": 100},
+  "right": {"image": "/home/claude/work/thumb/mosh_stamp.jpg", "pos": "50% 40%", "zoom": 100},
+  "tag": "SAN DIEGO",
+  "l1": "FATHER-IN-LAW",
+  "l2": "CAUGHT FIRST",
+  "s1": 130,
+  "s2": 120
+ },
+ "C": {
+  "side": "left",
+  "image": "/home/claude/work/thumb/C_base.jpg",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "l1": "5,500 KILOS",
+  "l2": "LINKED TO HIM",
+  "s1": 170,
+  "s2": 120,
+  "c1": "y",
+  "c2": "w",
+  "tag": "FEDS SAY",
+  "inset": {"image": "/home/claude/work/thumb/mosh_stamp.jpg", "x": 900, "y": 60, "w": 300, "h": 330, "label": "CHARGED"}
+ }
+}
