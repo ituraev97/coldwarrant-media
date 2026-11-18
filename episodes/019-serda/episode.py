@@ -38,7 +38,7 @@ LINES = [
   [('490825', 4.5, {'lab': 1})],
   {'gap': 0.5, 'tag': ('FILE FOOTAGE · HSI SPECIAL RESPONSE TEAM SERVES A WARRANT', 'TUCSON, ARIZ., NOV. 2016 · NOT THIS CASE · ICE / HSI VIA DVIDS'), 'lab': 1}),
  ("F-B-I SWAT was outside. He wouldn't come out.",
-  [('1006229', 15.5, {'lab': 1})],
+  [('1006229', 18.0, {'lab': 1})],
   {'gap': 0.9, 'speed': 0.98, 'tag': ('FILE FOOTAGE · FBI-LED OPERATION RED CARD', 'KANSAS CITY, MAY 2026 · NOT THIS CASE · FBI VIA DVIDS'), 'lab': 1}),
  ('And according to federal prosecutors, his girlfriend told the agents what he was doing in there.',
   [('996734', 3, {'lab': 1}), ('996734', 6.0, {'lab': 1})],
