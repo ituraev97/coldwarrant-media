@@ -1,0 +1,9 @@
+{
+"es": {"tag": "CONDENADO", "l1": "CADENA PERPETUA", "l2": "", "s1": 150, "s2": 10, "band": 470},
+"pt": {"tag": "CONDENADO", "l1": "PRISÃO PERPÉTUA", "l2": "", "s1": 150, "s2": 10, "band": 470},
+"fr": {"tag": "CONDAMNÉ", "l1": "PERPÉTUITÉ", "l2": "", "s1": 170, "s2": 10, "band": 470},
+"it": {"tag": "CONDANNATO", "l1": "ERGASTOLO", "l2": "", "s1": 180, "s2": 10, "band": 470},
+"de": {"tag": "VERURTEILT", "l1": "LEBENSLANG", "l2": "", "s1": 175, "s2": 10, "band": 470},
+"ru": {"font": "Osw", "tag": "ПРИГОВОР", "l1": "ПОЖИЗНЕННО", "l2": "", "s1": 150, "s2": 10, "band": 470},
+"hi": {"font": "Teko", "tag": "सज़ा", "l1": "उम्रक़ैद", "l2": "", "s1": 200, "s2": 10, "tsize": 84, "band": 470}
+}

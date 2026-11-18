@@ -1,0 +1,63 @@
+{
+ "image": "/home/claude/work/thumb/at22_labB.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "layout": "news",
+  "split": 46,
+  "left": {
+   "image": "/home/claude/work/thumb/at22_labA.jpg",
+   "pos": "0% 30%",
+   "zoom": 100
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/kilo_up.jpg",
+   "pos": "50% 30%",
+   "zoom": 100,
+   "circle": {
+    "x": 1010,
+    "y": 270,
+    "r": 175
+   }
+  },
+  "tag": "SENTENCED",
+  "l1": "LIFE IN PRISON",
+  "l2": "",
+  "s1": 190,
+  "s2": 10
+ },
+ "B": {
+  "side": "left",
+  "image": "/home/claude/work/thumb/at22_labB.jpg",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "l1": "\"TURN",
+  "l2": "AROUND\"",
+  "s1": 220,
+  "s2": 220,
+  "c1": "y",
+  "c2": "y",
+  "tag": "6:06 A.M.",
+  "inset": {
+   "image": "/home/claude/work/thumb/kilo_up.jpg",
+   "x": 930,
+   "y": 150,
+   "w": 300,
+   "h": 330,
+   "label": "LIFE"
+  }
+ },
+ "C": {
+  "side": "right",
+  "image": "/home/claude/work/thumb/guns_up.jpg",
+  "pos": "30% 40%",
+  "zoom": 100,
+  "l1": "26 FIREARMS",
+  "l2": "ONE INVESTIGATION",
+  "s1": 150,
+  "s2": 92,
+  "c1": "y",
+  "c2": "w",
+  "tag": "SEIZED"
+ }
+}

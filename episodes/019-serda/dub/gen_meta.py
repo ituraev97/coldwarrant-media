@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+# Localized titles/descriptions for the CASE FILE 019 dubs -> /home/claude/dub/019/ep/dub/<lang>/{title,description}.txt
+import os
+src = open("/home/claude/coldwarrant-media/episodes/019-serda/youtube_description.txt", encoding="utf-8").read()
+SOURCES = src.split("Sources\n", 1)[1].split("\n\nFootage:", 1)[0]
+CH_T = ["0:00", "1:36", "2:50", "5:57", "7:28", "9:50", "11:59"]
+L = {
+"es": dict(title="Avisó al cártel con el SWAT del FBI en la puerta: cadena perpetua",
+ p1="Mientras el equipo SWAT del FBI esperaba frente a su casa en Georgia, según los fiscales, Josué Serda llamó por WhatsApp a su presunto proveedor en México y le dijo que el camión con la droga \"diera la vuelta\". Un jurado federal lo declaró culpable y el 5 de noviembre de 2026 un juez condenó a cadena perpetua al hombre que los fiscales describen como proveedor del Cártel Jalisco Nueva Generación (CJNG) en Athens, Georgia.",
+ p2="El caso completo, según los propios documentos del Departamento de Justicia: la amenaza de 2015 sobre \"su cártel\", cuatro ventas de fentanilo grabadas, la redada del 26 de agosto de 2025 con 13 agencias y 12 órdenes de cateo, la llamada de las 6:06 de la mañana, el juicio de siete días y los otros dos casos del mismo día en el Distrito Medio de Georgia: Orlando \"Lando\" Muckle (30 años de prisión, 26 kg de cocaína) y Raúl Pérez Mondragón (acusado; según la fiscalía, metanfetamina escondida en coles). Los acusados que no han sido condenados se presumen inocentes.",
+ ch="Capítulos", chs=["La llamada de las 6:06", "I. \"Su cártel\"", "II. La ruta", "III. El estacionamiento", "IV. 6:06 a. m.", "V. El veredicto", "VI. El mismo día"],
+ so="Fuentes", cr="Imágenes: FBI, ICE/HSI, CBP y Ejército de EE. UU. vía DVIDS — dominio público. El MATERIAL DE ARCHIVO no muestra este caso y está marcado en pantalla. Fotos: Fiscalía federal del Distrito Medio de Georgia. La aparición de información visual del gobierno de EE. UU. no implica ni constituye respaldo.",
+ cf="EXPEDIENTE 019", tags="#truecrime #fbi #cartel"),
+"pt": dict(title="Avisou o cartel com a SWAT do FBI na porta — prisão perpétua",
+ p1="Enquanto a equipe SWAT do FBI esperava em frente à sua casa na Geórgia, segundo a promotoria, Josué Serda ligou pelo WhatsApp para o suposto fornecedor no México e mandou o caminhão com a droga \"dar meia-volta\". Um júri federal o condenou e, em 5 de novembro de 2026, um juiz deu prisão perpétua ao homem que os promotores descrevem como fornecedor do Cártel Jalisco Nueva Generación (CJNG) em Athens, Geórgia.",
+ p2="O caso completo, a partir dos próprios documentos do Departamento de Justiça: a ameaça de 2015 sobre \"o cartel dele\", quatro vendas de fentanil gravadas, a operação de 26 de agosto de 2025 com 13 agências e 12 mandados de busca, a ligação das 6h06, o julgamento de sete dias e os outros dois casos do mesmo dia no Distrito Central da Geórgia: Orlando \"Lando\" Muckle (30 anos de prisão, 26 kg de cocaína) e Raúl Pérez Mondragón (acusado; segundo a promotoria, metanfetamina escondida em repolhos). Réus ainda não condenados são presumidos inocentes.",
+ ch="Capítulos", chs=["A ligação das 6h06", "I. \"O cartel dele\"", "II. A rota", "III. O estacionamento", "IV. 6h06", "V. O veredito", "VI. O mesmo dia"],
+ so="Fontes", cr="Imagens: FBI, ICE/HSI, CBP e Exército dos EUA via DVIDS — domínio público. As IMAGENS DE ARQUIVO não mostram este caso e estão marcadas na tela. Fotos: Procuradoria federal do Distrito Central da Geórgia. O uso de material visual do governo dos EUA não implica nem constitui endosso.",
+ cf="ARQUIVO 019", tags="#truecrime #fbi #cartel"),
+"fr": dict(title="Il a prévenu le cartel, le SWAT du FBI à sa porte — perpétuité",
+ p1="Pendant que le SWAT du FBI attendait devant sa maison en Géorgie, selon les procureurs, Josué Serda a appelé sur WhatsApp son fournisseur présumé au Mexique pour lui dire de faire « demi-tour » au camion de drogue. Un jury fédéral l'a déclaré coupable et, le 5 novembre 2026, un juge a condamné à la perpétuité l'homme que les procureurs décrivent comme un fournisseur du cartel Jalisco Nouvelle Génération (CJNG) à Athens, en Géorgie.",
+ p2="Toute l'affaire d'après les documents du ministère américain de la Justice : la menace de 2015 sur « son cartel », quatre ventes de fentanyl enregistrées, le coup de filet du 26 août 2025 avec 13 agences et 12 mandats de perquisition, l'appel de 6 h 06, le procès de sept jours et les deux autres dossiers du même jour dans le district central de Géorgie : Orlando « Lando » Muckle (30 ans de prison, 26 kg de cocaïne) et Raúl Pérez Mondragón (inculpé ; selon l'accusation, méthamphétamine cachée dans des choux). Les accusés non condamnés sont présumés innocents.",
+ ch="Chapitres", chs=["L'appel de 6 h 06", "I. « Son cartel »", "II. La filière", "III. Le parking", "IV. 6 h 06", "V. Le verdict", "VI. Le même jour"],
+ so="Sources", cr="Images : FBI, ICE/HSI, CBP et armée américaine via DVIDS — domaine public. Les IMAGES D'ARCHIVE ne montrent pas cette affaire et sont signalées à l'écran. Photos : bureau du procureur fédéral du district central de Géorgie. L'utilisation d'images du gouvernement américain n'implique aucune approbation de sa part.",
+ cf="DOSSIER 019", tags="#truecrime #fbi #cartel"),
+"it": dict(title="Avvisò il cartello mentre lo SWAT dell'FBI aspettava fuori: ergastolo",
+ p1="Mentre la squadra SWAT dell'FBI aspettava davanti a casa sua in Georgia, secondo i procuratori, Josué Serda chiamò su WhatsApp il suo presunto fornitore in Messico e gli disse di far \"tornare indietro\" il camion della droga. Una giuria federale lo ha giudicato colpevole e il 5 novembre 2026 un giudice ha condannato all'ergastolo l'uomo che i procuratori descrivono come fornitore del Cártel Jalisco Nueva Generación (CJNG) ad Athens, in Georgia.",
+ p2="Il caso completo dai documenti del Dipartimento di Giustizia: la minaccia del 2015 sul \"suo cartello\", quattro vendite di fentanyl registrate, il blitz del 26 agosto 2025 con 13 agenzie e 12 mandati di perquisizione, la telefonata delle 6:06, il processo di sette giorni e gli altri due casi dello stesso giorno nel Distretto centrale della Georgia: Orlando \"Lando\" Muckle (30 anni, 26 kg di cocaina) e Raúl Pérez Mondragón (accusato; secondo l'accusa, metanfetamina nascosta nei cavoli). Gli imputati non condannati sono presunti innocenti.",
+ ch="Capitoli", chs=["La telefonata delle 6:06", "I. \"Il suo cartello\"", "II. La filiera", "III. Il parcheggio", "IV. Ore 6:06", "V. Il verdetto", "VI. Lo stesso giorno"],
+ so="Fonti", cr="Immagini: FBI, ICE/HSI, CBP ed Esercito degli Stati Uniti via DVIDS — pubblico dominio. Le IMMAGINI D'ARCHIVIO non mostrano questo caso e sono indicate sullo schermo. Foto: Procura federale del Distretto centrale della Georgia. La presenza di materiale visivo del governo degli Stati Uniti non implica né costituisce approvazione.",
+ cf="FASCICOLO 019", tags="#truecrime #fbi #cartel"),
+"de": dict(title="Er warnte das Kartell, während das FBI-SWAT wartete – lebenslang",
+ p1="Während das SWAT-Team des FBI vor seinem Haus in Georgia wartete, rief Josué Serda laut Anklage per WhatsApp seinen mutmaßlichen Lieferanten in Mexiko an: Der Drogen-Lkw solle „umkehren“. Eine Bundesjury sprach ihn schuldig, und am 5. November 2026 verurteilte ein Richter den Mann, den die Ankläger als Lieferanten des Cártel Jalisco Nueva Generación (CJNG) in Athens, Georgia, bezeichnen, zu lebenslanger Haft.",
+ p2="Der ganze Fall nach den Unterlagen des US-Justizministeriums: die Drohung von 2015 mit „seinem Kartell“, vier aufgezeichnete Fentanyl-Verkäufe, die Razzia vom 26. August 2025 mit 13 Behörden und 12 Durchsuchungsbefehlen, der Anruf um 6:06 Uhr, der siebentägige Prozess und die zwei anderen Fälle vom selben Tag im Middle District of Georgia: Orlando „Lando“ Muckle (30 Jahre Haft, 26 kg Kokain) und Raúl Pérez Mondragón (angeklagt; laut Anklage Meth in Kohlköpfen versteckt). Nicht verurteilte Angeklagte gelten als unschuldig.",
+ ch="Kapitel", chs=["Der Anruf um 6:06", "I. „Sein Kartell“", "II. Die Lieferkette", "III. Der Parkplatz", "IV. 6:06 Uhr", "V. Das Urteil", "VI. Derselbe Tag"],
+ so="Quellen", cr="Aufnahmen: FBI, ICE/HSI, CBP und US-Armee via DVIDS – gemeinfrei. ARCHIVMATERIAL zeigt nicht diesen Fall und ist im Bild gekennzeichnet. Fotos: US-Bundesanwaltschaft, Middle District of Georgia. Die Verwendung von Bildmaterial der US-Regierung bedeutet keine Billigung.",
+ cf="FALLAKTE 019", tags="#truecrime #fbi #kartell"),
+"ru": dict(title="Он предупредил картель, пока спецназ ФБР ждал у дома — пожизненное",
+ p1="Пока спецназ ФБР ждал у его дома в Джорджии, Хосуэ Серда, по версии обвинения, позвонил по WhatsApp своему предполагаемому поставщику в Мексике и велел развернуть грузовик с наркотиками. Федеральные присяжные признали его виновным, и 5 ноября 2026 года судья приговорил к пожизненному заключению человека, которого прокуроры называют поставщиком картеля нового поколения Халиско (CJNG) в городе Атенс, штат Джорджия.",
+ p2="Всё дело по документам Министерства юстиции США: угроза 2015 года «своим картелем», четыре записанные продажи фентанила, рейд 26 августа 2025 года — 13 ведомств и 12 ордеров на обыск, звонок в 6:06 утра, семидневный процесс и ещё два дела того же дня в Среднем округе Джорджии: Орландо «Лэндо» Маккл (30 лет тюрьмы, 26 кг кокаина) и Рауль Перес Мондрагон (обвиняемый; по версии обвинения, метамфетамин прятали в кочанах капусты). Обвиняемые, вина которых не доказана, считаются невиновными.",
+ ch="Главы", chs=["Звонок в 6:06", "I. «Его картель»", "II. Цепочка поставок", "III. Парковка", "IV. 6:06 утра", "V. Вердикт", "VI. Тот же день"],
+ so="Источники", cr="Видео: ФБР, ICE/HSI, CBP и армия США через DVIDS — общественное достояние. Кадры с пометкой FILE FOOTAGE (архив) не относятся к этому делу. Фото: федеральная прокуратура Среднего округа Джорджии. Использование визуальных материалов правительства США не означает их одобрения.",
+ cf="ДЕЛО 019", tags="#truecrime #фбр #картель"),
+"hi": dict(title="FBI स्वाट बाहर खड़ी थी, उसने कार्टेल को आगाह किया — उम्रक़ैद",
+ p1="अभियोजकों के अनुसार, जब एफ़बीआई की स्वाट टीम जॉर्जिया में उसके घर के बाहर इंतज़ार कर रही थी, तब होसुए सेर्दा ने मेक्सिको में अपने कथित सप्लायर को व्हाट्सऐप कॉल कर कहा कि ड्रग्स वाला ट्रक \"वापस मोड़ दो\"। संघीय जूरी ने उसे दोषी ठहराया, और 5 नवंबर 2026 को जज ने उस शख़्स को उम्रक़ैद दी जिसे अभियोजक एथेंस, जॉर्जिया में सीजेएनजी कार्टेल का सप्लायर बताते हैं।",
+ p2="अमेरिकी न्याय विभाग के दस्तावेज़ों के आधार पर पूरा केस: 2015 में \"उसके कार्टेल\" वाली धमकी, फ़ेंटानिल की चार रिकॉर्ड की गई बिक्री, 26 अगस्त 2025 की छापेमारी — 13 एजेंसियाँ और 12 सर्च वारंट, सुबह 6:06 की कॉल, सात दिन का मुक़दमा, और उसी दिन के दो और केस: ऑरलैंडो \"लैंडो\" मकल (30 साल, 26 किलो कोकीन) और राउल पेरेस मोंद्रागोन (आरोपी; अभियोजकों के अनुसार पत्तागोभी में छिपाया मेथ)। जिन आरोपियों का दोष साबित नहीं हुआ, वे निर्दोष माने जाते हैं।",
+ ch="अध्याय", chs=["सुबह 6:06 की कॉल", "I. \"उसका कार्टेल\"", "II. सप्लाई लाइन", "III. पार्किंग", "IV. सुबह 6:06", "V. फ़ैसला", "VI. वही दिन"],
+ so="स्रोत", cr="फ़ुटेज: एफ़बीआई, आईसीई/एचएसआई, सीबीपी और अमेरिकी सेना, DVIDS के ज़रिए — पब्लिक डोमेन। FILE FOOTAGE (फ़ाइल फ़ुटेज) लिखे दृश्य इस केस के नहीं हैं। फ़ोटो: मिडिल डिस्ट्रिक्ट ऑफ़ जॉर्जिया का अमेरिकी अटॉर्नी कार्यालय। अमेरिकी सरकार की दृश्य सामग्री के इस्तेमाल का मतलब उसका समर्थन नहीं है।",
+ cf="केस फ़ाइल 019", tags="#truecrime #fbi #cartel"),
+}
+for k, d in L.items():
+    assert len(d["title"]) <= 70, (k, len(d["title"]))
+    for base in ("/home/claude/dub/019/ep/dub", "/home/claude/coldwarrant-media/episodes/019-serda/dub"):
+        os.makedirs(f"{base}/{k}", exist_ok=True)
+        open(f"{base}/{k}/title.txt", "w", encoding="utf-8").write(d["title"] + "\n")
+        chap = "\n".join(f"{t} {n}" for t, n in zip(CH_T, d["chs"]))
+        desc = f"{d['p1']} {d['tags']}\n\n{d['p2']}\n\n{d['ch']}\n{chap}\n\n{d['so']}\n{SOURCES}\n\n{d['cr']}\n\n{d['cf']} · COLD WARRANT\n"
+        assert len(desc) < 5000, (k, len(desc))
+        open(f"{base}/{k}/description.txt", "w", encoding="utf-8").write(desc)
+    print(k, len(d["title"]), len(desc))
