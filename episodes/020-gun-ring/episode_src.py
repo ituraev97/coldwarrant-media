@@ -411,7 +411,7 @@ META = dict(
     credit=("Footage: CBP, ATF, ICE/HSI, U.S. Army, U.S. Coast Guard via DVIDS — public domain. Photos: U.S. Attorney's Office, Western District of Texas."
             r"\NFile footage is not of this case. Appearance of U.S. government visual information does not imply or constitute endorsement."),
     shorts=[
-        dict(id="s1", lines=[_L("A-T-F agents, with the San Antonio"), _L("Look at the tags.")], hook="24 GUNS · 4,000+ ROUNDS<br>[ONE HOUSE]",
+        dict(id="s1", lines=[_L("Inside, agents immediately recovered"), _L("Look at the tags.")], hook="24 GUNS · 4,000+ ROUNDS<br>[ONE HOUSE]",
              title="24 Guns, 4,000+ Rounds, Body Armor: What ATF Found in One House", slot="09:00", template="number + action (search → seizure reveal, DOJ photos)"),
         dict(id="s2", lines=[_L("During the outbound inspection"), _L("And then Cruz-Cardoza talked.")], hook="8 HANDGUNS<br>[HEADING INTO MEXICO]",
              title="Caught Heading Into Mexico With 8 Handguns and 19 Magazines", slot="11:00", template="action verb first (outbound inspection → seizure reveal)"),
