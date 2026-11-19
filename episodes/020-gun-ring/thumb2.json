@@ -1,0 +1,44 @@
+{
+ "image": "/home/claude/work/thumb/mx_177.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "side": "left",
+  "image": "/home/claude/work/thumb/mx_177.jpg",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "l1": "200+ WEAPONS",
+  "l2": "INTO MEXICO",
+  "s1": 160,
+  "s2": 120,
+  "c1": "y",
+  "c2": "w",
+  "tag": "10-PERSON RING"
+ },
+ "B": {
+  "side": "left",
+  "image": "/home/claude/work/thumb/pistols.jpg",
+  "pos": "50% 70%",
+  "zoom": 108,
+  "l1": "CAUGHT AT",
+  "l2": "THE BORDER",
+  "s1": 170,
+  "s2": 150,
+  "c1": "r",
+  "c2": "y",
+  "tag": "8 HANDGUNS"
+ },
+ "C": {
+  "side": "left",
+  "image": "/home/claude/work/thumb/arsenal.jpg",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "l1": "24 GUNS",
+  "l2": "4,000+ ROUNDS",
+  "s1": 200,
+  "s2": 120,
+  "c1": "y",
+  "c2": "w",
+  "tag": "SEIZED"
+ }
+}
