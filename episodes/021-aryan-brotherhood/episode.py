@@ -462,7 +462,7 @@ LINES = [
   [('g:quote', 0, {'q': 'These murders are a stark reminder that criminal organizations can direct violence from behind prison walls.', 'w': 'ROB CEKADA, DIRECTOR, ATF · AUG. 26, 2026'})],
   {'gap': 1.0, 'speed': 0.97}),
  ('Gray was convicted of two counts of murder in aid of racketeering. His sentencing is set for Monday, before U.S. District Judge Jennifer Thurston. The sentence is mandatory. Life.',
-  [('524999', 290.3, {'lab': 1}), ('524999', 296.2, {'lab': 1})],
+  [('524999', 290.3, {'lab': 1}), ('524999', 272.0, {'lab': 1})],
   {'big': ('NOV. 23 · LIFE', 'MANDATORY SENTENCE · JUSTIN GRAY, 40'), 'gap': 1.0, 'speed': 0.96, 'tag': ('FILE FOOTAGE · ICE DETENTION CENTER (NOT A PRISON)', 'LOS FRESNOS, TEX., 2017 · NOT THIS CASE · ICE VIA DVIDS'), 'lab': 1}),
  ("He isn't the last.",
   [('140047', 264.5, {'lab': 1})],
