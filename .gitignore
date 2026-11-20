@@ -15,3 +15,8 @@ episodes/*/shorts/
 pipeline/package-lock.json
 episodes/*/x265_2pass.log*
 episodes/*/*.log
+
+# media never goes on main (owner rule)
+*.mp3
+*.mp4
+*.wav
