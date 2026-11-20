@@ -1,0 +1,11 @@
+{
+ "image": "/home/claude/work/thumb/A.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {"side": "right", "image": "/home/claude/work/thumb/A.jpg", "pos": "50% 50%", "zoom": 100,
+       "l1": "THE DEA WAS", "l2": "LISTENING", "s1": 120, "s2": 150, "c1": "w", "c2": "y", "tag": "2 LIFE TERMS"},
+ "B": {"side": "left", "image": "/home/claude/work/thumb/B.jpg", "pos": "50% 50%", "zoom": 100,
+       "l1": "ORDERS", "l2": "FROM A CELL", "s1": 190, "s2": 130, "c1": "r", "c2": "w", "tag": "ARYAN BROTHERHOOD"},
+ "C": {"side": "left", "image": "/home/claude/work/thumb/C.jpg", "pos": "50% 50%", "zoom": 100,
+       "l1": "60+", "l2": "ARRESTED", "s1": 260, "s2": 150, "c1": "y", "c2": "w", "tag": "3 STATES"}
+}
