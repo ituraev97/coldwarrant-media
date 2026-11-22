@@ -9,6 +9,17 @@ Read this whole file before starting. Episode 001 (`episodes/001-ms13/`) is the 
 - Schedule per US day: Shorts 09:00, 11:00, 13:00, 15:00, 17:00 ET; long episode 12:00 ET. (21:00 slot dropped 2026-11-06 — weakest in stats.)
 - Do NOT set isAiGeneratedContent (owner's decision; we use only real public-domain footage, a generic TTS narrator and code-generated music — no realistic AI imagery).
 
+## Real footage via relay — owner decision 2026-11-23
+The cloud cannot reach youtube.com. A relay on the owner's server downloads clips (YouTube or any yt-dlp URL) and hands them over through Google Drive folder "FOOTAGE RELAY". Client: `tools/footage_client.py` (stdlib only; see its docstring).
+- Drive creds: Projects doc `claude/google-drive-oauth.md` → /tmp/drive_creds.json (never into git).
+- Find candidate videos with the YouTube Data API (claude/yt_research.py / the same API key).
+- Right after the script is drafted: `python3 tools/footage_client.py request <RUN> clips.json --creds /tmp/drive_creds.json`, keep working, then `python3 tools/footage_client.py wait <RUN> <dir> --creds /tmp/drive_creds.json --timeout 1800`. No answer in 30 min → continue with DVIDS/agency sources and say so in the report.
+- clips.json = `[{"name","src":"<youtube id or URL>","start":"M:SS","end":"M:SS"}]`, ≤ 40 clips, ≤ 90 s each.
+- Priority 1: official US government video — DOJ/DEA/FBI/ICE/ATF/HSI press conferences and raid footage, police-released bodycam, court-released video (public domain / public record). Priority 2: news reports about the exact case (short clips with our commentary, fair use).
+- Never: movies, TV dramas, music videos, other YouTubers' faces/commentary, victims' faces, minors, gore.
+- Real footage = 30–50% of runtime; ≤ ~12 s of one external clip at a time; mostly muted under narration, original audio only for short key quotes (≤ 15 s, speaker named).
+- On-screen source label during each clip ("SOURCE: DOJ, 2024" / "SOURCE: <network>"); list all footage sources in the description.
+
 ## 1. Setup (fresh container)
 ```bash
 # repo (needs add_repo owner=ituraev97 repo=coldwarrant-media access=push first)
@@ -31,7 +42,7 @@ Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 - "One case, one person": a protagonist (prefer sentenced/convicted; freshly charged only with "charged/alleged" + presumption-of-innocence line), told chronologically: who they were → the scheme → the detail that exposed it → takedown → court → what it means.
 - Long video 15–20 min (2,800–3,400 words at the channel pace — see "Narration rhythm"; check total speech seconds after TTS).
 - Why: Studio → Trends for our audience shows fresh DOJ/FBI cases with a person (California Reports "FBI ARRESTS 11 Over $17.4M" 147K in 10 min; "He Outran the Air Force With $1 Billion of Cocaine" 177K; "Killer Cop…" 55K). Our operation-statistics long videos got 1–23 views.
-- Visuals: agency press-release images/documents/press-conference video + DVIDS clips of the same agency or kind of operation. Anything not of this exact event gets an on-screen "FILE FOOTAGE" label and is never presented as the event. Faces only from U.S. federal-agency releases (public domain); never local-police/news/social photos, minors or victims.
+- Visuals: relay clips of the case (see "Real footage via relay") + agency press-release images/documents/press-conference video + DVIDS clips of the same agency or kind of operation. Anything not of this exact event gets an on-screen "FILE FOOTAGE" label and is never presented as the event. Faces only from U.S. government releases (federal agencies, police-released bodycam, court-released video) or relay news clips of the exact case; never social photos, minors or victims.
 - Footage rule for fresh cases: ≥ 6 usable clips of the agency/operation type (not necessarily of the event itself).
 - Title in Trends style: person/action + big number + twist, ≤ 70 chars, every word true and sourced. Thumbnail: federal-agency photo of the person or the seizure + 2–3 big words + red circle/arrow on the key detail.
 - Shorts: never two Shorts in a day with the same opening word or pattern (identical "N Arrests in …" titles lost reach on 8–9 Nov). Text ends with "Full case on the channel."
@@ -96,12 +107,13 @@ Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the
 ```bash
 EP=/home/claude/coldwarrant-media/episodes/NNN-slug; CL=/home/claude/clips; P=/home/claude/coldwarrant-media/pipeline
 # download clips: GET https://api.dvidshub.net/asset?api_key=KEY&id=video:ID -> files[] (720p) -> $CL/ID.mp4
+# relay clips: tools/footage_client.py wait <RUN> $CL ... (requested earlier, see "Real footage via relay") -> $CL/<name>.mp4, used alongside DVIDS/agency images
 python3 $P/tts_ep.py $EP   # voice bm_george:0.5+am_onyx:0.5, scale 1.15 (defaults)
 python3 $P/make_gspec.py $EP
 cd $P && node graphics.mjs $EP/gspec.json $EP/gfx
 python3 $P/build_ep.py $EP $CL          # ~40–60 min on 2 cores — run in background
 python3 $P/finish_ep.py $EP $CL
-bash $P/encode.sh $EP $EP/long.mp4 95   # must stay < 100 MB (GitHub file limit)
+bash $P/encode.sh $EP $EP/long.mp4 450  # ≤ 450 MB for Drive hosting (Metricool YouTube limit 500 MB), see §7
 python3 $P/shorts.py $EP $EP/shorts
 cd $P && node thumb2.mjs $EP/thumb2.json $EP   # thumb_A (main) + thumb_B + thumb_C (Test & Compare) — see "Thumbnails v2"
 ```
@@ -150,17 +162,20 @@ Changelog
 ## 7. Upload to GitHub (public raw URLs for Metricool)
 - Branch = weekday of the ET publish date: drop-mon … drop-sun. Orphan commit containing only that day's files, force-push:
 ```bash
-cd /home/claude/coldwarrant-media && git checkout --orphan up && git rm -rqf . && cp $EP/long.mp4 $EP/thumb_A.jpg $EP/shorts/s*.mp4 . && \
-git add long.mp4 thumb_A.jpg s*.mp4 && git -c user.name="COLD WARRANT bot" -c user.email="ituraev97@users.noreply.github.com" commit -qm "drop NNN" && \
+cd /home/claude/coldwarrant-media && git checkout --orphan up && git rm -rqf . && cp $EP/thumb_A.jpg $EP/shorts/s*.mp4 . && \
+git add thumb_A.jpg s*.mp4 && git -c user.name="COLD WARRANT bot" -c user.email="ituraev97@users.noreply.github.com" commit -qm "drop NNN" && \
 git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 ```
 - URL: `https://raw.githubusercontent.com/ituraev97/coldwarrant-media/drop-XXX/<file>`; check with `curl -sI` (200).
+- LONG VIDEO (owner 2026-11-23): not on GitHub — host on Google Drive folder "COLD WARRANT": `python3 tools/drive_upload.py $EP/long.mp4 --folder "COLD WARRANT" --creds /tmp/drive_creds.json` → its `direct` URL is the Metricool media for the long video. (Only in the ≤ 95 MB fallback add long.mp4 to the orphan commit.) Shorts and thumbnails stay on GitHub.
+- If Metricool rejects the long video as too big: re-encode to ≤ 300 MB (`encode.sh ... 300`) and re-upload to Drive; if still rejected, ≤ 95 MB on GitHub as before.
 
 ## 8. Schedule in Metricool
 - createScheduledPost, blogId 7731358, providers [{"network":"youtube"}], publicationDate {dateTime, timezone:"America/New_York"}.
-- Long: youtubeData {title, type:"video", privacy:"public", tags, category:"EDUCATION", madeForKids:false}; text = description; media [long.mp4 URL]; videoThumbnailUrl = thumb_A URL.
+- Long: youtubeData {title, type:"video", privacy:"public", tags, category:"EDUCATION", madeForKids:false}; text = description; media [long.mp4 Drive `direct` URL]; videoThumbnailUrl = thumb_A URL.
+- After scheduling: `python3 tools/drive_upload.py --folder "COLD WARRANT" --creds /tmp/drive_creds.json --cleanup-days 7` (deletes Drive files older than 7 days in that folder).
 - Shorts: type "short", title = hook + " #shorts"-free short title, madeForKids false, category EDUCATION; text = 1–2 lines + "Full case file on the channel."
-- Description template: 2–3 sentence summary · chapters (timestamps from timing.json chapter starts) · Sources (URLs) · Footage credit + "Appearance of U.S. government visual information does not imply or constitute endorsement." · CC photo credits.
+- Description template: 2–3 sentence summary · chapters (timestamps from timing.json chapter starts) · Sources (URLs) · Footage credit (every relay clip source: agency / network + URL) + "Appearance of U.S. government visual information does not imply or constitute endorsement." · CC photo credits.
 
 ## 9. Close the run
 - Commit to `main`: episodes/NNN-slug/{episode.py,sources.md,thumb.json}, updated `backlog.md` (status `done YYYY-MM-DD`), `used_clips.json`. (Push main normally; never commit video files to main.)
