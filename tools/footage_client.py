@@ -2,8 +2,8 @@
 """Real-footage client for the cloud YouTube tasks (cloud side). The cloud sandbox cannot reach youtube.com, so a relay on
 the owner's server downloads clips and hands them over through Google Drive folder "FOOTAGE RELAY" (--folder to override).
 
-  python3 nmtk_footage.py request RUN clips.json --creds /tmp/drive_creds.json   # clips.json: [{"name","src","start","end"}]
-  python3 nmtk_footage.py wait RUN OUTDIR --creds /tmp/drive_creds.json [--timeout 1800]
+  python3 footage_client.py request RUN clips.json --creds /tmp/drive_creds.json   # clips.json: [{"name","src","start","end"}]
+  python3 footage_client.py wait RUN OUTDIR --creds /tmp/drive_creds.json [--timeout 1800]
 `src` = YouTube video id or any yt-dlp URL (archive.org, C-SPAN, ...). start/end "M:SS" (≤ 90 s per clip, ≤ 40 clips).
 `wait` polls every 30 s until done_RUN.json appears, downloads every clip to OUTDIR/<name>.mp4 and prints the manifest.
 Only the Python standard library is used.
@@ -17,7 +17,7 @@ def token(path):
     c = json.load(open(path))
     body = urllib.parse.urlencode({"client_id": c["client_id"], "client_secret": c["client_secret"],
                                    "refresh_token": c["refresh_token"], "grant_type": "refresh_token"}).encode()
-    with urllib.request.urlopen("https://oauth2.googleapis.com/token", body, timeout=60) as r:
+    with urllib.request.urlopen("https://www.googleapis.com/oauth2/v4/token", body, timeout=60) as r:
         return json.load(r)["access_token"]
 
 def req(method, url, tok, body=None, headers=None):
