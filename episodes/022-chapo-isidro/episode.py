@@ -534,7 +534,7 @@ META = dict(
              title="A .50-Cal Rifle and a Grenade Launcher: What Soldiers Seized", slot="13:00", template="seizure reveal (haul list over raid file footage)"),
         dict(id="s4", note="CHARGED, NOT CONVICTED", lines=[_L("The Ten Most Wanted list has existed"), _L("Another FBI Ten Most Wanted fugitive")], hook="11TH CAPTURE<br>[UNDER THIS ADMINISTRATION]",
              title="'Off the Board': The 11th FBI Top Ten Fugitive Caught Under Trump", slot="15:00", template="verbatim quote with a number (FBI Top Ten board)"),
-        dict(id="s5", note="CHARGED, NOT CONVICTED · FILE FOOTAGE: NOT THIS RAID", lines=[_L("Back in Gwa-sah-veh, the night was not over."), _L("The state government said")], hook="10+ ROADBLOCKS<br>[AFTER THE ARREST]",
+        dict(id="s5", note="CHARGED, NOT CONVICTED · FILE FOOTAGE: NOT THIS RAID", lines=[_L("Back in Gwa-sah-veh, the night was not over."), _L("Mexican outlets reported roadblocks")], hook="10+ ROADBLOCKS<br>[AFTER THE ARREST]",
              title="10+ Roadblocks and Burning Vehicles After the Capture, AP Reports", slot="17:00", template="before -> after (night patrol file footage + AP numbers)"),
     ],
 )
