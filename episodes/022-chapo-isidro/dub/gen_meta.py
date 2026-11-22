@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+import os
+EP = "/home/claude/coldwarrant-media/episodes/022-chapo-isidro"
+src = open(f"{EP}/youtube_description.txt", encoding="utf-8").read()
+SOURCES = src.split("Sources\n", 1)[1].split("\n\nFausto Isidro Meza Flores has been charged", 1)[0]
+CH_T = ["0:00", "1:03", "1:07", "3:12", "6:03", "9:32", "12:05", "15:18"]
+L = {
+"es": dict(title="Capturan a \"Chapo Isidro\", del Top Ten del FBI: 4 soldados muertos",
+ p1="\"Chapo Isidro\" — Fausto Isidro Meza Flores, buscado por Estados Unidos desde 2012, con una recompensa de hasta 5 millones de dólares y en la lista de los Diez Más Buscados del FBI — fue capturado por fuerzas especiales mexicanas en Guasave, Sinaloa, el 20 de noviembre de 2026. Según la Secretaría de la Defensa, cuatro soldados murieron en el operativo. El Departamento de Justicia lo llama alto líder del Cártel de Sinaloa; en Washington enfrenta cargos de narcoterrorismo y apoyo material a una organización terrorista.",
+ p2="Fausto Isidro Meza Flores está acusado, no condenado, y se le presume inocente hasta que se demuestre su culpabilidad en un tribunal.",
+ ch="Capítulos", chs=["5 millones de dólares — capturado", "Expediente 022", "I. La mano derecha", "II. El rastro de papel", "III. La guerra en Sinaloa", "IV. Viernes por la noche en Guasave", "V. Fuera de la lista", "VI. Lo que viene"],
+ so="Fuentes", cr="Imágenes: Armada, Infantería de Marina y Ejército de EE. UU., FBI, ICE/HSI, CBP y Guardia Costera vía DVIDS — dominio público. El MATERIAL DE ARCHIVO (entrenamientos de infantería de marina mexicana y marines de EE. UU., Fuerzas Amigas 2025, Operación Diablo Express 2016, imágenes del FBI y HSI) NO muestra este operativo y está señalado en pantalla. Carteles: Departamento de Estado / FBI, publicados por el Departamento de Justicia. La aparición de información visual del gobierno de EE. UU. no implica respaldo. Narración: voz sintética.",
+ cf="EXPEDIENTE 022", tags="#truecrime #fbi #cartelDeSinaloa"),
+"pt": dict(title="\"Chapo Isidro\", do Top Ten do FBI, é capturado: 4 soldados mortos",
+ p1="\"Chapo Isidro\" — Fausto Isidro Meza Flores, procurado pelos EUA desde 2012, com recompensa de até 5 milhões de dólares e na lista dos Dez Mais Procurados do FBI — foi capturado por forças especiais mexicanas em Guasave, Sinaloa, em 20 de novembro de 2026. Segundo o Ministério da Defesa do México, quatro soldados morreram na operação. O Departamento de Justiça o chama de alto líder do Cartel de Sinaloa; em Washington ele responde por narcoterrorismo e apoio material a organização terrorista.",
+ p2="Fausto Isidro Meza Flores é acusado, não condenado, e presumido inocente até que a culpa seja provada na Justiça.",
+ ch="Capítulos", chs=["5 milhões de dólares — capturado", "Arquivo 022", "I. O braço direito", "II. O rastro de papel", "III. A guerra em Sinaloa", "IV. Sexta à noite em Guasave", "V. Fora da lista", "VI. O que vem agora"],
+ so="Fontes", cr="Imagens: Marinha, Fuzileiros Navais e Exército dos EUA, FBI, ICE/HSI, CBP e Guarda Costeira via DVIDS — domínio público. As IMAGENS DE ARQUIVO (treinos de fuzileiros mexicanos e americanos, Fuerzas Amigas 2025, Operação Diablo Express 2016, imagens do FBI e HSI) NÃO mostram esta operação e estão sinalizadas na tela. Cartazes: Departamento de Estado / FBI, divulgados pelo Departamento de Justiça. O uso de material visual do governo dos EUA não implica endosso. Narração: voz sintética.",
+ cf="ARQUIVO 022", tags="#truecrime #fbi #cartelDeSinaloa"),
+"fr": dict(title="\"Chapo Isidro\", fugitif du Top Ten du FBI, capturé : 4 soldats tués",
+ p1="« Chapo Isidro » — Fausto Isidro Meza Flores, recherché par les États-Unis depuis 2012, avec une récompense pouvant atteindre 5 millions de dollars et inscrit sur la liste des dix fugitifs les plus recherchés du FBI — a été capturé par les forces spéciales mexicaines à Guasave (Sinaloa) le 20 novembre 2026. Selon le ministère mexicain de la Défense, quatre soldats ont été tués pendant l'opération. Le département de la Justice le présente comme un haut dirigeant du cartel de Sinaloa ; à Washington, il est poursuivi pour narcoterrorisme et soutien matériel à une organisation terroriste.",
+ p2="Fausto Isidro Meza Flores est accusé, pas condamné, et présumé innocent jusqu'à ce que sa culpabilité soit prouvée devant un tribunal.",
+ ch="Chapitres", chs=["5 millions de dollars — capturé", "Dossier 022", "I. Le bras droit", "II. La piste écrite", "III. La guerre du Sinaloa", "IV. Vendredi soir à Guasave", "V. Rayé de la liste", "VI. La suite"],
+ so="Sources", cr="Images : marine, corps des Marines et armée américains, FBI, ICE/HSI, CBP et garde-côtes via DVIDS — domaine public. Les IMAGES D'ARCHIVE (entraînements de fusiliers marins mexicains et de Marines, Fuerzas Amigas 2025, opération Diablo Express 2016, images du FBI et de HSI) NE montrent PAS cette opération et sont signalées à l'écran. Affiches : département d'État / FBI, publiées par le département de la Justice. L'utilisation d'images du gouvernement américain n'implique aucune approbation. Narration : voix de synthèse.",
+ cf="DOSSIER 022", tags="#truecrime #fbi #cartelDeSinaloa"),
+"it": dict(title="Catturato \"Chapo Isidro\", Top Ten dell'FBI: uccisi 4 soldati",
+ p1="\"Chapo Isidro\" — Fausto Isidro Meza Flores, ricercato dagli Stati Uniti dal 2012, con una taglia fino a 5 milioni di dollari e nella lista dei dieci latitanti più ricercati dell'FBI — è stato catturato dalle forze speciali messicane a Guasave, Sinaloa, il 20 novembre 2026. Secondo il ministero della Difesa messicano, quattro soldati sono morti nell'operazione. Il dipartimento di Giustizia lo definisce un alto leader del cartello di Sinaloa; a Washington è accusato di narcoterrorismo e supporto materiale a un'organizzazione terroristica.",
+ p2="Fausto Isidro Meza Flores è accusato, non condannato, e presunto innocente fino a prova contraria in tribunale.",
+ ch="Capitoli", chs=["5 milioni di dollari — catturato", "Fascicolo 022", "I. Il braccio destro", "II. La traccia di carta", "III. La guerra in Sinaloa", "IV. Venerdì sera a Guasave", "V. Fuori dalla lista", "VI. Cosa succede ora"],
+ so="Fonti", cr="Immagini: Marina, Corpo dei Marines ed Esercito USA, FBI, ICE/HSI, CBP e Guardia Costiera via DVIDS — pubblico dominio. Il MATERIALE D'ARCHIVIO (addestramenti di fanteria di marina messicana e Marines USA, Fuerzas Amigas 2025, operazione Diablo Express 2016, immagini di FBI e HSI) NON mostra questa operazione ed è segnalato a schermo. Manifesti: Dipartimento di Stato / FBI, diffusi dal dipartimento di Giustizia. La presenza di materiale visivo del governo USA non implica approvazione. Narrazione: voce sintetica.",
+ cf="FASCICOLO 022", tags="#truecrime #fbi #cartelloDiSinaloa"),
+"de": dict(title="FBI-Top-Ten-Flüchtiger \"Chapo Isidro\" gefasst – 4 Soldaten getötet",
+ p1="\"Chapo Isidro\" – Fausto Isidro Meza Flores, seit 2012 von den USA gesucht, mit einer Belohnung von bis zu 5 Millionen Dollar und auf der Liste der zehn meistgesuchten Flüchtigen des FBI – wurde am 20. November 2026 von mexikanischen Spezialkräften in Guasave, Sinaloa, gefasst. Laut Mexikos Verteidigungsministerium wurden bei dem Einsatz vier Soldaten getötet. Das US-Justizministerium nennt ihn einen hochrangigen Anführer des Sinaloa-Kartells; in Washington ist er wegen Narkoterrorismus und materieller Unterstützung einer Terrororganisation angeklagt.",
+ p2="Fausto Isidro Meza Flores ist angeklagt, nicht verurteilt, und gilt als unschuldig, bis seine Schuld vor Gericht bewiesen ist.",
+ ch="Kapitel", chs=["5 Millionen Dollar – gefasst", "Akte 022", "I. Die rechte Hand", "II. Die Papierspur", "III. Der Krieg in Sinaloa", "IV. Freitagnacht in Guasave", "V. Von der Liste", "VI. Wie es weitergeht"],
+ so="Quellen", cr="Aufnahmen: US Navy, US Marine Corps, US Army, FBI, ICE/HSI, CBP und US Coast Guard via DVIDS – gemeinfrei. ARCHIVMATERIAL (Übungen mexikanischer Marineinfanterie und US-Marines, Fuerzas Amigas 2025, Operation Diablo Express 2016, FBI- und HSI-Aufnahmen) zeigt NICHT diesen Einsatz und ist im Bild gekennzeichnet. Plakate: US-Außenministerium / FBI, veröffentlicht vom US-Justizministerium. Die Verwendung von Bildmaterial der US-Regierung bedeutet keine Billigung. Sprecher: synthetische Stimme.",
+ cf="AKTE 022", tags="#truecrime #fbi #sinaloakartell"),
+"ru": dict(title="Беглец из топ-10 ФБР «Чапо Исидро» пойман: погибли 4 военных",
+ p1="«Чапо Исидро» — Фаусто Исидро Меса Флорес, которого США разыскивали с 2012 года, с наградой до 5 миллионов долларов, из списка десяти самых разыскиваемых ФБР — задержан мексиканским спецназом в Гуасаве (штат Синалоа) 20 ноября 2026 года. По данным Министерства обороны Мексики, в ходе операции погибли четверо военных. Минюст США называет его одним из высших лидеров картеля Синалоа; в Вашингтоне ему предъявлены обвинения в наркотерроризме и материальной поддержке террористической организации.",
+ p2="Фаусто Исидро Меса Флорес обвиняется, но не осуждён и считается невиновным, пока его вина не доказана в суде.",
+ ch="Главы", chs=["5 миллионов долларов — пойман", "Дело 022", "I. Правая рука", "II. Бумажный след", "III. Война в Синалоа", "IV. Пятничная ночь в Гуасаве", "V. Снят с доски", "VI. Что дальше"],
+ so="Источники", cr="Видео: ВМС, морская пехота и армия США, ФБР, ICE/HSI, CBP и береговая охрана через DVIDS — общественное достояние. АРХИВНЫЕ кадры (учения мексиканской и американской морской пехоты, Fuerzas Amigas 2025, операция Diablo Express 2016, съёмки ФБР и HSI) НЕ показывают эту операцию и помечены на экране. Плакаты: Госдепартамент / ФБР, опубликованы Минюстом США. Использование материалов правительства США не означает их одобрения. Озвучка: синтезированный голос.",
+ cf="ДЕЛО 022", tags="#truecrime #фбр #картельсиналоа"),
+"hi": dict(title="एफ़बीआई टॉप टेन भगोड़ा 'चापो इसिद्रो' पकड़ा गया — 4 सैनिक मारे गए",
+ p1="'चापो इसिद्रो' — फ़ाउस्टो इसिद्रो मेसा फ़्लोरेस, जिसे अमेरिका 2012 से ढूँढ रहा था, जिस पर 50 लाख डॉलर तक का इनाम था और जो एफ़बीआई की दस सबसे वांछित भगोड़ों की सूची में था — 20 नवंबर 2026 को मेक्सिको के विशेष बलों ने सिनालोआ के ग्वासावे में पकड़ा। मेक्सिको के रक्षा मंत्रालय के अनुसार अभियान में चार सैनिक मारे गए। अमेरिकी न्याय विभाग उसे सिनालोआ कार्टेल का वरिष्ठ नेता बताता है; वॉशिंगटन में उस पर नार्को-आतंकवाद और आतंकी संगठन को सामग्री सहायता के आरोप हैं।",
+ p2="फ़ाउस्टो इसिद्रो मेसा फ़्लोरेस पर आरोप हैं, वह दोषी नहीं ठहराया गया है और अदालत में दोष साबित होने तक निर्दोष माना जाता है।",
+ ch="अध्याय", chs=["50 लाख डॉलर — पकड़ा गया", "केस फ़ाइल 022", "I. दाहिना हाथ", "II. काग़ज़ों का सिलसिला", "III. सिनालोआ की जंग", "IV. ग्वासावे में शुक्रवार की रात", "V. सूची से बाहर", "VI. आगे क्या"],
+ so="स्रोत", cr="फ़ुटेज: अमेरिकी नौसेना, मरीन कोर, सेना, एफ़बीआई, ICE/HSI, CBP और कोस्ट गार्ड, DVIDS के ज़रिए — पब्लिक डोमेन। फ़ाइल फ़ुटेज (मेक्सिकन और अमेरिकी मरीन का प्रशिक्षण, Fuerzas Amigas 2025, ऑपरेशन Diablo Express 2016, एफ़बीआई और HSI की फ़ुटेज) इस अभियान की नहीं है और स्क्रीन पर चिह्नित है। पोस्टर: अमेरिकी विदेश विभाग / एफ़बीआई, न्याय विभाग द्वारा जारी। अमेरिकी सरकार की दृश्य सामग्री के उपयोग का अर्थ समर्थन नहीं है। आवाज़: सिंथेटिक।",
+ cf="केस फ़ाइल 022", tags="#truecrime #fbi #sinaloacartel"),
+}
+for k, d in L.items():
+    assert len(d["title"]) <= 70, (k, len(d["title"]))
+    od = f"{EP}/dub/{k}"; os.makedirs(od, exist_ok=True)
+    open(f"{od}/title.txt", "w", encoding="utf-8").write(d["title"] + "\n")
+    chs = "\n".join(f"{t} {c}" for t, c in zip(CH_T, d["chs"]))
+    body = f"{d['p1']} {d['tags']}\n\n{d['p2']}\n\n{d['ch']}\n{chs}\n\n{d['so']}\n{SOURCES}\n\n{d['cr']}\n\n{d['cf']} · COLD WARRANT"
+    open(f"{od}/description.txt", "w", encoding="utf-8").write(body + "\n")
+    print(k, len(d["title"]), len(body))

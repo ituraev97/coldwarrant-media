@@ -1,0 +1,137 @@
+{
+ "es": {
+  "layout": "news",
+  "split": 48,
+  "left": {
+   "image": "/home/claude/work/thumb/cap_tall.jpg",
+   "pos": "50% 30%",
+   "zoom": 125
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/a_124.jpg",
+   "pos": "60% 40%",
+   "zoom": 190
+  },
+  "tag": "NUEVO",
+  "l1": "FUGITIVO DE $5 MILLONES",
+  "l2": "CAPTURADO",
+  "s1": 96,
+  "s2": 150
+ },
+ "pt": {
+  "layout": "news",
+  "split": 48,
+  "left": {
+   "image": "/home/claude/work/thumb/cap_tall.jpg",
+   "pos": "50% 30%",
+   "zoom": 125
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/a_124.jpg",
+   "pos": "60% 40%",
+   "zoom": 190
+  },
+  "tag": "NOVO",
+  "l1": "FORAGIDO DE US$ 5 MILHÕES",
+  "l2": "CAPTURADO",
+  "s1": 96,
+  "s2": 150
+ },
+ "fr": {
+  "layout": "news",
+  "split": 48,
+  "left": {
+   "image": "/home/claude/work/thumb/cap_tall.jpg",
+   "pos": "50% 30%",
+   "zoom": 125
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/a_124.jpg",
+   "pos": "60% 40%",
+   "zoom": 190
+  },
+  "tag": "NOUVEAU",
+  "l1": "FUGITIF À 5 MILLIONS $",
+  "l2": "CAPTURÉ",
+  "s1": 96,
+  "s2": 150
+ },
+ "it": {
+  "layout": "news",
+  "split": 48,
+  "left": {
+   "image": "/home/claude/work/thumb/cap_tall.jpg",
+   "pos": "50% 30%",
+   "zoom": 125
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/a_124.jpg",
+   "pos": "60% 40%",
+   "zoom": 190
+  },
+  "tag": "NUOVO",
+  "l1": "LATITANTE DA 5 MILIONI $",
+  "l2": "CATTURATO",
+  "s1": 96,
+  "s2": 150
+ },
+ "de": {
+  "layout": "news",
+  "split": 48,
+  "left": {
+   "image": "/home/claude/work/thumb/cap_tall.jpg",
+   "pos": "50% 30%",
+   "zoom": 125
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/a_124.jpg",
+   "pos": "60% 40%",
+   "zoom": 190
+  },
+  "tag": "NEU",
+  "l1": "5-MILLIONEN-$-FLÜCHTIGER",
+  "l2": "GEFASST",
+  "s1": 96,
+  "s2": 150
+ },
+ "ru": {
+  "layout": "news",
+  "split": 48,
+  "left": {
+   "image": "/home/claude/work/thumb/cap_tall.jpg",
+   "pos": "50% 30%",
+   "zoom": 125
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/a_124.jpg",
+   "pos": "60% 40%",
+   "zoom": 190
+  },
+  "tag": "НОВОЕ",
+  "l1": "БЕГЛЕЦ ЗА 5 МЛН $",
+  "l2": "ПОЙМАН",
+  "s1": 96,
+  "s2": 150,
+  "font": "Osw"
+ },
+ "hi": {
+  "layout": "news",
+  "split": 48,
+  "left": {
+   "image": "/home/claude/work/thumb/cap_tall.jpg",
+   "pos": "50% 30%",
+   "zoom": 125
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/a_124.jpg",
+   "pos": "60% 40%",
+   "zoom": 190
+  },
+  "tag": "नया",
+  "l1": "50 लाख डॉलर का भगोड़ा",
+  "l2": "पकड़ा गया",
+  "s1": 96,
+  "s2": 150,
+  "font": "Teko"
+ }
+}

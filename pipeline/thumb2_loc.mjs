@@ -40,9 +40,9 @@ function news(o) {  // "news" layout (owner 2026-11-14, from 1M+ competitors): s
   h += `<div style="position:absolute;left:${split}%;top:0;bottom:0;width:10px;margin-left:-5px;background:#fff;box-shadow:0 0 0 3px #000"></div>`;
   h += `<div style="position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(0deg,rgba(0,0,0,.92),rgba(0,0,0,.6) 55%,rgba(0,0,0,0))"></div><div class="vig"></div>`;
   if (R.circle) { const c = R.circle; h += `<div class="circle" style="left:${c.x - c.r}px;top:${c.y - c.r}px;width:${2 * c.r}px;height:${2 * c.r}px"></div>`; }
-  if (o.tag) h += `<div style="position:absolute;left:0;top:22px;font-family:Anton;font-size:58px;color:#fff;background:${COL.r};padding:6px 26px 0 22px;border:5px solid #000;border-left:0">${o.tag}</div>`;
+  if (o.tag) h += `<div style="position:absolute;left:0;top:22px;font-family:${o.font ? o.font + ",Anton" : "Anton"};font-size:58px;color:#fff;background:${COL.r};padding:6px 26px 0 22px;border:5px solid #000;border-left:0">${o.tag}</div>`;
   const s1 = o.s1 || 104, s2 = o.s2 || s1;
-  h += `<div style="position:absolute;left:24px;right:24px;bottom:30px;text-align:center;font-family:Anton;line-height:1;text-transform:uppercase">
+  h += `<div style="position:absolute;left:24px;right:24px;bottom:30px;text-align:center;font-family:${o.font ? o.font + ",Anton;font-weight:" + (o.font==="Teko"?600:700) : "Anton"};line-height:1;text-transform:uppercase">
     <div style="font-size:${s1}px;color:#fff;-webkit-text-stroke:8px #000;paint-order:stroke fill;text-shadow:0 6px 0 #000">${o.l1}</div>
     <div style="font-size:${s2}px;color:${COL.y};-webkit-text-stroke:8px #000;paint-order:stroke fill;text-shadow:0 6px 0 #000;margin-top:4px">${o.l2 || ""}</div></div>`;
   return h + `<div class="logo" style="top:26px;bottom:auto;left:auto;right:26px"><span>COLD</span><i>WARRANT</i></div></div>`;
