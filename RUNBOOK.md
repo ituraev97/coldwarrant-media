@@ -1,13 +1,25 @@
 # COLD WARRANT — daily production runbook
 
-One run = one long episode (10–14 min, English) + 5 vertical Shorts, uploaded here and scheduled in Metricool for one US day.
+One run = one long episode (10–14 min, English) + Short candidates (usually 5), of which only the best 1–2 by the scorecard are uploaded here and scheduled in Metricool for one US day (see "Shorts: cadence + hook rules").
 Read this whole file before starting. Episode 001 (`episodes/001-ms13/`) is the reference for structure, pacing and style.
 
 ## 0. Context
 - Channel bible: Projects doc `claude/cold-warrant-bible.md` (rules, brand, schedule). Read it first.
 - Metricool brand "COLD WARRANT": blogId **7731358**. Publish timezone **America/New_York**.
-- Schedule per US day: Shorts 09:00, 11:00, 13:00, 15:00, 17:00 ET; long episode 12:00 ET. (21:00 slot dropped 2026-11-06 — weakest in stats.)
+- Schedule per US day: Shorts 09:00 and 15:00 ET (max 2; owner 2026-11-23 — 11:00/13:00/17:00 dropped, the two best slots kept); long episode 12:00 ET. (21:00 slot dropped 2026-11-06 — weakest in stats.)
 - Do NOT set isAiGeneratedContent (owner's decision; we use only real public-domain footage, a generic TTS narrator and code-generated music — no realistic AI imagery).
+
+## Shorts: cadence + hook rules — owner decision 2026-11-23
+Source: yt-pilot `analysis/HOOK_RULES.md` (30 days, 10 channels, 546 Shorts). Template clones posted 3–6×/day decay week over week — our Shorts median by upload week fell 633 → 722 → 588.5 → 107 at ~4.6 Shorts/day. Overrides older Shorts-count notes below.
+- **1–2 YouTube Shorts per day, never more.** Cut the usual candidates (META["shorts"]), score each, schedule only the best 1–2 that score ≥ 7/10 (09:00 = strongest, 15:00 = second). COLD WARRANT has no TikTok in Metricool, so the other candidates are not published (don't push them to the drop branch).
+- Two Shorts on one day: ≥ 6 h apart (09:00 / 15:00) and different visual templates. Every run has a long video, so one of the two is a trailer for it (15:00, after the 12:00 long; ends "Full case on the channel.").
+- Scorecard (≥ 7/10 to publish): Hook 0–4 (hard number / famous name / paradox in the first second, on screen AND spoken) · Payoff 0–3 (the hook's promise paid in the last 2–3 s) · Freshness 0–2 (new story or angle, not yesterday's template) · Clarity 0–1 (works with sound off). Write the scores in the run report.
+- Hook rules: second 0 = the most surprising sentence on action footage — no logo, title card or slow "In 2017…" start; on-screen hook ≤ 7 words, large, upper third. Title ≤ 60 chars: [number] + [stakes/action] or [famous name] + [unexpected fact]; "Why/How did…?" only with a number + action (question/definition titles lose here, see Performance rule 5).
+- Banned openers/titles: quizzes ("Name this X in 3 seconds"), plain recaps without a number or a famous name, "Here's what happened…", "Did you know…", explainers ("What Does MS-13 Actually Mean?").
+- Length 20–40 s, hard cap 50 s. End on the payoff and cut (outro ≤ 1 s; a loopable last line is a plus).
+- Rotate ≥ 3 visual templates (footage-led action, document/number-led, map/timeline-led); never the same template two days running. If a Short's AVD in Metricool is < 5 s after 48 h, that hook style is dead — don't repeat it.
+- Our evidence: winners = number + agency/operation or vivid sea action — "638 Gang Arrests in 179 Cities: Project Southbound" (1456), "267 Arrests, One Gang…" (1455), "Coast Guard Jumps Onto a Moving Narco-Sub" (1446). Losers = explainer titles with no number ("What Does 'MS-13' Actually Mean?" 147, "MS-13 Had a Board of Directors" 77) and money/penalty or "hidden in a truck" angles (Performance rules 2–3).
+- Weekly (Mondays, with "Performance rules"): read the last 7 days of Shorts (views + AVD), list top 3 / bottom 3, add one line "what won" to the Changelog — repeat winners' hook pattern, drop losers'.
 
 ## Real footage via relay — owner decision 2026-11-23
 The cloud cannot reach youtube.com. A relay on the owner's server downloads clips (YouTube or any yt-dlp URL) and hands them over through Google Drive folder "FOOTAGE RELAY". Client: `tools/footage_client.py` (stdlib only; see its docstring).
@@ -130,7 +142,7 @@ cd $P && node thumb2.mjs $EP/thumb2.json $EP   # thumb_A (main) + thumb_B + thum
 - Winners so far (~1,100–1,400 views each): "267 Arrests, One Gang", "Coast Guard Jumps Onto a Moving Narco-Sub", "12,000 Pounds of Cocaine in One Semi-Sub", "32 Tons of Marijuana Under the Border".
 - Losers (11–135 views): explainers about names, history or structure — "What Does MS-13 Actually Mean?", "MS-13 Had a Board of Directors", "62 Killed in One Day — How El Salvador Responded". Don't make these.
 - Title = number + action, ≤ 70 chars. Choose META["shorts"] line ranges whose footage shows that action.
-- LENGTH (owner, 2026-11-06, vidIQ niche data): YouTube Shorts = 20–35 s (2–4 lines). Start on the action shot, number spoken and on screen in the first second; no graphics-only lines inside a Short. Niche breakouts are 9–31 s pure action (Coast Guard boarding 0:09–0:31 → 165K–2.4M views); our 40–50 s Shorts held viewers only 6–20 s.
+- LENGTH (owner, 2026-11-06, vidIQ niche data; 20–40 s per owner 2026-11-23): YouTube Shorts = 20–40 s (2–4 lines), hard cap 50 s. Start on the action shot, number spoken and on screen in the first second; no graphics-only lines inside a Short. Niche breakouts are 9–31 s pure action (Coast Guard boarding 0:09–0:31 → 165K–2.4M views); our 40–50 s Shorts held viewers only 6–20 s.
 - TikTok (only if the brand has TikTok connected in Metricool — COLD WARRANT has none as of 2026-11-06): separate cuts of 61–90 s (TikTok rewards videos over 1 minute). Do NOT trim those to YouTube length.
 
 ## Long-video packaging (vidIQ niche data, 2026-11-06)
@@ -143,9 +155,9 @@ Weekly review (Mondays, Metricool YTVP02/17/06/08, last 28 days). Each rule is b
 1. Shorts = an action moment on real footage. Action/seizure Shorts: median ~1,000 views; history / definition / structure / "who/why" Shorts: median ~200 (n=12: "What Does MS-13…" 142, "MS-13 Had a Board…" 77, "Who Actually Smuggles Fentanyl?" 394, "Why Southern California Gangs Use the Number 13" 276…). Never make the second kind.
 2. At-sea cocaine action beats land concealment: Coast Guard / boat / cargo-ship Shorts median 977 (n=15, 77–1,439); "N Pounds Hidden in a Truck/Trailer" Shorts median 178 (n=5, 11-11: 89–624). For land cases, lead the Short with the arrest/raid moment, not "hidden in a load of …".
 3. Money / laundering / penalty Shorts lose: median 214 (n=4, 11-08: $3B penalty 138, $50M cash 313, $474M bank 290, 81 vehicles 104) vs 977 for the seizure Short of the same day. Pair finance cases with a seizure or arrest action Short and keep the money angle for the long video.
-4. Put the day's strongest action+number Short at 09:00 ET: 09:00 median 1,232 (n=13) vs 15:00 759 (n=13), 17:00 549 (n=13), 11:00 430 (n=14), 13:00 198 (n=7). Recommendation for the owner (not applied): 13:00 is the weakest slot on 7 data points — consider moving it to 08:00 or 19:00 and re-check.
+4. Put the day's strongest action+number Short at 09:00 ET: 09:00 median 1,232 (n=13) vs 15:00 759 (n=13), 17:00 549 (n=13), 11:00 430 (n=14), 13:00 198 (n=7). Recommendation for the owner (not applied): 13:00 is the weakest slot on 7 data points — consider moving it to 08:00 or 19:00 and re-check. (Superseded 2026-11-23: only 09:00 + 15:00 are used.)
 5. Lead the Short title with the number or the action verb (top-5 Shorts 1,327–1,454 all do: "638 Gang Arrests…", "267 Arrests, One Gang…", "Coast Guard Jumps Onto a Moving Narco-Sub", "976 Gang Arrests…"). Never a question or definition title (5 videos, 76–394 views).
-6. Retention is falling: Shorts average view duration was 11 s (median, n=47, Oct 29–Nov 7) and 5 s (n=20, Nov 8–11). The number and the action must be on screen in second 1 and the payoff must land by ~8 s; keep Shorts 20–35 s.
+6. Retention is falling: Shorts average view duration was 11 s (median, n=47, Oct 29–Nov 7) and 5 s (n=20, Nov 8–11). The number and the action must be on screen in second 1 and the payoff must land by ~8 s; keep Shorts 20–40 s.
 7. Long videos: all 13 long videos in the window got 1–27 views regardless of title formula (place/gang/program-first titles 3–27; number-first titles 1–21). The fresh one-case/one-person format (from ep. 015, 11-13) has no Metricool data yet — judge it next Monday; meanwhile never start a long title with a place, gang or program name.
 8. Same case, different angle: the seizure/action angle beats the person/sentence angle on the same footage ("77 Pounds of Fentanyl in One Car" 1,257 vs "A Teacher, 77 Pounds…, 87 Months" 104; "Coast Guard Jumps Onto a Moving Narco-Sub" 1,439 vs "Caught Twice on a Narco-Sub" 77; "The Longest Smuggling Tunnel…" 1,232 vs "The 'Store' Hiding a Drug Tunnel" 81).
 
@@ -160,9 +172,9 @@ Changelog
 - Thumbnail: view at 168×94 — the big word must still read; nothing in the bottom-right corner.
 
 ## 7. Upload to GitHub (public raw URLs for Metricool)
-- Branch = weekday of the ET publish date: drop-mon … drop-sun. Orphan commit containing only that day's files, force-push:
+- Branch = weekday of the ET publish date: drop-mon … drop-sun. Orphan commit containing only that day's files (thumb + the 1–2 selected Shorts only; sX/sY = their ids), force-push:
 ```bash
-cd /home/claude/coldwarrant-media && git checkout --orphan up && git rm -rqf . && cp $EP/thumb_A.jpg $EP/shorts/s*.mp4 . && \
+cd /home/claude/coldwarrant-media && git checkout --orphan up && git rm -rqf . && cp $EP/thumb_A.jpg $EP/shorts/sX.mp4 $EP/shorts/sY.mp4 . && \
 git add thumb_A.jpg s*.mp4 && git -c user.name="COLD WARRANT bot" -c user.email="ituraev97@users.noreply.github.com" commit -qm "drop NNN" && \
 git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 ```
@@ -174,7 +186,7 @@ git push -f origin up:drop-XXX && git checkout -q main && git branch -D up
 - createScheduledPost, blogId 7731358, providers [{"network":"youtube"}], publicationDate {dateTime, timezone:"America/New_York"}.
 - Long: youtubeData {title, type:"video", privacy:"public", tags, category:"EDUCATION", madeForKids:false}; text = description; media [long.mp4 Drive `direct` URL]; videoThumbnailUrl = thumb_A URL.
 - After scheduling: `python3 tools/drive_upload.py --folder "COLD WARRANT" --creds /tmp/drive_creds.json --cleanup-days 7` (deletes Drive files older than 7 days in that folder).
-- Shorts: type "short", title = hook + " #shorts"-free short title, madeForKids false, category EDUCATION; text = 1–2 lines + "Full case file on the channel."
+- Shorts (only the 1–2 selected, 09:00 + 15:00 ET): type "short", title = hook + " #shorts"-free short title, madeForKids false, category EDUCATION; text = 1–2 lines + "Full case file on the channel."
 - Description template: 2–3 sentence summary · chapters (timestamps from timing.json chapter starts) · Sources (URLs) · Footage credit (every relay clip source: agency / network + URL) + "Appearance of U.S. government visual information does not imply or constitute endorsement." · CC photo credits.
 
 ## 9. Close the run
