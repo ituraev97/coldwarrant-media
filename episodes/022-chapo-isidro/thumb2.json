@@ -1,0 +1,64 @@
+{
+ "image": "/home/claude/work/thumb/a_124.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "layout": "news",
+  "split": 48,
+  "left": {
+   "image": "/home/claude/work/thumb/cap_tall.jpg",
+   "pos": "50% 30%",
+   "zoom": 125
+  },
+  "right": {
+   "image": "/home/claude/work/thumb/a_124.jpg",
+   "pos": "60% 40%",
+   "zoom": 190
+  },
+  "tag": "NEW",
+  "l1": "$5 MILLION FUGITIVE",
+  "l2": "CAPTURED",
+  "s1": 96,
+  "s2": 150
+ },
+ "B": {
+  "side": "left",
+  "image": "/home/claude/work/thumb/a_118.jpg",
+  "pos": "60% 50%",
+  "zoom": 105,
+  "l1": "FBI TOP 10",
+  "l2": "CAUGHT",
+  "s1": 170,
+  "s2": 170,
+  "c1": "y",
+  "c2": "r",
+  "inset": {
+   "image": "/home/claude/work/thumb/cap_ins.jpg",
+   "x": 800,
+   "y": 70,
+   "w": 430,
+   "h": 190,
+   "label": "NOV. 20, 2026"
+  }
+ },
+ "C": {
+  "side": "left",
+  "image": "/home/claude/work/thumb/b_126.jpg",
+  "pos": "70% 50%",
+  "zoom": 112,
+  "l1": "WANTED",
+  "l2": "14 YEARS",
+  "s1": 190,
+  "s2": 150,
+  "c1": "r",
+  "c2": "y",
+  "inset": {
+   "image": "/home/claude/work/thumb/wanted_top.jpg",
+   "x": 880,
+   "y": 60,
+   "w": 330,
+   "h": 300,
+   "label": "SINCE 2012"
+  }
+ }
+}

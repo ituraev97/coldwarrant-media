@@ -37,6 +37,8 @@ for sh in E.META.get("shorts", []):
     hook = re.sub(r"\[(.+?)\]", r"{\\c&H2D21D3&}\1{\\c&HDCE7EC&}", hook)
     ev.append(f"Dialogue: 2,{ts(0)},{ts(D)},Hook,,0,0,0,,{{\\fad(150,0)}}{hook}")
     ev.append(f"Dialogue: 2,{ts(0)},{ts(D)},Brand,,0,0,0,,COLD {{\\3c&H2D21D3&\\bord8}}WARRANT")
+    if sh.get("note"):  # persistent legal line, e.g. "CHARGED, NOT CONVICTED" (run 022)
+        ev.append(f"Dialogue: 3,{ts(0)},{ts(D - 2.4)},Brand,,0,0,0,,{{\\an5\\pos(540,1520)\\fs40\\bord3\\3c&H000000&}}{sh['note']}")
     for i in range(a, b + 1):
         txt = disp(E.LINES[i][0]); cs = words_chunks(txt, 3); tot = sum(len(c) for c in cs); s = S[i] - t0
         for c in cs:
