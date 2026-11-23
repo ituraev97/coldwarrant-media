@@ -842,18 +842,18 @@
 {
 "line": 106,
 "slot": 3.91,
-"dur": 4.44,
-"stretch": 1.18,
+"dur": 3.91,
+"stretch": 1.154,
 "delay": 0.01,
-"late": 0.53
+"late": 0.01
 },
 {
 "line": 107,
 "slot": 10.34,
 "dur": 9.76,
 "stretch": 1.0,
-"delay": 0.53,
-"late": -0.05
+"delay": 0.01,
+"late": -0.58
 },
 {
 "line": 108,
@@ -922,146 +922,146 @@
 {
 "line": 116,
 "slot": 8.07,
-"dur": 8.71,
-"stretch": 1.18,
+"dur": 8.07,
+"stretch": 1.061,
 "delay": 0.0,
-"late": 0.64
+"late": 0.01
 },
 {
 "line": 117,
 "slot": 5.1,
 "dur": 3.78,
 "stretch": 1.0,
-"delay": 0.64,
-"late": -0.68
+"delay": 0.01,
+"late": -1.32
 },
 {
 "line": 118,
 "slot": 9.35,
-"dur": 11.49,
-"stretch": 1.18,
+"dur": 9.18,
+"stretch": 1.0,
 "delay": 0.0,
-"late": 2.14
+"late": -0.18
 },
 {
 "line": 119,
 "slot": 7.74,
 "dur": 7.74,
 "stretch": 1.024,
-"delay": 2.14,
-"late": 2.14
+"delay": 0.0,
+"late": -0.0
 },
 {
 "line": 120,
 "slot": 3.04,
 "dur": 3.05,
 "stretch": 1.125,
-"delay": 2.14,
-"late": 2.15
+"delay": 0.0,
+"late": 0.01
 },
 {
 "line": 121,
 "slot": 4.59,
 "dur": 4.3,
 "stretch": 1.0,
-"delay": 2.15,
-"late": 1.85
+"delay": 0.01,
+"late": -0.28
 },
 {
 "line": 122,
 "slot": 11.21,
 "dur": 11.22,
 "stretch": 1.046,
-"delay": 1.85,
-"late": 1.86
+"delay": 0.0,
+"late": 0.01
 },
 {
 "line": 123,
 "slot": 9.96,
-"dur": 10.9,
-"stretch": 1.18,
-"delay": 1.86,
-"late": 2.8
+"dur": 9.96,
+"stretch": 1.121,
+"delay": 0.01,
+"late": 0.01
 },
 {
 "line": 124,
 "slot": 8.41,
 "dur": 6.51,
 "stretch": 1.0,
-"delay": 2.8,
-"late": 0.9
+"delay": 0.01,
+"late": -1.89
 },
 {
 "line": 125,
 "slot": 7.58,
 "dur": 7.56,
 "stretch": 1.0,
-"delay": 0.9,
-"late": 0.87
+"delay": 0.0,
+"late": -0.02
 },
 {
 "line": 126,
 "slot": 7.73,
 "dur": 7.74,
 "stretch": 1.093,
-"delay": 0.87,
-"late": 0.88
+"delay": 0.0,
+"late": 0.01
 },
 {
 "line": 127,
 "slot": 7.12,
 "dur": 7.14,
 "stretch": 1.035,
-"delay": 0.88,
-"late": 0.89
+"delay": 0.01,
+"late": 0.02
 },
 {
 "line": 128,
 "slot": 5.66,
 "dur": 5.66,
 "stretch": 1.061,
-"delay": 0.89,
-"late": 0.9
+"delay": 0.02,
+"late": 0.02
 },
 {
 "line": 129,
 "slot": 7.17,
 "dur": 6.68,
 "stretch": 1.0,
-"delay": 0.9,
-"late": 0.41
+"delay": 0.02,
+"late": -0.46
 },
 {
 "line": 130,
 "slot": 3.37,
 "dur": 3.39,
 "stretch": 1.102,
-"delay": 0.41,
-"late": 0.42
+"delay": 0.0,
+"late": 0.01
 },
 {
 "line": 131,
 "slot": 4.47,
 "dur": 4.31,
 "stretch": 1.0,
-"delay": 0.42,
-"late": 0.26
+"delay": 0.01,
+"late": -0.15
 },
 {
 "line": 132,
 "slot": 8.69,
 "dur": 8.69,
 "stretch": 1.004,
-"delay": 0.26,
-"late": 0.26
+"delay": 0.0,
+"late": -0.0
 },
 {
 "line": 133,
 "slot": 5.04,
 "dur": 4.2,
 "stretch": 1.0,
-"delay": 0.26,
-"late": -0.58
+"delay": 0.0,
+"late": -0.84
 },
 {
 "line": 134,
