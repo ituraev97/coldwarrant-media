@@ -1,6 +1,6 @@
 # COLD WARRANT — daily production runbook
 
-One run = one long episode (10–14 min, English) + Short candidates (usually 5), of which only the best 1–2 by the scorecard are uploaded here and scheduled in Metricool for one US day (see "Shorts: cadence + hook rules").
+One run = publish the episode voiced since the last run + write and order the voice for the next one (see "Voice = Chatterbox via TTS relay"). An episode = one long video (English) + Short candidates (usually 5), of which only the best 1–2 by the scorecard are uploaded here and scheduled in Metricool for one US day (see "Shorts: cadence + hook rules").
 Read this whole file before starting. Episode 001 (`episodes/001-ms13/`) is the reference for structure, pacing and style.
 
 ## 0. Context
@@ -49,6 +49,24 @@ for s,d in [('anton/files/anton-latin-400-normal.woff2','Anton-Regular.ttf'),('o
 ```
 Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 
+## Voice = Chatterbox via TTS relay — owner decision 2026-11-23 (overrides the Kokoro VOICE/speed lines in "Narration rhythm" and §5 for the English narration; dubs stay on their own engine)
+Why: the long videos are the weak spot (median 8.5 views while Shorts get ~500) and the Kokoro narrator is the most obvious "AI" tell. Chatterbox with the channel's own deep male voice (`cw`) runs on the owner's server, ~3–6 h per episode, so each run works on TWO episodes: it publishes the one voiced since the previous run, then writes the next one and orders its voice.
+Tools: `tools/cw_voice.py` (wraps `tools/tts_client.py`; read both docstrings). Creds = the same `/tmp/drive_creds.json` as the footage relay.
+
+**Run order (replaces the single-episode flow of §2–§9):**
+1. **Publish the voiced episode first.** Find the `backlog.md` row with status `voicing NNN` (oldest first) and run `python3 tools/cw_voice.py status NNN --creds /tmp/drive_creds.json`.
+   - `ready` → `python3 tools/cw_voice.py fetch NNN $EP` (writes $EP/vo/raw_NN.wav), get the relay footage again (`footage_client.py wait NNN $CL`, clips stay 7 days) and the DVIDS clips, then §5 build as usual — `tts_ep.py` skips every existing raw file (if it prints that it voiced lines, the text changed after the request: mixed voices — re-order or say so in the report). Then §6 QA, §7, §8 (target date = earliest ET date ≥ tomorrow without a long video), dubs, §9 → row `done YYYY-MM-DD`.
+   - `pending` → the server is still working: go to step 2 and say so in the report.
+   - `failed`, or `pending` for more than 30 h → build that episode now with Kokoro (old flow) so no day is missed; row `done (kokoro)`.
+2. **Write the next episode** (§2 case + research, §3, §4 episode.py, independent fact check of every line). The LINES text is final after that — never edit a spoken line after ordering the voice.
+3. **Order its voice:** `python3 tools/cw_voice.py request NNN $EP --creds /tmp/drive_creds.json --hint "<names, gangs, cities, agencies in this case, comma-separated>"`, order the footage (`footage_client.py request NNN clips.json`), commit episode.py + sources.md, set the row to `voicing NNN`, push. Do NOT build it in this run.
+4. **Never leave tomorrow empty:** if step 1 published nothing and Metricool has no long video for tomorrow (ET), build the step-2 episode right away with Kokoro (skip step 3), row `done (kokoro)`.
+
+**Writing for Chatterbox (replaces the Kokoro respelling rule in §4):**
+- Spoken text uses REAL spellings ("Medellín", "Sinaloa", "Guzmán") — no phonetic respellings ("Meh-deh-yeen"): Chatterbox reads names well and the server checks every sentence with speech recognition against the text, so respellings fail the check. Put unusual names in `--hint`. Numbers and years still as words.
+- Pace: per-line opts `speed` still work (relative to 1.04; the server turns them into tempo on top of 1.08). Keep the gap rules — they are applied by build_ep.py exactly as before.
+- Delivery follows punctuation: a "!" raises the energy (use only on real reveals), "?" lifts the end, commas give short breaths. Short sentences sound most human.
+
 ## Fresh-case format (owner decision 2026-11-14 — overrides older case-picking notes)
 - Source of topics = official newsrooms of the LAST 7 DAYS (14 max): justice.gov/news + USAO pages, fbi.gov/news, dea.gov, ice.gov/news, cbp.gov/newsroom, news.uscg.mil. backlog.md is a fallback only.
 - "One case, one person": a protagonist (prefer sentenced/convicted; freshly charged only with "charged/alleged" + presumption-of-innocence line), told chronologically: who they were → the scheme → the detail that exposed it → takedown → court → what it means.
@@ -64,7 +82,7 @@ Playwright + Chromium and ffmpeg (libx265) are preinstalled.
 Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the default gap) and every line had the same speed — a metronome rhythm that viewers hear as "AI voice".
 - Split long sentences into separate LINES at natural breath points (a reveal, a number, a colon) so the pause lands where a narrator would breathe.
 - Vary the gap per line with opts `gap`: 0.25–0.35 inside one thought, 0.5–0.7 between sentences, 0.9–1.3 before a reveal, after a key number and before each chapter card. Never more than 3 consecutive lines with the same gap.
-- VOICE (owner 2026-11-14, chose sample D): Kokoro blend `bm_george:0.5+am_onyx:0.5` — default in tts_ep.py; never am_michael (shared with 3 other channels). Pace: tts_ep.py multiplies every line speed by TTS_SCALE=1.15 (owner: "faster"); the cold-open sample with real pauses ran 40 s, same as the old voice.
+- VOICE: Chatterbox `cw` (owner 2026-11-23, see "Voice = Chatterbox via TTS relay"). Kokoro fallback only (owner 2026-11-14, sample D): Kokoro blend `bm_george:0.5+am_onyx:0.5` — default in tts_ep.py; never am_michael (shared with 3 other channels). Pace: tts_ep.py multiplies every line speed by TTS_SCALE=1.15 (owner: "faster"); the cold-open sample with real pauses ran 40 s, same as the old voice.
 - Vary speed per line with opts `speed` (relative, × 1.15 in tts_ep.py): 1.06–1.10 for background/context, 0.96–1.00 for the reveal line and the line after a big number, 0.94 for the last line of the cold open. Default 1.04.
 - Script style — cut the AI tells: no staccato triads as a habit ("Four boats. One helicopter. One rule." — at most once per episode, in the cold open), no slogan endings ("The boats keep coming. So does the helicopter."), no "This is the story of…", "Little did they know", "But here's the thing", "In a world where", "What happened next…". Vary sentence openers (not 20%+ starting with "The"). Prefer concrete verbs, quotes from court documents and agency statements, and plain connective speech ("So", "By then", "That's when") the way a human narrator talks.
 - Listen-check before build: render the cold open + one chapter, check the pause histogram (no single gap value > 30% of pauses) and fix.
@@ -120,7 +138,8 @@ Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the
 EP=/home/claude/coldwarrant-media/episodes/NNN-slug; CL=/home/claude/clips; P=/home/claude/coldwarrant-media/pipeline
 # download clips: GET https://api.dvidshub.net/asset?api_key=KEY&id=video:ID -> files[] (720p) -> $CL/ID.mp4
 # relay clips: tools/footage_client.py wait <RUN> $CL ... (requested earlier, see "Real footage via relay") -> $CL/<name>.mp4, used alongside DVIDS/agency images
-python3 $P/tts_ep.py $EP   # voice bm_george:0.5+am_onyx:0.5, scale 1.15 (defaults)
+python3 tools/cw_voice.py fetch NNN $EP --creds /tmp/drive_creds.json   # Chatterbox voice ordered in the previous run (see voice section)
+python3 $P/tts_ep.py $EP   # only fills missing lines (Kokoro fallback: bm_george:0.5+am_onyx:0.5, scale 1.15)
 python3 $P/make_gspec.py $EP
 cd $P && node graphics.mjs $EP/gspec.json $EP/gfx
 python3 $P/build_ep.py $EP $CL          # ~40–60 min on 2 cores — run in background
