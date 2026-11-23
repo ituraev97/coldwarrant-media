@@ -1,0 +1,53 @@
+{
+ "image": "/home/claude/work/img/src/c_goldak.png",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "layout": "news",
+  "split": 50,
+  "left": {
+   "image": "/home/claude/work/img/src/c_pez.png",
+   "pos": "50% 25%",
+   "zoom": 100
+  },
+  "right": {
+   "image": "/home/claude/work/img/src/c_fresa.png",
+   "pos": "50% 25%",
+   "zoom": 100
+  },
+  "tag": "WANTED",
+  "l1": "2 BROTHERS",
+  "l2": "$8 MILLION",
+  "s1": 120,
+  "s2": 150
+ },
+ "B": {
+  "image": "/home/claude/work/img/thumbB.jpg",
+  "pos": "0% 50%",
+  "zoom": 100,
+  "side": "right",
+  "l1": "GOLD-PLATED",
+  "l2": "CARTEL GUNS",
+  "c1": "y",
+  "c2": "w",
+  "s1": 150,
+  "s2": 120
+ },
+ "C": {
+  "image": "/home/claude/work/img/thumbC.jpg",
+  "pos": "0% 50%",
+  "zoom": 100,
+  "side": "right",
+  "l1": "COCAINE IN",
+  "l2": "THE ENGINE",
+  "c1": "w",
+  "c2": "y",
+  "s1": 140,
+  "s2": 120,
+  "circle": {
+   "x": 393,
+   "y": 357,
+   "r": 240
+  }
+ }
+}

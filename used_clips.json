@@ -12458,5 +12458,525 @@
 "clip": 1016602,
 "start": 168.0,
 "episode": "022"
+},
+{
+"clip": 1026422,
+"start": 36.0,
+"episode": "023"
+},
+{
+"clip": 1026422,
+"start": 41.5,
+"episode": "023"
+},
+{
+"clip": 1016602,
+"start": 151.0,
+"episode": "023"
+},
+{
+"clip": 1016602,
+"start": 160,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 0.5,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 5.0,
+"episode": "023"
+},
+{
+"clip": 1016334,
+"start": 71.0,
+"episode": "023"
+},
+{
+"clip": 1016334,
+"start": 77.5,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 44,
+"episode": "023"
+},
+{
+"clip": 1016334,
+"start": 84.0,
+"episode": "023"
+},
+{
+"clip": 1016334,
+"start": 136,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 48.0,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 54.0,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 60.0,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 64.0,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 67.18,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 74.0,
+"episode": "023"
+},
+{
+"clip": 907567,
+"start": 10,
+"episode": "023"
+},
+{
+"clip": 1016602,
+"start": 16.8,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 79.5,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 84.5,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 89.5,
+"episode": "023"
+},
+{
+"clip": 1028963,
+"start": 0.51,
+"episode": "023"
+},
+{
+"clip": 1022178,
+"start": 2,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 10.12,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 14.5,
+"episode": "023"
+},
+{
+"clip": 893769,
+"start": 75.0,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 99.5,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 94.5,
+"episode": "023"
+},
+{
+"clip": 1016602,
+"start": 23.3,
+"episode": "023"
+},
+{
+"clip": 1018364,
+"start": 77.0,
+"episode": "023"
+},
+{
+"clip": 974123,
+"start": 85.25,
+"episode": "023"
+},
+{
+"clip": 974123,
+"start": 90.5,
+"episode": "023"
+},
+{
+"clip": 994254,
+"start": 263.5,
+"episode": "023"
+},
+{
+"clip": 974123,
+"start": 95.0,
+"episode": "023"
+},
+{
+"clip": 974123,
+"start": 99.0,
+"episode": "023"
+},
+{
+"clip": 943762,
+"start": 13,
+"episode": "023"
+},
+{
+"clip": 943762,
+"start": 17.5,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 25.15,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 26.0,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 32.5,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 36.5,
+"episode": "023"
+},
+{
+"clip": 943762,
+"start": 22.0,
+"episode": "023"
+},
+{
+"clip": 943762,
+"start": 28.5,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 9,
+"episode": "023"
+},
+{
+"clip": 907567,
+"start": 16.5,
+"episode": "023"
+},
+{
+"clip": 950625,
+"start": 121.5,
+"episode": "023"
+},
+{
+"clip": 989488,
+"start": 27.0,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 24.0,
+"episode": "023"
+},
+{
+"clip": 907567,
+"start": 22.5,
+"episode": "023"
+},
+{
+"clip": 989488,
+"start": 31.0,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 29.5,
+"episode": "023"
+},
+{
+"clip": 907567,
+"start": 27.5,
+"episode": "023"
+},
+{
+"clip": 989488,
+"start": 37.5,
+"episode": "023"
+},
+{
+"clip": 950625,
+"start": 126.5,
+"episode": "023"
+},
+{
+"clip": 950625,
+"start": 131.0,
+"episode": "023"
+},
+{
+"clip": 943762,
+"start": 35.39,
+"episode": "023"
+},
+{
+"clip": 943762,
+"start": 39.0,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 40.5,
+"episode": "023"
+},
+{
+"clip": 943762,
+"start": 43.0,
+"episode": "023"
+},
+{
+"clip": 943762,
+"start": 48.5,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 47.5,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 51.5,
+"episode": "023"
+},
+{
+"clip": 960896,
+"start": 59.31,
+"episode": "023"
+},
+{
+"clip": 960896,
+"start": 64.5,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 35.0,
+"episode": "023"
+},
+{
+"clip": 960896,
+"start": 69.0,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 48.0,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 52.0,
+"episode": "023"
+},
+{
+"clip": 960896,
+"start": 74.5,
+"episode": "023"
+},
+{
+"clip": 1026422,
+"start": 119.92,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 56.0,
+"episode": "023"
+},
+{
+"clip": 960896,
+"start": 79.0,
+"episode": "023"
+},
+{
+"clip": 959446,
+"start": 1,
+"episode": "023"
+},
+{
+"clip": 952317,
+"start": 1,
+"episode": "023"
+},
+{
+"clip": 1026652,
+"start": 88.0,
+"episode": "023"
+},
+{
+"clip": 1026652,
+"start": 93.0,
+"episode": "023"
+},
+{
+"clip": 1026652,
+"start": 0.5,
+"episode": "023"
+},
+{
+"clip": 1026652,
+"start": 5.0,
+"episode": "023"
+},
+{
+"clip": 995945,
+"start": 14,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 55.5,
+"episode": "023"
+},
+{
+"clip": 907567,
+"start": 31.0,
+"episode": "023"
+},
+{
+"clip": 959446,
+"start": 7.5,
+"episode": "023"
+},
+{
+"clip": 959446,
+"start": 11.5,
+"episode": "023"
+},
+{
+"clip": 952317,
+"start": 7.49,
+"episode": "023"
+},
+{
+"clip": 1026422,
+"start": 48.0,
+"episode": "023"
+},
+{
+"clip": 1026422,
+"start": 53.5,
+"episode": "023"
+},
+{
+"clip": 1026652,
+"start": 9.5,
+"episode": "023"
+},
+{
+"clip": 995945,
+"start": 62.5,
+"episode": "023"
+},
+{
+"clip": 995945,
+"start": 66.5,
+"episode": "023"
+},
+{
+"clip": 995945,
+"start": 19.0,
+"episode": "023"
+},
+{
+"clip": 995945,
+"start": 30,
+"episode": "023"
+},
+{
+"clip": 1026652,
+"start": 13.0,
+"episode": "023"
+},
+{
+"clip": 1026652,
+"start": 18.0,
+"episode": "023"
+},
+{
+"clip": 950625,
+"start": 135.5,
+"episode": "023"
+},
+{
+"clip": 950625,
+"start": 139.5,
+"episode": "023"
+},
+{
+"clip": 957013,
+"start": 59.58,
+"episode": "023"
+},
+{
+"clip": 1015442,
+"start": 250.41,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 60.0,
+"episode": "023"
+},
+{
+"clip": 984482,
+"start": 64.5,
+"episode": "023"
+},
+{
+"clip": 959446,
+"start": 15.5,
+"episode": "023"
+},
+{
+"clip": 959446,
+"start": 20.5,
+"episode": "023"
+},
+{
+"clip": 959446,
+"start": 25.5,
+"episode": "023"
+},
+{
+"clip": 1026652,
+"start": 23.0,
+"episode": "023"
 }
 ]
