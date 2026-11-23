@@ -1,0 +1,1202 @@
+[
+{
+"line": 1,
+"slot": 6.48,
+"dur": 6.18,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.31
+},
+{
+"line": 2,
+"slot": 7.87,
+"dur": 7.89,
+"stretch": 1.048,
+"delay": 0.0,
+"late": 0.02
+},
+{
+"line": 3,
+"slot": 6.13,
+"dur": 6.13,
+"stretch": 1.0,
+"delay": 0.02,
+"late": 0.02
+},
+{
+"line": 4,
+"slot": 2.93,
+"dur": 2.42,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -0.49
+},
+{
+"line": 5,
+"slot": 3.47,
+"dur": 3.29,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.17
+},
+{
+"line": 6,
+"slot": 2.74,
+"dur": 2.55,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.19
+},
+{
+"line": 7,
+"slot": 9.15,
+"dur": 8.4,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.75
+},
+{
+"line": 8,
+"slot": 5.05,
+"dur": 4.53,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.52
+},
+{
+"line": 9,
+"slot": 6.57,
+"dur": 6.47,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.1
+},
+{
+"line": 10,
+"slot": 7.91,
+"dur": 5.74,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -2.17
+},
+{
+"line": 11,
+"slot": 4.31,
+"dur": 1.55,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -2.76
+},
+{
+"line": 12,
+"slot": 4.9,
+"dur": 3.68,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.22
+},
+{
+"line": 13,
+"slot": 5.71,
+"dur": 4.89,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.82
+},
+{
+"line": 14,
+"slot": 6.05,
+"dur": 4.88,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.17
+},
+{
+"line": 15,
+"slot": 3.46,
+"dur": 3.11,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.35
+},
+{
+"line": 16,
+"slot": 10.39,
+"dur": 10.39,
+"stretch": 1.047,
+"delay": 0.0,
+"late": -0.0
+},
+{
+"line": 17,
+"slot": 3.52,
+"dur": 1.94,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.58
+},
+{
+"line": 18,
+"slot": 10.77,
+"dur": 10.51,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.26
+},
+{
+"line": 19,
+"slot": 7.01,
+"dur": 7.01,
+"stretch": 1.092,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 20,
+"slot": 10.95,
+"dur": 10.97,
+"stretch": 1.021,
+"delay": 0.01,
+"late": 0.02
+},
+{
+"line": 21,
+"slot": 7.04,
+"dur": 6.71,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -0.31
+},
+{
+"line": 22,
+"slot": 9.57,
+"dur": 9.08,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.49
+},
+{
+"line": 23,
+"slot": 5.52,
+"dur": 4.53,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.99
+},
+{
+"line": 24,
+"slot": 5.91,
+"dur": 5.92,
+"stretch": 1.102,
+"delay": 0.0,
+"late": 0.02
+},
+{
+"line": 25,
+"slot": 5.02,
+"dur": 2.62,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -2.38
+},
+{
+"line": 26,
+"slot": 7.39,
+"dur": 5.18,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -2.2
+},
+{
+"line": 27,
+"slot": 11.83,
+"dur": 11.73,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.1
+},
+{
+"line": 28,
+"slot": 5.74,
+"dur": 6.02,
+"stretch": 1.18,
+"delay": 0.0,
+"late": 0.28
+},
+{
+"line": 29,
+"slot": 13.41,
+"dur": 12.97,
+"stretch": 1.0,
+"delay": 0.28,
+"late": -0.16
+},
+{
+"line": 30,
+"slot": 7.59,
+"dur": 7.02,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.57
+},
+{
+"line": 31,
+"slot": 5.23,
+"dur": 5.37,
+"stretch": 1.18,
+"delay": 0.0,
+"late": 0.14
+},
+{
+"line": 32,
+"slot": 4.41,
+"dur": 4.05,
+"stretch": 1.0,
+"delay": 0.14,
+"late": -0.21
+},
+{
+"line": 33,
+"slot": 8.49,
+"dur": 8.41,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.07
+},
+{
+"line": 34,
+"slot": 3.38,
+"dur": 3.26,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.12
+},
+{
+"line": 35,
+"slot": 8.82,
+"dur": 7.3,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.52
+},
+{
+"line": 36,
+"slot": 5.14,
+"dur": 4.74,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.4
+},
+{
+"line": 37,
+"slot": 7.31,
+"dur": 7.21,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.1
+},
+{
+"line": 38,
+"slot": 5.77,
+"dur": 5.23,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.54
+},
+{
+"line": 39,
+"slot": 6.42,
+"dur": 6.32,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.09
+},
+{
+"line": 40,
+"slot": 4.21,
+"dur": 3.92,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.28
+},
+{
+"line": 41,
+"slot": 7.63,
+"dur": 7.64,
+"stretch": 1.063,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 42,
+"slot": 6.53,
+"dur": 6.55,
+"stretch": 1.134,
+"delay": 0.01,
+"late": 0.03
+},
+{
+"line": 43,
+"slot": 8.13,
+"dur": 8.14,
+"stretch": 1.013,
+"delay": 0.03,
+"late": 0.04
+},
+{
+"line": 44,
+"slot": 3.86,
+"dur": 2.47,
+"stretch": 1.0,
+"delay": 0.04,
+"late": -1.35
+},
+{
+"line": 45,
+"slot": 7.72,
+"dur": 6.93,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.79
+},
+{
+"line": 46,
+"slot": 4.32,
+"dur": 2.58,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.74
+},
+{
+"line": 47,
+"slot": 6.92,
+"dur": 6.74,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.18
+},
+{
+"line": 48,
+"slot": 5.97,
+"dur": 5.98,
+"stretch": 1.098,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 49,
+"slot": 7.0,
+"dur": 6.0,
+"stretch": 1.0,
+"delay": 0.01,
+"late": -0.99
+},
+{
+"line": 50,
+"slot": 7.55,
+"dur": 7.08,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.47
+},
+{
+"line": 51,
+"slot": 7.81,
+"dur": 7.82,
+"stretch": 1.14,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 52,
+"slot": 12.06,
+"dur": 12.05,
+"stretch": 1.005,
+"delay": 0.01,
+"late": 0.01
+},
+{
+"line": 53,
+"slot": 7.52,
+"dur": 7.53,
+"stretch": 1.112,
+"delay": 0.01,
+"late": 0.02
+},
+{
+"line": 54,
+"slot": 6.93,
+"dur": 6.36,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -0.55
+},
+{
+"line": 55,
+"slot": 11.81,
+"dur": 11.82,
+"stretch": 1.069,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 56,
+"slot": 4.91,
+"dur": 3.7,
+"stretch": 1.0,
+"delay": 0.01,
+"late": -1.21
+},
+{
+"line": 57,
+"slot": 4.77,
+"dur": 4.45,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.32
+},
+{
+"line": 58,
+"slot": 3.69,
+"dur": 3.2,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.49
+},
+{
+"line": 59,
+"slot": 5.53,
+"dur": 5.52,
+"stretch": 1.027,
+"delay": 0.0,
+"late": -0.01
+},
+{
+"line": 60,
+"slot": 4.52,
+"dur": 4.52,
+"stretch": 1.006,
+"delay": 0.0,
+"late": 0.0
+},
+{
+"line": 61,
+"slot": 3.42,
+"dur": 3.03,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.38
+},
+{
+"line": 62,
+"slot": 5.08,
+"dur": 4.65,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.43
+},
+{
+"line": 63,
+"slot": 4.48,
+"dur": 4.1,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.38
+},
+{
+"line": 64,
+"slot": 5.79,
+"dur": 5.8,
+"stretch": 1.027,
+"delay": 0.0,
+"late": 0.0
+},
+{
+"line": 65,
+"slot": 4.91,
+"dur": 4.93,
+"stretch": 1.141,
+"delay": 0.0,
+"late": 0.02
+},
+{
+"line": 66,
+"slot": 5.76,
+"dur": 5.56,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -0.17
+},
+{
+"line": 67,
+"slot": 5.42,
+"dur": 4.05,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.37
+},
+{
+"line": 68,
+"slot": 2.83,
+"dur": 1.27,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.55
+},
+{
+"line": 69,
+"slot": 2.93,
+"dur": 2.63,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.29
+},
+{
+"line": 70,
+"slot": 8.25,
+"dur": 8.25,
+"stretch": 1.088,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 71,
+"slot": 8.15,
+"dur": 8.15,
+"stretch": 1.131,
+"delay": 0.01,
+"late": 0.01
+},
+{
+"line": 72,
+"slot": 8.59,
+"dur": 8.56,
+"stretch": 1.0,
+"delay": 0.01,
+"late": -0.02
+},
+{
+"line": 73,
+"slot": 6.99,
+"dur": 7.0,
+"stretch": 1.015,
+"delay": 0.0,
+"late": 0.02
+},
+{
+"line": 74,
+"slot": 9.55,
+"dur": 9.56,
+"stretch": 1.054,
+"delay": 0.02,
+"late": 0.02
+},
+{
+"line": 75,
+"slot": 12.91,
+"dur": 10.75,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -2.14
+},
+{
+"line": 76,
+"slot": 9.38,
+"dur": 9.39,
+"stretch": 1.019,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 77,
+"slot": 9.08,
+"dur": 9.09,
+"stretch": 1.047,
+"delay": 0.01,
+"late": 0.02
+},
+{
+"line": 78,
+"slot": 6.62,
+"dur": 5.78,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -0.82
+},
+{
+"line": 79,
+"slot": 4.58,
+"dur": 4.59,
+"stretch": 1.042,
+"delay": 0.0,
+"late": 0.0
+},
+{
+"line": 80,
+"slot": 8.02,
+"dur": 8.42,
+"stretch": 1.18,
+"delay": 0.0,
+"late": 0.4
+},
+{
+"line": 81,
+"slot": 5.31,
+"dur": 5.32,
+"stretch": 1.041,
+"delay": 0.4,
+"late": 0.41
+},
+{
+"line": 82,
+"slot": 4.95,
+"dur": 4.97,
+"stretch": 1.105,
+"delay": 0.41,
+"late": 0.43
+},
+{
+"line": 83,
+"slot": 7.87,
+"dur": 7.86,
+"stretch": 1.127,
+"delay": 0.43,
+"late": 0.42
+},
+{
+"line": 84,
+"slot": 5.7,
+"dur": 4.82,
+"stretch": 1.0,
+"delay": 0.42,
+"late": -0.46
+},
+{
+"line": 85,
+"slot": 6.99,
+"dur": 5.89,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.1
+},
+{
+"line": 86,
+"slot": 3.65,
+"dur": 3.4,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.25
+},
+{
+"line": 87,
+"slot": 10.76,
+"dur": 10.76,
+"stretch": 1.168,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 88,
+"slot": 3.23,
+"dur": 2.66,
+"stretch": 1.0,
+"delay": 0.01,
+"late": -0.56
+},
+{
+"line": 89,
+"slot": 8.76,
+"dur": 8.66,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.1
+},
+{
+"line": 90,
+"slot": 4.96,
+"dur": 4.21,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.75
+},
+{
+"line": 91,
+"slot": 3.13,
+"dur": 1.71,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.41
+},
+{
+"line": 92,
+"slot": 3.87,
+"dur": 2.26,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.62
+},
+{
+"line": 93,
+"slot": 6.1,
+"dur": 6.12,
+"stretch": 1.059,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 94,
+"slot": 7.46,
+"dur": 6.6,
+"stretch": 1.0,
+"delay": 0.01,
+"late": -0.85
+},
+{
+"line": 95,
+"slot": 6.16,
+"dur": 5.84,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.32
+},
+{
+"line": 96,
+"slot": 2.56,
+"dur": 1.36,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.2
+},
+{
+"line": 97,
+"slot": 5.98,
+"dur": 5.99,
+"stretch": 1.056,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 98,
+"slot": 5.07,
+"dur": 5.08,
+"stretch": 1.059,
+"delay": 0.01,
+"late": 0.03
+},
+{
+"line": 99,
+"slot": 6.21,
+"dur": 5.62,
+"stretch": 1.0,
+"delay": 0.03,
+"late": -0.56
+},
+{
+"line": 100,
+"slot": 6.05,
+"dur": 5.51,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.54
+},
+{
+"line": 101,
+"slot": 5.22,
+"dur": 4.68,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.54
+},
+{
+"line": 102,
+"slot": 6.6,
+"dur": 5.55,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.05
+},
+{
+"line": 103,
+"slot": 4.51,
+"dur": 3.84,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.67
+},
+{
+"line": 104,
+"slot": 7.85,
+"dur": 7.65,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.19
+},
+{
+"line": 105,
+"slot": 4.26,
+"dur": 4.0,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.26
+},
+{
+"line": 106,
+"slot": 3.91,
+"dur": 3.75,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.17
+},
+{
+"line": 107,
+"slot": 10.34,
+"dur": 10.34,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.01
+},
+{
+"line": 108,
+"slot": 7.33,
+"dur": 6.94,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.4
+},
+{
+"line": 109,
+"slot": 3.97,
+"dur": 2.82,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.16
+},
+{
+"line": 110,
+"slot": 5.5,
+"dur": 5.47,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.03
+},
+{
+"line": 111,
+"slot": 6.44,
+"dur": 5.74,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.69
+},
+{
+"line": 112,
+"slot": 3.11,
+"dur": 2.82,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.3
+},
+{
+"line": 113,
+"slot": 6.41,
+"dur": 6.42,
+"stretch": 1.028,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 114,
+"slot": 8.29,
+"dur": 8.28,
+"stretch": 1.081,
+"delay": 0.01,
+"late": 0.01
+},
+{
+"line": 115,
+"slot": 6.35,
+"dur": 6.36,
+"stretch": 1.011,
+"delay": 0.01,
+"late": 0.02
+},
+{
+"line": 116,
+"slot": 8.07,
+"dur": 8.07,
+"stretch": 1.105,
+"delay": 0.02,
+"late": 0.02
+},
+{
+"line": 117,
+"slot": 5.1,
+"dur": 4.2,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -0.88
+},
+{
+"line": 118,
+"slot": 9.35,
+"dur": 10.34,
+"stretch": 1.18,
+"delay": 0.0,
+"late": 0.98
+},
+{
+"line": 119,
+"slot": 7.74,
+"dur": 7.51,
+"stretch": 1.0,
+"delay": 0.98,
+"late": 0.75
+},
+{
+"line": 120,
+"slot": 3.04,
+"dur": 2.89,
+"stretch": 1.0,
+"delay": 0.75,
+"late": 0.61
+},
+{
+"line": 121,
+"slot": 4.59,
+"dur": 4.19,
+"stretch": 1.0,
+"delay": 0.61,
+"late": 0.21
+},
+{
+"line": 122,
+"slot": 11.21,
+"dur": 10.96,
+"stretch": 1.0,
+"delay": 0.21,
+"late": -0.04
+},
+{
+"line": 123,
+"slot": 9.96,
+"dur": 10.9,
+"stretch": 1.18,
+"delay": 0.0,
+"late": 0.95
+},
+{
+"line": 124,
+"slot": 8.41,
+"dur": 6.94,
+"stretch": 1.0,
+"delay": 0.95,
+"late": -0.53
+},
+{
+"line": 125,
+"slot": 7.58,
+"dur": 7.6,
+"stretch": 1.081,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 126,
+"slot": 7.73,
+"dur": 7.27,
+"stretch": 1.0,
+"delay": 0.01,
+"late": -0.45
+},
+{
+"line": 127,
+"slot": 7.12,
+"dur": 7.13,
+"stretch": 1.146,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 128,
+"slot": 5.66,
+"dur": 4.91,
+"stretch": 1.0,
+"delay": 0.01,
+"late": -0.74
+},
+{
+"line": 129,
+"slot": 7.17,
+"dur": 7.18,
+"stretch": 1.024,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 130,
+"slot": 3.37,
+"dur": 3.01,
+"stretch": 1.0,
+"delay": 0.01,
+"late": -0.36
+},
+{
+"line": 131,
+"slot": 4.47,
+"dur": 4.19,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.27
+},
+{
+"line": 132,
+"slot": 8.69,
+"dur": 7.99,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.71
+},
+{
+"line": 133,
+"slot": 5.04,
+"dur": 4.95,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.09
+},
+{
+"line": 134,
+"slot": 5.45,
+"dur": 4.16,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -1.29
+},
+{
+"line": 135,
+"slot": 10.14,
+"dur": 10.14,
+"stretch": 1.02,
+"delay": 0.0,
+"late": -0.0
+},
+{
+"line": 136,
+"slot": 9.0,
+"dur": 9.01,
+"stretch": 1.084,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 137,
+"slot": 10.12,
+"dur": 10.14,
+"stretch": 1.064,
+"delay": 0.01,
+"late": 0.03
+},
+{
+"line": 138,
+"slot": 5.19,
+"dur": 4.31,
+"stretch": 1.0,
+"delay": 0.03,
+"late": -0.86
+},
+{
+"line": 139,
+"slot": 4.93,
+"dur": 4.91,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.03
+},
+{
+"line": 140,
+"slot": 3.79,
+"dur": 3.2,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.59
+},
+{
+"line": 141,
+"slot": 6.86,
+"dur": 6.85,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.0
+},
+{
+"line": 142,
+"slot": 2.33,
+"dur": 1.35,
+"stretch": 1.0,
+"delay": 0.0,
+"late": -0.98
+},
+{
+"line": 143,
+"slot": 11.85,
+"dur": 11.86,
+"stretch": 1.119,
+"delay": 0.0,
+"late": 0.01
+},
+{
+"line": 144,
+"slot": 7.95,
+"dur": 7.96,
+"stretch": 1.145,
+"delay": 0.01,
+"late": 0.03
+},
+{
+"line": 145,
+"slot": 12.98,
+"dur": 12.99,
+"stretch": 1.006,
+"delay": 0.03,
+"late": 0.04
+},
+{
+"line": 146,
+"slot": 2.54,
+"dur": 1.25,
+"stretch": 1.0,
+"delay": 0.04,
+"late": -1.25
+},
+{
+"line": 147,
+"slot": 9.0,
+"dur": 9.02,
+"stretch": 1.129,
+"delay": 0.0,
+"late": 0.02
+},
+{
+"line": 148,
+"slot": 8.22,
+"dur": 8.23,
+"stretch": 1.172,
+"delay": 0.02,
+"late": 0.02
+},
+{
+"line": 149,
+"slot": 5.48,
+"dur": 3.28,
+"stretch": 1.0,
+"delay": 0.02,
+"late": -2.18
+},
+{
+"line": 150,
+"slot": 2.99,
+"dur": 3.52,
+"stretch": 1.18,
+"delay": 0.0,
+"late": 0.53
+}
+]
