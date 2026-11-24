@@ -78,6 +78,12 @@ Tools: `tools/cw_voice.py` (wraps `tools/tts_client.py`; read both docstrings). 
 - Pace: per-line opts `speed` still work (relative to 1.04; the server turns them into tempo on top of 1.08). Keep the gap rules — they are applied by build_ep.py exactly as before.
 - Delivery follows punctuation: a "!" raises the energy (use only on real reveals), "?" lifts the end, commas give short breaths. Short sentences sound most human.
 
+## NEVER SKIP A LONG-VIDEO DAY — evergreen fallback (owner decision 2026-11-24, overrides "no episode (thin case)")
+- Owner: "COLD WARRANT must publish; if there is nothing new, take something great from the past." A run that would have produced a long video must ship one.
+- Score the fresh candidates first (famous name / record number / action footage at sea or a raid, 0–10). If none scores ≥ 7 or has ≥ 6 usable clips, take the first `todo (evergreen)` row of backlog.md (E01…) — legendary federal cases with strong public footage. Mark it `done YYYY-MM-DD` and, when fewer than 3 evergreen rows remain, research and append new ones (same bar: famous name or record, real government footage, a twist).
+- Data behind this (Performance rules 2–3, 8): fresh one-person court cases got 1–10 views on long and dragged Shorts down to a 177 median, while at-sea action, record seizures and famous names ("El Mencho…", "Coast Guard Jumps Onto a Moving Narco-Sub") won. Evergreen episodes follow the same Promise rule (the boarding/escape/seizure moment in the first 60 s) and EMOTION FIRST thumbnails.
+- Never present an old case as news: title and narration state the year ("In 2019…"), thumbnail tag "THE CASE" or the year, not "BREAKING".
+
 ## Fresh-case format (owner decision 2026-11-14 — overrides older case-picking notes)
 - Source of topics = official newsrooms of the LAST 7 DAYS (14 max): justice.gov/news + USAO pages, fbi.gov/news, dea.gov, ice.gov/news, cbp.gov/newsroom, news.uscg.mil. backlog.md is a fallback only.
 - "One case, one person": a protagonist (prefer sentenced/convicted; freshly charged only with "charged/alleged" + presumption-of-innocence line), told chronologically: who they were → the scheme → the detail that exposed it → takedown → court → what it means.
