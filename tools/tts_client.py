@@ -5,7 +5,7 @@ Used by SWORN, COLD WARRANT and other cloud channels.
   python3 tts_client.py request-spec RUN spec.json --creds /tmp/drive_creds.json [--hint "..."]
       Generic form. spec.json = {"<out_dir_key>": {"lines": ["text", ...], "names": ["raw_01.wav", ...], "tempo": 1.0,
       "speed": 1.0}, ...}. Every line becomes <out_dir_key>/<name> (48 kHz mono wav) in the result zip.
-      "tempos": [per-line factors] optional. "tempo" = speed-up factor applied after synthesis (1.0 = natural pace; 1.08–1.12 = brisk; Shorts 1.15).
+      "tempos": [per-line factors] optional. "tempo" = speed-up factor applied after synthesis (1.0 = natural pace = MAX for long-form, owner 2026-11-24; Shorts ≤ 1.10 — the relay clamps higher values).
 
   python3 tts_client.py request RUN EPISODE_DIR --creds /tmp/drive_creds.json [--hint "Names, Companies"]
       Builds the request from EPISODE_DIR/episode.json (key "vo", speed 0.98) and every short*.json (key "s<N>/vo", speed 1.15)

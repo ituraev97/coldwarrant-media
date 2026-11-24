@@ -4,6 +4,7 @@
 > - Thumbnails v6 (section "Thumbnails v6" near the end): thumb_A and thumb_B are made with `tools/thumbkit/thumbkit.py` + AI pictures from `tools/img_client.py` (request them at the START of the run); only thumb_C uses this channel's old generator. Every run must at least request the AI pictures; if they do not arrive in time, say so in the report.
 > - EMOTION FIRST: every thumbnail shows a strong emotion (rage, shock, fear, disbelief) — never a calm face; the AI may only re-light a real face, never change it.
 > - Promise rule + subtitles + minimal bleeps (section "Promise, clips & subtitles" at the end).
+> - VOICE PACE (owner 2026-11-24: "the voice speeds up and talks too fast"): long-form narration is NEVER sped up — `speed`/`tempo`/`tempos` ≤ 1.0 for the long video (the relay now clamps long-form to 1.0 and Shorts to 1.10). Target 150–165 words per minute: budget ≈ 155 words per minute of narration when you size the script, short sentences, commas where a speaker breathes; do not cram to hit a duration — cut words instead.
 - NEVER skip a long-video day: no strong fresh case → take the first `todo (evergreen)` backlog row (section "NEVER SKIP A LONG-VIDEO DAY").
 
 
