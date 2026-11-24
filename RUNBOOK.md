@@ -1,5 +1,12 @@
 # COLD WARRANT — daily production runbook
 
+> **LATEST OWNER DECISIONS — read first, they override older sections below (2026-11-24)**
+> - Thumbnails v6 (section "Thumbnails v6" near the end): thumb_A and thumb_B are made with `tools/thumbkit/thumbkit.py` + AI pictures from `tools/img_client.py` (request them at the START of the run); only thumb_C uses this channel's old generator. Every run must at least request the AI pictures; if they do not arrive in time, say so in the report.
+> - EMOTION FIRST: every thumbnail shows a strong emotion (rage, shock, fear, disbelief) — never a calm face; the AI may only re-light a real face, never change it.
+> - Promise rule + subtitles + minimal bleeps (section "Promise, clips & subtitles" at the end).
+- NEVER skip a long-video day: no strong fresh case → take the first `todo (evergreen)` backlog row (section "NEVER SKIP A LONG-VIDEO DAY").
+
+
 Run notes go to RUNBOOK_NOTES.md (append there, never here). Promote a note into a rule section only if it must apply to every future run.
 
 The run fires daily but is a LONG run only every 2nd day (see "Long-video cadence" — do its OFF check FIRST, before reading further). A LONG run = publish the episode voiced since the previous long run + write and order the voice for the next one (see "Voice = Chatterbox via TTS relay"). An episode = one long video (English) + Short candidates (usually 5–6), of which the best 4 by the scorecard are uploaded here and scheduled in Metricool over two US days (see "Shorts: cadence + hook rules").
