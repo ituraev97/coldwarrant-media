@@ -1,0 +1,67 @@
+{
+ "es": {
+  "tag": "GUARDIA COSTERA",
+  "l1": "CASI 17.000 LB",
+  "l2": "DE COCAÍNA",
+  "s1": 150,
+  "s2": 130,
+  "band": 395,
+  "tw": 640
+ },
+ "pt": {
+  "tag": "GUARDA COSTEIRA",
+  "l1": "QUASE 17 MIL LB",
+  "l2": "DE COCAÍNA",
+  "s1": 140,
+  "s2": 130,
+  "band": 395,
+  "tw": 640
+ },
+ "fr": {
+  "tag": "GARDE-CÔTES",
+  "l1": "PRÈS DE 17 000 LB",
+  "l2": "DE COCAÏNE",
+  "s1": 130,
+  "s2": 130,
+  "band": 395,
+  "tw": 640
+ },
+ "it": {
+  "tag": "GUARDIA COSTIERA",
+  "l1": "QUASI 17.000 LB",
+  "l2": "DI COCAINA",
+  "s1": 140,
+  "s2": 130,
+  "band": 395,
+  "tw": 640
+ },
+ "de": {
+  "tag": "KÜSTENWACHE",
+  "l1": "FAST 17.000 LB",
+  "l2": "KOKAIN",
+  "s1": 150,
+  "s2": 140,
+  "band": 395,
+  "tw": 640
+ },
+ "ru": {
+  "tag": "БЕРЕГОВАЯ ОХРАНА",
+  "l1": "ПОЧТИ 17 000 ФУНТОВ",
+  "l2": "КОКАИНА",
+  "s1": 100,
+  "s2": 120,
+  "band": 395,
+  "font": "Osw",
+  "tw": 640
+ },
+ "hi": {
+  "tag": "तट रक्षक",
+  "l1": "लगभग 17,000 पाउंड",
+  "l2": "कोकीन",
+  "s1": 150,
+  "s2": 140,
+  "band": 395,
+  "font": "Teko",
+  "tw": 640
+ }
+}
