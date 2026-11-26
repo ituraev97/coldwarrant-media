@@ -1,0 +1,8 @@
+[{"out":"/home/claude/coldwarrant-media/episodes/027-colonel-crespo/thumb_A.jpg","layout":"full","plate":"/home/claude/plates_out/B_A.png","focus":[0.6,0.4],
+  "line1":"THE COLONEL","line2":"EXTRADITED",
+  "overlays":[{"type":"tag","text":"CHARGED, NOT CONVICTED"}],
+  "brand":{"accent":"#FFD400","sticker":"#FFD400","border":false}},
+ {"out":"/home/claude/coldwarrant-media/episodes/027-colonel-crespo/thumb_B.jpg","layout":"full","plate":"/home/claude/plates_out/B_B.png","focus":[0.6,0.4],
+  "line1":"ALLEGED","line2":"ARMED GUARDS",
+  "overlays":[{"type":"tag","text":"CHARGED, NOT CONVICTED"}],
+  "brand":{"accent":"#FF2A2A","sticker":"#FFD400","border":false}}]
