@@ -50,3 +50,6 @@ Never use DVIDS videos titled "Lethal Kinetic Strike" or any footage showing peo
 | E04 | EVERGREEN — The cucumber truck: the biggest fentanyl seizure in U.S. history at the time (Nogales, Jan 2019, 254 lb) and how CBP found it | DVIDS "Nogales fentanyl" CBP b-roll + press conference | todo (evergreen) |
 | E05 | EVERGREEN — Silk Road: the FBI hunt for "Dread Pirate Roberts", the library arrest (2013), double life sentence — and the 2025 pardon | DOJ/FBI releases, trial exhibits; file footage labelled | todo (evergreen) |
 | E06 | EVERGREEN — Operation Fast and Furious: when ATF let 2,000 guns walk to the cartels (2009–2011) and one ended up at a Border Patrol agent's murder scene | DOJ OIG report pages, congressional hearing video (public), ATF b-roll | todo (evergreen) |
+| 040 | CASE FILE 025 — CJNG tunnel engineer 'El Ingeniero' Hernandez Victoria (1,933-ft tunnel, $45M, indicted Oct. 29, 2026; evergreen-fill) | file footage only | done 2026-11-26 |
+| 041 | CASE FILE 026 — USCGC Charles Sexton disabling fire on two boats 175 mi off Cartagena, Oct. 28, 2026 ($89.2M) | DVIDS 1029779 + file footage | done 2026-11-26 |
+| 042 | CASE FILE 027 — Colonel Crespo-Guzman, ex-Bolivian Air Force colonel extradited Nov. 19, 2026 (charged, not convicted) | DOJ photo + file footage | done 2026-11-26 |

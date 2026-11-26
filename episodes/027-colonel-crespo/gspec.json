@@ -1,0 +1,297 @@
+[
+ {
+  "key": "title_09e7e0",
+  "name": "title",
+  "opts": {
+   "case": "027",
+   "title": "THE <span class=\"red\">COLONEL</span> EXTRADITED",
+   "sub": "HENRY RICHARD CRESPO-GUZMAN \u00b7 CHARGED, NOT CONVICTED \u00b7 SDNY \u00b7 NOV. 20, 2026",
+   "size": 130
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_cacbb8",
+  "name": "chapter",
+  "opts": {
+   "case": "027",
+   "n": "I",
+   "t": "THE MEETING"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "doc_cd05a9",
+  "name": "doc",
+  "opts": {
+   "header": "SDNY PRESS RELEASE 26-338 \u00b7 NOV. 20, 2026",
+   "title": "ACCORDING TO THE SUPERSEDING INDICTMENT",
+   "body": "\u201c\u2026the defendant conducted meetings at the Bolivian Air Force Base while dressed in his official Bolivian Air Force Uniform, while subordinate members of the Bolivian Air Force stood guard with automatic weapons.\u201d",
+   "stamp": "ALLEGATION",
+   "source": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D.N.Y."
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "list_fe90d1",
+  "name": "list",
+  "opts": {
+   "kicker": "NOT IN THE JUSTICE DEPARTMENT RELEASE",
+   "title": "WHAT THE RELEASE LEAVES OUT",
+   "items": [
+    "Kilograms of cocaine",
+    "Type of aircraft",
+    "Flight dates",
+    "Number of weapons"
+   ],
+   "footer": "SOURCE: SDNY PRESS RELEASE 26-338 \u00b7 NOV. 20, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_adb938",
+  "name": "chapter",
+  "opts": {
+   "case": "027",
+   "n": "II",
+   "t": "THE CHARGES"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "cards3_e17db0",
+  "name": "cards3",
+  "opts": {
+   "kicker": "THE THREE COUNTS \u00b7 ALL ALLEGATIONS",
+   "title": "CHARGED, NOT CONVICTED",
+   "cards": [
+    {
+     "h": "COUNT ONE",
+     "t": "10 YRS MIN",
+     "s": "Conspiracy to import cocaine \u00b7 max life"
+    },
+    {
+     "h": "COUNT TWO",
+     "t": "30 YRS MIN",
+     "s": "Machineguns + destructive devices \u00b7 max life \u00b7 consecutive"
+    },
+    {
+     "h": "COUNT THREE",
+     "t": "LIFE MAX",
+     "s": "Conspiracy to use and carry machineguns"
+    }
+   ],
+   "footer": "IF CONVICTED \u00b7 SOURCE: SDNY PRESS RELEASE 26-338 \u00b7 NOV. 20, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "timeline_77eceb",
+  "name": "timeline",
+  "opts": {
+   "kicker": "THE ALLEGED PERIOD VS. THE ARREST",
+   "title": "2020 \u2192 2026",
+   "events": [
+    {
+     "y": "SEPT. 2020",
+     "t": "Alleged period begins"
+    },
+    {
+     "y": "AUG. 2021",
+     "t": "Alleged period ends"
+    },
+    {
+     "y": "AUG. 28, 2026",
+     "t": "Arrested in Bolivia"
+    },
+    {
+     "y": "NOV. 19, 2026",
+     "t": "Extradited"
+    },
+    {
+     "y": "NOV. 20, 2026",
+     "t": "Initial appearance scheduled"
+    }
+   ]
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_caa75f",
+  "name": "chapter",
+  "opts": {
+   "case": "027",
+   "n": "III",
+   "t": "SANTA CRUZ TO NEW YORK"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "map_45533c",
+  "name": "map",
+  "opts": {
+   "map": {
+    "bounds": [
+     [
+      -70.5,
+      -23.5
+     ],
+     [
+      -56.5,
+      -8.5
+     ]
+    ],
+    "topPad": 170,
+    "highlight": {
+     "068": "#3a2a2a"
+    },
+    "cities": [
+     {
+      "ll": [
+       -63.18,
+       -17.78
+      ],
+      "name": "SANTA CRUZ",
+      "sub": "ARRESTED AUG. 28 \u00b7 FLIGHT OUT NOV. 19",
+      "d": 0.4,
+      "size": 24
+     },
+     {
+      "ll": [
+       -65.26,
+       -19.03
+      ],
+      "name": "SUCRE",
+      "sub": "SAN ROQUE PRISON",
+      "d": 1.0,
+      "size": 24,
+      "anchor": "end"
+     }
+    ]
+   },
+   "kicker": "BOLIVIA",
+   "title": "THE EXTRADITION ROUTE",
+   "footer": "SOURCES: EL DEBER, NOV. 19, 2026 \u00b7 EL DIARIO, NOV. 20, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "list_e468a3",
+  "name": "list",
+  "opts": {
+   "kicker": "THANKED IN THE RELEASE",
+   "title": "WHO HELPED",
+   "items": [
+    "U.S. Southern Command",
+    "DEA Lima Country Office",
+    "U.S. Embassy, La Paz \u00b7 HSI Bolivia",
+    "INTERPOL Bolivia \u00b7 Bolivian National Police",
+    "FELCN-GIOE (Bolivian anti-narcotics unit)"
+   ],
+   "footer": "SOURCE: SDNY PRESS RELEASE 26-338 \u00b7 NOV. 20, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_25c9a5",
+  "name": "chapter",
+  "opts": {
+   "case": "027",
+   "n": "IV",
+   "t": "A COUNTRY WITHOUT THE DEA"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_77e490",
+  "name": "quote",
+  "opts": {
+   "q": "\u201c\u2026no one is beyond the reach of American justice.\u201d",
+   "w": "DEA ADMINISTRATOR TERRANCE C. COLE \u00b7 SDNY RELEASE 26-338 \u00b7 NOV. 20, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_d0bfc5",
+  "name": "chapter",
+  "opts": {
+   "case": "027",
+   "n": "V",
+   "t": "THE FIRST ONE"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "cards3_61c0a1",
+  "name": "cards3",
+  "opts": {
+   "kicker": "MAXIMILIANO DAVILA PEREZ \u00b7 FORMER FELCN DIRECTOR",
+   "title": "THE PRECEDENT",
+   "cards": [
+    {
+     "h": "CHARGED",
+     "t": "FEB. 2022",
+     "s": "Unsealed in Manhattan \u00b7 $5M reward offered"
+    },
+    {
+     "h": "EXTRADITED",
+     "t": "DEC. 2024",
+     "s": "Arrived in the U.S. Dec. 13, 2024"
+    },
+    {
+     "h": "SENTENCED",
+     "t": "25 YEARS",
+     "s": "Convicted Oct. 23, 2025 \u00b7 sentenced Mar. 19, 2026"
+    }
+   ],
+   "footer": "SOURCES: SDNY RELEASES, FEB. 2, 2022 \u00b7 DEC. 13, 2024 \u00b7 MAR. 19, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_138a55",
+  "name": "quote",
+  "opts": {
+   "q": "\u201c\u2026you are also going to profit, I am going to win too.\u201d",
+   "w": "DAVILA PEREZ, ON A RECORDING DESCRIBED IN THE SDNY SENTENCING RELEASE \u00b7 MAR. 19, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_088b51",
+  "name": "quote",
+  "opts": {
+   "q": "\u201c\u2026our reach is global, our memory is long\u2026\u201d",
+   "w": "U.S. ATTORNEY DAMIAN WILLIAMS \u00b7 SDNY \u00b7 DEC. 13, 2024"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_b7ffb3",
+  "name": "chapter",
+  "opts": {
+   "case": "027",
+   "n": "VI",
+   "t": "WHAT HAPPENS NEXT"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_81f861",
+  "name": "quote",
+  "opts": {
+   "q": "\u201cThe charges in the Superseding Indictment are merely accusations, and the defendant is presumed innocent unless and until proven guilty.\u201d",
+   "w": "SDNY PRESS RELEASE 26-338 \u00b7 NOV. 20, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "end_ea45b6",
+  "name": "end",
+  "opts": {
+   "case": "027",
+   "label": "THE COLONEL EXTRADITED"
+  },
+  "intro": 2.4
+ }
+]

@@ -1,0 +1,46 @@
+[
+ {
+  "out": "/home/claude/coldwarrant-media/episodes/025-cjng-tunnel-engineer/thumb_A.jpg",
+  "layout": "full",
+  "plate": "/home/claude/plates_out/C_A.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "line1": "TERROR CHARGE",
+  "line2": "ALLEGED ENGINEER",
+  "overlays": [
+   {
+    "type": "tag",
+    "text": "INDICTED OCT. 29"
+   }
+  ],
+  "brand": {
+   "accent": "#FFD400",
+   "sticker": "#FFD400",
+   "border": false
+  }
+ },
+ {
+  "out": "/home/claude/coldwarrant-media/episodes/025-cjng-tunnel-engineer/thumb_B.jpg",
+  "layout": "full",
+  "plate": "/home/claude/plates_out/C_B.png",
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "line1": "1,933 FT",
+  "line2": "UNDER A STORE",
+  "overlays": [
+   {
+    "type": "tag",
+    "text": "$45M COCAINE"
+   }
+  ],
+  "brand": {
+   "accent": "#FF2A2A",
+   "sticker": "#FFD400",
+   "border": false
+  }
+ }
+]

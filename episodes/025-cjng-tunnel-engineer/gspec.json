@@ -1,0 +1,335 @@
+[
+ {
+  "key": "title_000acd",
+  "name": "title",
+  "opts": {
+   "case": "025",
+   "title": "THE <span class=\"red\">TUNNEL</span> ENGINEER",
+   "sub": "CJNG \u00b7 OTAY MESA \u00b7 INDICTED OCT. 29, 2026 \u00b7 CHARGED, NOT CONVICTED",
+   "size": 140
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_cd6bf3",
+  "name": "chapter",
+  "opts": {
+   "case": "025",
+   "n": "I",
+   "t": "THE STORE"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "cards3_7b22af",
+  "name": "cards3",
+  "opts": {
+   "kicker": "THE THREE STOPS \u00b7 MAY 29, 2026",
+   "title": "851 PACKAGES",
+   "cards": [
+    {
+     "h": "TRUCK \u00b7 COOLIDGE AVE.",
+     "t": "173",
+     "s": "~630 lb \u00b7 286 kg"
+    },
+    {
+     "h": "TRUCK \u00b7 NEAR THE STORE",
+     "t": "423",
+     "s": "~1,035 lb \u00b7 469 kg"
+    },
+    {
+     "h": "SECOND VAN",
+     "t": "255",
+     "s": "~604 lb \u00b7 274 kg"
+    }
+   ],
+   "footer": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., JUNE 1, 2026 \u00b7 COMPLAINT, ALLEGATIONS"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "stat_3b4303",
+  "name": "stat",
+  "opts": {
+   "a": "2,270 LB \u00b7 $45M",
+   "b": "COCAINE SEIZED FROM THREE VEHICLES \u00b7 ESTIMATED STREET VALUE",
+   "c": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., JUNE 1, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_95bbfa",
+  "name": "quote",
+  "opts": {
+   "q": "\u201cFor these defendants, it wasn't a light at the end of the tunnel. It was lights and sirens.\u201d",
+   "w": "U.S. ATTORNEY ADAM GORDON \u00b7 SOUTHERN DISTRICT OF CALIFORNIA \u00b7 JUNE 1, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_0cb354",
+  "name": "chapter",
+  "opts": {
+   "case": "025",
+   "n": "II",
+   "t": "THE TUNNEL"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "list_f1140c",
+  "name": "list",
+  "opts": {
+   "kicker": "THE BUY 4 LESS TUNNEL \u00b7 PER THE U.S. ATTORNEY'S OFFICE",
+   "title": "55 FEET DOWN",
+   "items": [
+    "About 55 feet deep",
+    "Up to 4.5 feet high",
+    "Reinforced walls",
+    "Rail system + ventilation",
+    "Electricity"
+   ],
+   "footer": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., JUNE 1 AND OCT. 29, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "stat_4b7f55",
+  "name": "stat",
+  "opts": {
+   "a": "1,933 FEET",
+   "b": "TIJUANA TO BUY 4 LESS, OTAY MESA \u00b7 ABOUT 55 FEET UNDERGROUND",
+   "c": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., OCT. 29, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "cards3_d8a44f",
+  "name": "cards3",
+  "opts": {
+   "kicker": "SOUTHERN DISTRICT OF CALIFORNIA \u00b7 SINCE 1993",
+   "title": "99 TUNNELS FOUND",
+   "cards": [
+    {
+     "h": "PASSAGES FOUND",
+     "t": "99",
+     "s": "Since 1993"
+    },
+    {
+     "h": "SOPHISTICATED",
+     "t": "28",
+     "s": "Per the U.S. Attorney's Office"
+    },
+    {
+     "h": "LAST OPERATIONAL",
+     "t": "2022",
+     "s": "Before this one"
+    }
+   ],
+   "footer": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., JUNE 1, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_e554e7",
+  "name": "chapter",
+  "opts": {
+   "case": "025",
+   "n": "III",
+   "t": "THE FIRST FOUR"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_debbd9",
+  "name": "chapter",
+  "opts": {
+   "case": "025",
+   "n": "IV",
+   "t": "THE ENGINEER"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "map_983691",
+  "name": "map",
+  "opts": {
+   "map": {
+    "bounds": [
+     [
+      -119.5,
+      34.0
+     ],
+     [
+      -100.0,
+      18.5
+     ]
+    ],
+    "topPad": 170,
+    "highlight": {
+     "484": "#3a2a2a",
+     "840": "#22222a"
+    },
+    "cities": [
+     {
+      "ll": [
+       -117.16,
+       32.55
+      ],
+      "name": "BUY 4 LESS \u00b7 OTAY MESA",
+      "sub": "SAN DIEGO",
+      "d": 0.4,
+      "size": 22,
+      "color": "#D3212D",
+      "anchor": "start"
+     },
+     {
+      "ll": [
+       -103.35,
+       20.67
+      ],
+      "name": "JALISCO STATE",
+      "sub": "ARREST OCT. 15, 2026 \u00b7 PER REPORTS",
+      "d": 1.0,
+      "size": 24
+     }
+    ]
+   },
+   "kicker": "THE ARREST",
+   "title": "REPORTED ARREST",
+   "footer": "ARREST PER PUBLIC REPORTS CITED BY U.S. ATTORNEY'S OFFICE, OCT. 29, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "list_4abbbc",
+  "name": "list",
+  "opts": {
+   "kicker": "INVESTIGATING AGENCIES \u00b7 PER THE RELEASE",
+   "title": "WHO WORKED THE CASE",
+   "items": [
+    "Homeland Security Investigations",
+    "U.S. Border Patrol \u00b7 CBP",
+    "San Diego County Sheriff's Office",
+    "DEA \u00b7 FBI \u00b7 HIDTA",
+    "California Dept. of Justice"
+   ],
+   "footer": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., JUNE 1, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "list_77b276",
+  "name": "list",
+  "opts": {
+   "kicker": "INDICTMENT \u00b7 SOUTHERN DISTRICT OF CALIFORNIA \u00b7 OCT. 29, 2026",
+   "title": "FOUR CHARGES \u00b7 ALLEGED",
+   "items": [
+    "1 \u00b7 Conspiracy to build/finance a tunnel \u00b7 20 yrs",
+    "2 \u00b7 Conspiracy to use a tunnel to import \u00b7 life",
+    "3 \u00b7 Conspiracy to import drugs \u00b7 life",
+    "4 \u00b7 Material support to a terrorist org. \u00b7 20 yrs"
+   ],
+   "footer": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., OCT. 29, 2026 \u00b7 CHARGES ARE ALLEGATIONS"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_f77fc1",
+  "name": "quote",
+  "opts": {
+   "q": "\u201cHernandez engineered his own downfall.\u201d",
+   "w": "U.S. ATTORNEY ADAM GORDON \u00b7 SOUTHERN DISTRICT OF CALIFORNIA \u00b7 OCT. 29, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_fc823e",
+  "name": "chapter",
+  "opts": {
+   "case": "025",
+   "n": "V",
+   "t": "THE TERROR CHARGE"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "doc_42c702",
+  "name": "doc",
+  "opts": {
+   "header": "U.S. ATTORNEY'S OFFICE \u00b7 OCT. 29, 2026",
+   "title": "FOREIGN TERRORIST ORGANIZATION",
+   "body": "Cartel de Jalisco Nueva Generacion (CJNG) designated by the United States on February 20, 2025 \u00b7 Charge: providing material support to a foreign terrorist organization, 18 U.S.C. 2339B(a)(1)",
+   "stamp": "DESIGNATED",
+   "source": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., OCT. 29, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "timeline_833c62",
+  "name": "timeline",
+  "opts": {
+   "kicker": "THE BUY 4 LESS TUNNEL CASE",
+   "title": "DEC. 2025 \u2192 OCT. 2026",
+   "events": [
+    {
+     "y": "DEC 2025",
+     "t": "Surveillance begins"
+    },
+    {
+     "y": "MAY 29",
+     "t": "3 stops \u00b7 tunnel found"
+    },
+    {
+     "y": "JUNE 1",
+     "t": "Four men charged"
+    },
+    {
+     "y": "OCT 15",
+     "t": "Arrest, per reports"
+    },
+    {
+     "y": "OCT 29",
+     "t": "Indictment announced"
+    }
+   ],
+   "footer": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL. \u00b7 CHARGES ARE ALLEGATIONS"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_e5b40d",
+  "name": "chapter",
+  "opts": {
+   "case": "025",
+   "n": "VI",
+   "t": "WHAT'S LEFT"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "list_bd2671",
+  "name": "list",
+  "opts": {
+   "kicker": "WHAT HAPPENS NEXT",
+   "title": "THREE OPEN QUESTIONS",
+   "items": [
+    "Will he be brought to the U.S.?",
+    "Who are the other two defendants?",
+    "Will the terror charge hold up in court?"
+   ],
+   "footer": "SOURCE: U.S. ATTORNEY'S OFFICE, S.D. CAL., OCT. 29, 2026 \u00b7 STATUS AS OF NOV. 26, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "end_b81bcd",
+  "name": "end",
+  "opts": {
+   "case": "025",
+   "label": "THE TUNNEL ENGINEER",
+   "stamp": "STILL OPEN"
+  },
+  "intro": 2.4
+ }
+]

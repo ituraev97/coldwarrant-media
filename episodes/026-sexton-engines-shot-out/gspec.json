@@ -1,0 +1,308 @@
+[
+ {
+  "key": "title_84e240",
+  "name": "title",
+  "opts": {
+   "case": "026",
+   "title": "<span class=\"red\">DISABLING FIRE</span> OFF CARTAGENA",
+   "sub": "USCGC CHARLES SEXTON \u00b7 OCT. 28, 2026 \u00b7 10,900 LB OF COCAINE \u00b7 10 DETAINED",
+   "size": 130
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_1451f4",
+  "name": "chapter",
+  "opts": {
+   "case": "026",
+   "n": "I",
+   "t": "TWO BOATS"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_0de009",
+  "name": "quote",
+  "opts": {
+   "q": "\u201cWe can fire warning shots and then disabling fire to shoot out the engines of the fast vessel.\u201d",
+   "w": "REAR ADM. JEFFREY NOVAK \u00b7 DEPUTY COMMANDER, COAST GUARD PACIFIC AREA \u00b7 TO KFMB, VIA CBS NEWS, DEC. 16, 2025"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "doc_fe6df5",
+  "name": "doc",
+  "opts": {
+   "header": "U.S. COAST GUARD NEWS RELEASE \u00b7 NOV. 13, 2026",
+   "title": "CUTTER CHARLES SEXTON STOPS 2 SUSPECTED DRUG VESSELS AT SEA",
+   "body": "Oct. 28 \u00b7 ~175 miles off Cartagena, Colombia \u00b7 both vessels stopped by disabling fire \u00b7 ~10,900 lb of cocaine, est. $89.2M \u00b7 10 detained, repatriated to Colombia for further investigation and potential prosecution",
+   "stamp": "RELEASE",
+   "source": "SOURCE: COAST GUARD RELEASE AS REPORTED BY SEAPOWER, NOV. 16, 2026 \u00b7 CHUCK HILL\u2019S CG BLOG, NOV. 13"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_3b30c3",
+  "name": "quote",
+  "opts": {
+   "q": "\u201cWe are determined to keep drugs off America\u2019s streets.\u201d",
+   "w": "LT. PETER FAGER \u00b7 COMMANDING OFFICER, USCGC CHARLES SEXTON \u00b7 COAST GUARD RELEASE, NOV. 13, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "stat_5aa00c",
+  "name": "stat",
+  "opts": {
+   "a": "10,900 LB",
+   "b": "ABOUT 5 METRIC TONS \u00b7 $89.2M ESTIMATED VALUE \u00b7 \u2248 $8,200 A POUND (OUR ARITHMETIC)",
+   "c": "SOURCE: U.S. COAST GUARD"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "list_cc24be",
+  "name": "list",
+  "opts": {
+   "kicker": "NOT IN THE COAST GUARD\u2019S RELEASE",
+   "title": "WHAT WE DON\u2019T KNOW",
+   "items": [
+    "Who fired, and with what",
+    "How many people on each boat",
+    "Nationalities of the ten",
+    "Where the cocaine was unloaded",
+    "Whether anyone was charged"
+   ],
+   "footer": "AS OF NOV. 26, 2026 \u00b7 PUBLIC RECORD I COULD FIND"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_780869",
+  "name": "chapter",
+  "opts": {
+   "case": "026",
+   "n": "II",
+   "t": "THE SMALLEST SHIP"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "stat_f5b73c",
+  "name": "stat",
+  "opts": {
+   "a": "154 FT vs 270 FT",
+   "b": "CHARLES SEXTON (FAST RESPONSE CUTTER) vs TAHOMA (MEDIUM ENDURANCE CUTTER)",
+   "c": "SOURCES: WIKIPEDIA \u00b7 SEAPOWER, MAY 14, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_2926d7",
+  "name": "chapter",
+  "opts": {
+   "case": "026",
+   "n": "III",
+   "t": "DISABLING FIRE"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "doc_125672",
+  "name": "doc",
+  "opts": {
+   "header": "14 U.S. CODE \u00a7 526",
+   "title": "STOPPING VESSELS; INDEMNITY FOR FIRING AT OR INTO VESSEL",
+   "body": "A Coast Guard commander may fire at a vessel liable to seizure or examination that fails to stop when ordered \u00b7 a warning gun normally comes first \u00b7 protection from penalties and damages claims",
+   "stamp": "LAW",
+   "source": "SOURCE: U.S. CODE, TITLE 14, \u00a7 526 (LEGAL INFORMATION INSTITUTE) \u00b7 SUMMARY"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "timeline_1310e8",
+  "name": "timeline",
+  "opts": {
+   "kicker": "DISABLING FIRE, FROM PROHIBITION TO TODAY",
+   "title": "1980 \u2192 2026",
+   "events": [
+    {
+     "y": "c. 1933",
+     "t": "Prior use, per history"
+    },
+    {
+     "y": "OCT 9 1980",
+     "t": "Thomas E: 55 rounds"
+    },
+    {
+     "y": "MAY 8 2026",
+     "t": "Tahoma: sniper fire"
+    },
+    {
+     "y": "OCT 28 2026",
+     "t": "Sexton: 2 boats"
+    }
+   ],
+   "footer": "SOURCES: COAST GUARD HISTORY ARTICLE \u00b7 SEAPOWER \u00b7 COAST GUARD RELEASE"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_451e93",
+  "name": "chapter",
+  "opts": {
+   "case": "026",
+   "n": "IV",
+   "t": "AFTER THE SHOOTING"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_1ed11d",
+  "name": "chapter",
+  "opts": {
+   "case": "026",
+   "n": "V",
+   "t": "SEVEN DAYS LATER"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "map_8464a6",
+  "name": "map",
+  "opts": {
+   "map": {
+    "bounds": [
+     [
+      -88.0,
+      8.0
+     ],
+     [
+      -72.0,
+      27.0
+     ]
+    ],
+    "topPad": 170,
+    "highlight": {
+     "170": "#3a2a2a",
+     "388": "#3a2a2a",
+     "840": "#22222a",
+     "192": "#22222a"
+    },
+    "cities": [
+     {
+      "ll": [
+       -81.78,
+       24.55
+      ],
+      "name": "KEY WEST",
+      "sub": "SEXTON HOME PORT",
+      "d": 0.3,
+      "size": 22
+     },
+     {
+      "ll": [
+       -80.13,
+       25.78
+      ],
+      "name": "MIAMI BEACH",
+      "sub": "NOV. 17 OFFLOAD",
+      "d": 0.7,
+      "size": 22
+     },
+     {
+      "ll": [
+       -77.2,
+       17.8
+      ],
+      "name": "PORTLAND COTTAGE",
+      "sub": "NOV. 4 \u00b7 ~110 NM SE",
+      "d": 1.2,
+      "size": 22,
+      "color": "#D3212D"
+     },
+     {
+      "ll": [
+       -75.5,
+       10.4
+      ],
+      "name": "CARTAGENA",
+      "sub": "OCT. 28 \u00b7 ~175 MI OFFSHORE",
+      "d": 1.6,
+      "size": 22,
+      "color": "#D3212D"
+     }
+    ]
+   },
+   "kicker": "TWO CASES, ONE CUTTER",
+   "title": "OCT. 28 AND NOV. 4",
+   "footer": "SOURCES: COAST GUARD RELEASES VIA SEAPOWER, THE EPOCH TIMES, DVIDS \u00b7 POSITIONS APPROXIMATE"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "quote_540c47",
+  "name": "quote",
+  "opts": {
+   "q": "\u201cDrug trafficking organizations continue to exploit maritime routes throughout the Caribbean Sea to transport illicit narcotics.\u201d",
+   "w": "LT. PETER FAGER \u00b7 COMMANDING OFFICER, USCGC CHARLES SEXTON \u00b7 VIA THE EPOCH TIMES, NOV. 21, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "cards3_8b96ad",
+  "name": "cards3",
+  "opts": {
+   "kicker": "CHARLES SEXTON \u00b7 7 DAYS APART",
+   "title": "TWO CASES, ONE CUTTER",
+   "cards": [
+    {
+     "h": "OCT. 28 \u00b7 CARTAGENA",
+     "t": "10,900 LB",
+     "s": "$89.2M \u00b7 10 detained"
+    },
+    {
+     "h": "NOV. 4 \u00b7 JAMAICA",
+     "t": "2,425 LB",
+     "s": "$18.2M \u00b7 3 detained"
+    },
+    {
+     "h": "TOGETHER",
+     "t": "~13,300 LB",
+     "s": "~$107M \u00b7 13 detained"
+    }
+   ],
+   "footer": "SOURCES: COAST GUARD RELEASES \u00b7 DVIDS \u00b7 TOTALS ARE OUR ARITHMETIC"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "chapter_6554a1",
+  "name": "chapter",
+  "opts": {
+   "case": "026",
+   "n": "VI",
+   "t": "THE PIPELINE"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "stat_513346",
+  "name": "stat",
+  "opts": {
+   "a": "~198,000 LB",
+   "b": "COCAINE SEIZED IN FISCAL YEAR 2026 \u00b7 ABOVE ANNUAL AVERAGE \u00b7 >262,000 LB SINCE AUG. 2025 (OPERATION PACIFIC VIPER)",
+   "c": "SOURCE: U.S. COAST GUARD RELEASE, NOV. 13, 2026"
+  },
+  "intro": 2.4
+ },
+ {
+  "key": "end_d6e9c9",
+  "name": "end",
+  "opts": {
+   "case": "026",
+   "label": "DISABLING FIRE OFF CARTAGENA"
+  },
+  "intro": 2.4
+ }
+]
