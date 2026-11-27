@@ -160,7 +160,7 @@ DISPLAY = [
 
 META = dict(
     case="028", label="KEEFE D: THE MAN WHO TALKED",
-    title="Keefe D: The Gangster Who Talked Himself Into 40 Years to Life",
+    title="He Told the World He Was in Tupac's Car — Now It's 40 Years to Life",
     imgs={},
     mute_nat=[],
     credit=("Footage: news-conference, courtroom and police body-camera video of the Las Vegas Metropolitan Police Department / Clark County District Attorney / Eighth Judicial District Court proceedings as broadcast by Law&Crime, CBS News, ABC, USA TODAY, CNN, AP, KTNV and NewsNation, used with commentary. "
