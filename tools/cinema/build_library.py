@@ -31,11 +31,13 @@ WANT = {
     "helicopter":  (["helicopter flyover"], 20, 2),
     "siren":       (["police siren distant"], 15, 2),
 }
-MUSIC = {
-    "music_tension": ["dark ambient tension", "suspense cinematic"],
-    "music_documentary": ["documentary background", "cinematic documentary"],
-    "music_drive": ["electronic pulse driving", "cinematic percussion"],
-    "music_calm": ["calm ambient piano", "ambient pad"],
+MUSIC = {  # owner 2026-11-28: every channel was getting the same bed -> 6 tracks per mood, rotated per episode
+    "music_tension": ["dark ambient tension", "suspense cinematic", "thriller underscore", "dark cinematic drone strings"],
+    "music_documentary": ["documentary background", "cinematic documentary", "documentary underscore", "news background music"],
+    "music_drive": ["electronic pulse driving", "cinematic percussion", "action trailer percussion", "dark electronic beat"],
+    "music_calm": ["calm ambient piano", "ambient pad", "soft piano reflective", "ambient atmosphere"],
+    "music_investigative": ["investigation mystery music", "mystery ambient", "noir jazz", "detective mystery"],
+    "music_somber": ["sad piano", "melancholic strings", "somber cinematic", "emotional ambient"],
 }
 OK_LIC = {"cc0", "by"}
 
@@ -84,7 +86,7 @@ os.makedirs(OUT, exist_ok=True)
 libf = os.path.join(OUT, "library.json")
 lib = json.load(open(libf)) if os.path.exists(libf) else []
 have = {e["id"] for e in lib}
-jobs = [(role, qs, mx, n, False) for role, (qs, mx, n) in WANT.items()] + [(role, qs, 240, 3, True) for role, qs in MUSIC.items()]
+jobs = [(role, qs, mx, n, False) for role, (qs, mx, n) in WANT.items()] + [(role, qs, 240, 6, True) for role, qs in MUSIC.items()]
 for role, queries, max_s, keep, is_music in jobs:
     got = sum(1 for e in lib if e["role"] == role)
     for q in queries:

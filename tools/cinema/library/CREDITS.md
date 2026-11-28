@@ -33,3 +33,16 @@ All CC0 or CC BY. For CC BY items put the line in the video description.
 - "Drakkar" by Ivan Tregub (BER) — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1465379
 - "#18 (Gullinburste-2018)" by Ivan Tregub (BER) — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1550301
 - "Omega report" by zero-project — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1806073
+- "War-flowers" by Jose Beausejour — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1301913
+- "Marching with the braves" by Jose Beausejour — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1301990
+- "VolexTagamine - Sky (StepTwo, music2000, ps1)" by VolexOne — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1618110
+- "Wanderer" by Andrew kn — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1538246
+- "Ljosalfheimr III" by Ivan Tregub (BER) — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1529566
+- "Ambient Dance" by Alexander Blu — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1476509
+- "Ambient" by Alexander Blu — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1476529
+- "I was supposed to be ambient" by Voytek Pavlik — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1024474
+- "Sad Piano" by Alexander Blu — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1476512
+- "Ghost" by madelyn munsell — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1174818
+- "Far Away" by VITNE — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1447645
+- "Kissing Streams" by Rivers and Leaves — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1665671
+- "Soft Orange Glow" by Josh Woodward — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/215756
