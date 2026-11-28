@@ -156,3 +156,9 @@
 - Hook still: Ken Burns zoom + subtitles cover the bottom ~250 px — keep baked hook text above y≈900 and names under the photos clear of it.
 - Single-pass H.264 (`libx264 -preset veryfast -b:v 3000k -maxrate 4500k`, AAC 160k) = 16:41 in ~25 min, 387 MB — fits the ≤ 450 MB Drive route; 2-pass x265 is no longer needed for Drive hosting.
 - Fact-checker caught: Simmons' quotes attributed to Pasciucco, Bessent's 2025 quote placed as if about this indictment, "justice has found five" (implies guilt), Mexico's reward as "each", DOJ wording vs indictment wording (Barrett/AK), "first indicted"/"ever since", AP per-acre fee stated as fact, Short title implying all 33 guns were gold.
+
+## 2026-11-28 run lessons
+- finish_ep on >19 min episodes needs swap (8 GB swapfile) or it is OOM-killed.
+- drive_upload names by basename: copy each long to a unique name (long029/030/031.mp4) first.
+- IMG relay (FLUX plates) can take 50+ min and may never deliver; fall back to thumb2.mjs real-frame thumbs.
+- DVIDS clips: check for slates/black gaps (blackdetect) and shift shots before building.
