@@ -1,0 +1,35 @@
+# Sound & music credits (Doc Cinema library)
+All CC0 or CC BY. For CC BY items put the line in the video description.
+
+- "Suspense Whoosh/Transition 01" by tyops — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/tyops/sounds/275145
+- "Suspense Whoosh/Transition" by tyops — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/tyops/sounds/275143
+- "Whoosh Transitional Sound" by alirabiei — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://freesound.org/people/alirabiei/sounds/491854
+- "Whoosh.wav" by _bepis — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/_bepis/sounds/414422
+- "Impact" by original_sound — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://freesound.org/people/original_sound/sounds/376816
+- "2 Impact Wet" by original_sound — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://freesound.org/people/original_sound/sounds/376818
+- "Risers - Horror Whooshes Tension Builder 1.mp3" by original_sound — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://freesound.org/people/original_sound/sounds/494981
+- "Cinematic Impact Boom" by EminYILDIRIM — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/EminYILDIRIM/sounds/535412
+- "Cinematic Impact Boom Drama 2022" by EminYILDIRIM — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/EminYILDIRIM/sounds/648155
+- "cinematic boom 130730_06.wav" by klankbeeld — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/klankbeeld/sounds/195790
+- "Deep Cinematic Impact" by MeijstroAudio — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/MeijstroAudio/sounds/377303
+- "Agogo_Bell_Low_Velocity20.wav" by pjcohen — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/pjcohen/sounds/414560
+- "Camera Shutter, Fast, A.wav" by InspectorJ — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/InspectorJ/sounds/360329
+- "Page Turn - Please Turn Over (PTO) - paper_turn_over.wav" by flag2 — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/flag2/sounds/63318
+- "Page Turn (1)" by DrMinky — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/DrMinky/sounds/167047
+- "typing.aif" by MAJ061785 — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://freesound.org/people/MAJ061785/sounds/85564
+- "Radio Static Off Station.wav" by digifishmusic — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/digifishmusic/sounds/74929
+- "Kalgoorlie Wind #4" by kangaroovindaloo — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/kangaroovindaloo/sounds/180235
+- "outdoor ambience" by daenerys — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/daenerys/sounds/260726
+- "Construction Site Ambience in Thailand .WAV" by YOH — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/YOH/sounds/170873
+- "33. construction ambience 1.wav" by btherad2000 — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/btherad2000/sounds/328080
+- "Inflight Ambience.mp3" by digifishmusic — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/digifishmusic/sounds/30365
+- "Landing sounds and Taxi messages.mp3" by digifishmusic — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/digifishmusic/sounds/30367
+- "blackhawk_flyby.wav" by primeval_polypod — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://freesound.org/people/primeval_polypod/sounds/160613
+- "distant_ambulance_siren.mp3" by themfish — CC BY (https://creativecommons.org/licenses/by/4.0/) — https://freesound.org/people/themfish/sounds/33630
+- "8." by Ivan Tregub (BER) — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1503876
+- "7" by Ivan Tregub (BER) — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1503874
+- "Documentary Background" by Soundrider/Dope — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1670561
+- "The darkest hour" by zero-project — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1640794
+- "Drakkar" by Ivan Tregub (BER) — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1465379
+- "#18 (Gullinburste-2018)" by Ivan Tregub (BER) — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1550301
+- "Omega report" by zero-project — CC BY (https://creativecommons.org/licenses/by/3.0/) — https://www.jamendo.com/track/1806073

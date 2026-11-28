@@ -20,6 +20,7 @@ this channel's rules, sourcing/fact standards and available footage (P1 first). 
 which idea was skipped and why. The idea is the TOPIC only — research, script and visuals stay our own; never copy a competitor's video.
 ALWAYS follow `ideas/growth.md` (growth rules: packaging, thumbnails, length, voice — owner 2026-11-28; it overrides older thumbnail/length lines of this file where they conflict).
 Also follow `ideas/playbook.md` (weekly HOW-TO: length, hooks, title formulas, thumbnails) where it does not conflict with this runbook.
+SOUND & FINISHING: use the Doc Cinema kit in `tools/cinema/` (read tools/cinema/RULES.md) — real-recording sound library, five-layer sound design from an events.json log (sound_design.py), eased moves on stills, film finish and intentional transitions (look.py). Never synthesize drones/hits in code. Put tools/cinema/library CC BY credits (credits.txt) in the description.
 After publishing, append one line to `ideas/used.md`: `<idea id> | <date> | <published title>`.
 
 ## Long-video cadence — owner decision 2026-11-23 (overrides every "one long per run/day" line)
