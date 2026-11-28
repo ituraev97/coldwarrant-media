@@ -1,137 +1,144 @@
 {
- "es": {
-  "layout": "news",
-  "split": 50,
-  "left": {
-   "image": "/home/claude/work/img/src/c_pez.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "right": {
-   "image": "/home/claude/work/img/src/c_fresa.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "tag": "BUSCADOS",
-  "l1": "2 HERMANOS",
-  "l2": "$8 MILLONES",
-  "s1": 120,
-  "s2": 150
- },
- "pt": {
-  "layout": "news",
-  "split": 50,
-  "left": {
-   "image": "/home/claude/work/img/src/c_pez.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "right": {
-   "image": "/home/claude/work/img/src/c_fresa.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "tag": "PROCURADOS",
-  "l1": "2 IRMÃOS",
-  "l2": "US$ 8 MILHÕES",
-  "s1": 120,
-  "s2": 150
- },
- "fr": {
-  "layout": "news",
-  "split": 50,
-  "left": {
-   "image": "/home/claude/work/img/src/c_pez.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "right": {
-   "image": "/home/claude/work/img/src/c_fresa.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "tag": "RECHERCHÉS",
-  "l1": "2 FRÈRES",
-  "l2": "8 MILLIONS $",
-  "s1": 120,
-  "s2": 150
- },
- "it": {
-  "layout": "news",
-  "split": 50,
-  "left": {
-   "image": "/home/claude/work/img/src/c_pez.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "right": {
-   "image": "/home/claude/work/img/src/c_fresa.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "tag": "RICERCATI",
-  "l1": "2 FRATELLI",
-  "l2": "8 MILIONI $",
-  "s1": 120,
-  "s2": 150
- },
- "de": {
-  "layout": "news",
-  "split": 50,
-  "left": {
-   "image": "/home/claude/work/img/src/c_pez.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "right": {
-   "image": "/home/claude/work/img/src/c_fresa.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "tag": "GESUCHT",
-  "l1": "2 BRÜDER",
-  "l2": "8 MIO. $",
-  "s1": 120,
-  "s2": 150
- },
- "ru": {
-  "layout": "news",
-  "split": 50,
-  "left": {
-   "image": "/home/claude/work/img/src/c_pez.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "right": {
-   "image": "/home/claude/work/img/src/c_fresa.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "tag": "В РОЗЫСКЕ",
-  "l1": "2 БРАТА",
-  "l2": "$8 МЛН",
-  "s1": 120,
-  "s2": 150,
-  "font": "Osw"
- },
- "hi": {
-  "layout": "news",
-  "split": 50,
-  "left": {
-   "image": "/home/claude/work/img/src/c_pez.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "right": {
-   "image": "/home/claude/work/img/src/c_fresa.png",
-   "pos": "50% 25%",
-   "zoom": 100
-  },
-  "tag": "वॉन्टेड",
-  "l1": "2 भाई",
-  "l2": "80 लाख डॉलर",
-  "s1": 120,
-  "s2": 150,
-  "font": "Teko"
- }
+"es": {
+"layout": "news",
+"split": 50,
+"left": {
+"image": "/home/claude/work/img/src/c_pez.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"right": {
+"image": "/home/claude/work/img/src/c_fresa.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"tag": "BUSCADOS",
+"l1": "2 HERMANOS",
+"l2": "$8 MILLONES",
+"s1": 120,
+"s2": 150,
+"band": 350
+},
+"pt": {
+"layout": "news",
+"split": 50,
+"left": {
+"image": "/home/claude/work/img/src/c_pez.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"right": {
+"image": "/home/claude/work/img/src/c_fresa.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"tag": "PROCURADOS",
+"l1": "2 IRMÃOS",
+"l2": "US$ 8 MILHÕES",
+"s1": 120,
+"s2": 150,
+"band": 350
+},
+"fr": {
+"layout": "news",
+"split": 50,
+"left": {
+"image": "/home/claude/work/img/src/c_pez.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"right": {
+"image": "/home/claude/work/img/src/c_fresa.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"tag": "RECHERCHÉS",
+"l1": "2 FRÈRES",
+"l2": "8 MILLIONS $",
+"s1": 120,
+"s2": 150,
+"band": 350
+},
+"it": {
+"layout": "news",
+"split": 50,
+"left": {
+"image": "/home/claude/work/img/src/c_pez.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"right": {
+"image": "/home/claude/work/img/src/c_fresa.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"tag": "RICERCATI",
+"l1": "2 FRATELLI",
+"l2": "8 MILIONI $",
+"s1": 120,
+"s2": 150,
+"band": 350
+},
+"de": {
+"layout": "news",
+"split": 50,
+"left": {
+"image": "/home/claude/work/img/src/c_pez.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"right": {
+"image": "/home/claude/work/img/src/c_fresa.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"tag": "GESUCHT",
+"l1": "2 BRÜDER",
+"l2": "8 MIO. $",
+"s1": 120,
+"s2": 150,
+"band": 350
+},
+"ru": {
+"layout": "news",
+"split": 50,
+"left": {
+"image": "/home/claude/work/img/src/c_pez.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"right": {
+"image": "/home/claude/work/img/src/c_fresa.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"tag": "В РОЗЫСКЕ",
+"l1": "2 БРАТА",
+"l2": "$8 МЛН",
+"s1": 120,
+"s2": 150,
+"font": "Osw",
+"band": 350
+},
+"hi": {
+"layout": "news",
+"split": 50,
+"left": {
+"image": "/home/claude/work/img/src/c_pez.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"right": {
+"image": "/home/claude/work/img/src/c_fresa.png",
+"pos": "50% 25%",
+"zoom": 100
+},
+"tag": "वॉन्टेड",
+"l1": "2 भाई",
+"l2": "80 लाख डॉलर",
+"s1": 120,
+"s2": 150,
+"font": "Teko",
+"band": 350
+}
 }
