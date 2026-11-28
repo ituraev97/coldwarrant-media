@@ -1,0 +1,24 @@
+{
+ "image": "/home/claude/work/th/a30.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "image": "/home/claude/work/th/a30.jpg",
+  "pos": "60% 8%",
+  "zoom": 125,
+  "l1": "DEAD END",
+  "l2": "BOSS MAN",
+  "c1": "r",
+  "c2": "w",
+  "tag": "FEDS SAY"
+ },
+ "B": {
+  "image": "/home/claude/work/th/b30.jpg",
+  "pos": "50% 8%",
+  "zoom": 125,
+  "l1": "25 YEARS",
+  "l2": "SENTENCED",
+  "c1": "y",
+  "c2": "w"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "image": "/home/claude/work/th/a31.jpg",
+ "pos": "50% 50%",
+ "zoom": 100,
+ "A": {
+  "image": "/home/claude/work/th/a31.jpg",
+  "pos": "50% 4%",
+  "zoom": 140,
+  "l1": "40 YEARS",
+  "l2": "ONE MORNING",
+  "c1": "y",
+  "c2": "w",
+  "tag": "SENTENCED"
+ },
+ "B": {
+  "image": "/home/claude/work/th/b31.jpg",
+  "pos": "50% 4%",
+  "zoom": 140,
+  "l1": "PJ GLIZZY",
+  "l2": "40 YEARS",
+  "c1": "w",
+  "c2": "r"
+ }
+}

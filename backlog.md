@@ -54,3 +54,6 @@ Never use DVIDS videos titled "Lethal Kinetic Strike" or any footage showing peo
 | 041 | CASE FILE 026 — USCGC Charles Sexton disabling fire on two boats 175 mi off Cartagena, Oct. 28, 2026 ($89.2M) | DVIDS 1029779 + file footage | done 2026-11-26 |
 | 042 | CASE FILE 027 — Colonel Crespo-Guzman, ex-Bolivian Air Force colonel extradited Nov. 19, 2026 (charged, not convicted) | DOJ photo + file footage | done 2026-11-26 |
 - 028 Keefe D (Duane Davis, South Side Compton Crips) — Tupac murder; convicted 2026-08-31, 40 to life 2026-10-13 — done 2026-11-27
+- 029 CASE FILE 029 — Peter "Sana" Ojeda, Orange County Mexican Mafia (convicted 2006 + Jan. 13, 2016; Oct. 30, 2026 hook) — EVERGREEN SATURDAY — done 2026-11-28
+- 030 CASE FILE 030 — Kendrick "Peanut" Young, Four Deuce Oakland Crips, Dallas (ATF Operation Blue Laces; 300 months, Nov. 23, 2026) — done 2026-11-28
+- 031 CASE FILE 031 — Paul Johnson "PJ Glizzy", OGz, Bronx (40 years, Nov. 20, 2026; victim Jayquan McKenley) — done 2026-11-28
