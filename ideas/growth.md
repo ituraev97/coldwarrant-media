@@ -29,6 +29,11 @@ Source: YouTube Help Center / Creator Insider (Todd Beaupré, Sep 2026) / YPP po
 - Never ElevenLabs (owner 2026-11-28). Chatterbox (relay) or the livelier Kokoro method only.
 
 ## This channel
+- MONETIZATION PUSH (owner 2026-11-28): subscribers are done (4,110 ≥ 1,000); the ONLY missing YPP requirement is 4,000 public long-form watch hours in 12 months — we have 6. Shorts watch time does NOT count. Every decision now optimises LONG-FORM watch time.
+- Every long: cut 3–4 Shorts from it the SAME day, each Short is a teaser that ends on an open question the long answers, and the Short title names the case. The owner's Claude links each Short to its long (Studio 'Related video'); list the Short↔long pairs in shorts_link.json as before.
+- Long cadence: 1 long per day when a PROVEN topic exists (radar breakout ≤72 h in ideas/next.md, or one of our Shorts > 500 views without a long yet); otherwise 1 every 2 days. Proven topics first, always.
+- Series: give every long a series label in the description first line (CARTELS · COAST GUARD · GANGS · MONEY · TUNNELS) so playlists/end screens chain episodes; end the long on a one-line teaser of the next case in the same series.
+- Auto-dubbing is ON for this channel (20 languages) — non-English viewers now count toward watch hours; keep titles/thumbnails localised (dub text + thumb_loc per RUNBOOK 'Dubbing v2').
 - Thumbnails: put a PERSON on every long thumbnail (the defendant's DOJ/agency photo, agents in action from DVIDS, or a gang's known emblem/name) — our dark empty scenery plates lose to competitors who show a face or a named gang (Hells Angels, Mexican Mafia).
 - Name the gang/cartel/agency the audience knows in title + thumbnail (≤3 words).
 - Longs only on stories where a competitor breakout or our Short already proved the topic (see ideas/next.md).
