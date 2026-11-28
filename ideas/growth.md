@@ -23,7 +23,15 @@ Source: YouTube Help Center / Creator Insider (Todd Beaupré, Sep 2026) / YPP po
 - Not the same template every time (inauthentic-content risk) — rotate 3–4 layouts.
 - Never AI-generated faces of real people; real photos only (government releases, archive), AI may only relight/extend.
 
+## Voice (all channels)
+- Long narration 150–170 words/min, Shorts 160–180. No silence > 0.6 s inside narration except one deliberate beat before a reveal.
+- Use tone tags: ~25% "hype" on reveals/numbers/verdicts, ~15% "calm" for context, the rest "normal". Short punchy sentences, rhetorical questions, one dry joke per chapter.
+- Never ElevenLabs (owner 2026-11-28). Chatterbox (relay) or the livelier Kokoro method only.
+
 ## This channel
 - Thumbnails: put a PERSON on every long thumbnail (the defendant's DOJ/agency photo, agents in action from DVIDS, or a gang's known emblem/name) — our dark empty scenery plates lose to competitors who show a face or a named gang (Hells Angels, Mexican Mafia).
 - Name the gang/cartel/agency the audience knows in title + thumbnail (≤3 words).
 - Longs only on stories where a competitor breakout or our Short already proved the topic (see ideas/next.md).
+
+## Voice
+- Voice audit 2026-11-28: lively (pitch 6.9–7.3, 157–169 wpm) — keep the current narrator.
