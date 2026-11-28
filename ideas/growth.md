@@ -33,6 +33,7 @@ Audit of the last 4 long videos per channel found the same problem everywhere: o
 - A clip/still used in any of the previous 5 episodes: ≤ 10 s in the new one. Generic stock (Capitol, courthouse, aircraft, city skyline, military jets): ≤ 20 s per video in total.
 - The same document page/photo at most twice per video — show the next page, a different crop of a different line, or another document.
 - Graphics: no card type more than ~12 times or 8% of runtime; nothing holds still > 6 s.
+- SUPER-REALISTIC (owner 2026-11-28): every 3D model / AI picture must show THE specific thing — correct model/type and its real markings (airline livery and logo, ship name and hull number, police/army insignia, company branding, the real building). A UPS crash shows a UPS MD-11, not a white airliner. Generic white/placeholder models are banned; if it cannot be made convincingly, use real photos or footage instead.
 **Sound:** never generate the music bed in code (fixed chords/seed = the same track every episode). Use `tools/cinema/library/music_*` (6 moods × several tracks), choose by mood, and keep `used_music.json`: a track used in the last 4 episodes of this channel is not used again.
 **Packaging and structure:**
 - Thumbnail: rotate at least 3 layouts; never the same layout + accent colour twice in a row, never the same wording pattern within 5 episodes. Never AI-drawn documents (garbled text looks fake) — real crops only. Only show a person's face if the video is about THEM.
