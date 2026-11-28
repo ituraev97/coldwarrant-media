@@ -1,0 +1,81 @@
+{
+ "es": {
+  "layout": "thumb2",
+  "image": "/home/claude/coldwarrant-media/episodes/028-keefe-d/thumb/cA.png",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "c1": "w",
+  "c2": "y",
+  "tag": "CONDENADO",
+  "l1": "TUPAC",
+  "l2": "40 AÑOS A PERPETUA"
+ },
+ "pt": {
+  "layout": "thumb2",
+  "image": "/home/claude/coldwarrant-media/episodes/028-keefe-d/thumb/cA.png",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "c1": "w",
+  "c2": "y",
+  "tag": "CONDENADO",
+  "l1": "TUPAC",
+  "l2": "40 ANOS A PERPÉTUA"
+ },
+ "fr": {
+  "layout": "thumb2",
+  "image": "/home/claude/coldwarrant-media/episodes/028-keefe-d/thumb/cA.png",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "c1": "w",
+  "c2": "y",
+  "tag": "CONDAMNÉ",
+  "l1": "TUPAC",
+  "l2": "40 ANS À PERPÉTUITÉ"
+ },
+ "it": {
+  "layout": "thumb2",
+  "image": "/home/claude/coldwarrant-media/episodes/028-keefe-d/thumb/cA.png",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "c1": "w",
+  "c2": "y",
+  "tag": "CONDANNATO",
+  "l1": "TUPAC",
+  "l2": "DA 40 ANNI A VITA"
+ },
+ "de": {
+  "layout": "thumb2",
+  "image": "/home/claude/coldwarrant-media/episodes/028-keefe-d/thumb/cA.png",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "c1": "w",
+  "c2": "y",
+  "tag": "VERURTEILT",
+  "l1": "TUPAC",
+  "l2": "40 JAHRE–LEBENSLANG"
+ },
+ "ru": {
+  "layout": "thumb2",
+  "image": "/home/claude/coldwarrant-media/episodes/028-keefe-d/thumb/cA.png",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "c1": "w",
+  "c2": "y",
+  "tag": "ОСУЖДЁН",
+  "l1": "ТУПАК",
+  "l2": "40 ЛЕТ — ПОЖИЗНЕННО",
+  "font": "Osw"
+ },
+ "hi": {
+  "layout": "thumb2",
+  "image": "/home/claude/coldwarrant-media/episodes/028-keefe-d/thumb/cA.png",
+  "pos": "50% 50%",
+  "zoom": 100,
+  "c1": "w",
+  "c2": "y",
+  "tag": "दोषी करार",
+  "l1": "टुपैक",
+  "l2": "40 साल से उम्रक़ैद",
+  "font": "Teko"
+ }
+}

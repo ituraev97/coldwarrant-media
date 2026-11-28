@@ -1,0 +1,67 @@
+{
+ "es": {
+  "tag": "ACUSADO EL 29 OCT.",
+  "l1": "CARGO TERRORISTA",
+  "l2": "PRESUNTO INGENIERO",
+  "s1": 130,
+  "s2": 130,
+  "band": 390,
+  "tw": 600
+ },
+ "pt": {
+  "tag": "INDICIADO EM 29/10",
+  "l1": "ACUSAÇÃO DE TERROR",
+  "l2": "SUPOSTO ENGENHEIRO",
+  "s1": 130,
+  "s2": 130,
+  "band": 390,
+  "tw": 600
+ },
+ "fr": {
+  "tag": "INCULPÉ LE 29 OCT.",
+  "l1": "CHARGE TERRORISTE",
+  "l2": "INGÉNIEUR PRÉSUMÉ",
+  "s1": 130,
+  "s2": 130,
+  "band": 390,
+  "tw": 600
+ },
+ "it": {
+  "tag": "INCRIMINATO IL 29/10",
+  "l1": "ACCUSA DI TERRORISMO",
+  "l2": "PRESUNTO INGEGNERE",
+  "s1": 120,
+  "s2": 130,
+  "band": 390,
+  "tw": 600
+ },
+ "de": {
+  "tag": "ANGEKLAGT AM 29. OKT.",
+  "l1": "TERROR-ANKLAGE",
+  "l2": "ANGEBLICHER INGENIEUR",
+  "s1": 140,
+  "s2": 115,
+  "band": 390,
+  "tw": 600
+ },
+ "ru": {
+  "tag": "ОБВИНЁН 29 ОКТЯБРЯ",
+  "l1": "ОБВИНЕНИЕ В ТЕРРОРЕ",
+  "l2": "ПРЕДПОЛАГАЕМЫЙ ИНЖЕНЕР",
+  "s1": 100,
+  "s2": 95,
+  "band": 390,
+  "font": "Osw",
+  "tw": 600
+ },
+ "hi": {
+  "tag": "29 अक्टूबर को अभियोग",
+  "l1": "आतंकवाद का आरोप",
+  "l2": "कथित इंजीनियर",
+  "s1": 140,
+  "s2": 140,
+  "band": 390,
+  "font": "Teko",
+  "tw": 600
+ }
+}

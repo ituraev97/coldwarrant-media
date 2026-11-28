@@ -1,0 +1,67 @@
+{
+ "es": {
+  "tag": "ACUSADO, NO CONDENADO",
+  "l1": "EL CORONEL",
+  "l2": "EXTRADITADO",
+  "s1": 150,
+  "s2": 150,
+  "band": 390,
+  "tw": 870
+ },
+ "pt": {
+  "tag": "ACUSADO, NÃO CONDENADO",
+  "l1": "O CORONEL",
+  "l2": "EXTRADITADO",
+  "s1": 150,
+  "s2": 150,
+  "band": 390,
+  "tw": 870
+ },
+ "fr": {
+  "tag": "INCULPÉ, PAS CONDAMNÉ",
+  "l1": "LE COLONEL",
+  "l2": "EXTRADÉ",
+  "s1": 150,
+  "s2": 150,
+  "band": 390,
+  "tw": 870
+ },
+ "it": {
+  "tag": "ACCUSATO, NON CONDANNATO",
+  "l1": "IL COLONNELLO",
+  "l2": "ESTRADATO",
+  "s1": 150,
+  "s2": 150,
+  "band": 390,
+  "tw": 870
+ },
+ "de": {
+  "tag": "ANGEKLAGT, NICHT VERURTEILT",
+  "l1": "DER OBERST",
+  "l2": "AUSGELIEFERT",
+  "s1": 150,
+  "s2": 150,
+  "band": 390,
+  "tw": 870
+ },
+ "ru": {
+  "tag": "ОБВИНЁН, НЕ ОСУЖДЁН",
+  "l1": "ПОЛКОВНИК",
+  "l2": "ЭКСТРАДИРОВАН",
+  "s1": 130,
+  "s2": 130,
+  "band": 390,
+  "font": "Osw",
+  "tw": 870
+ },
+ "hi": {
+  "tag": "आरोपी, दोषी नहीं",
+  "l1": "कर्नल",
+  "l2": "प्रत्यर्पित",
+  "s1": 150,
+  "s2": 150,
+  "band": 390,
+  "font": "Teko",
+  "tw": 870
+ }
+}
