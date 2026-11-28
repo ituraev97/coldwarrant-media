@@ -19,7 +19,7 @@ On a LONG run read this whole file before starting. Episode 001 (`episodes/001-m
 2. Otherwise → **LONG run**, long date = D (if D already has a long video, take the earliest date ≥ D without one and say so).
 3. A LONG run does the "Voice = Chatterbox via TTS relay" run order: step 1 publishes the episode voiced since the previous long run (long at 12:00 ET on D), steps 2–3 write the next episode and order its voice — with a 2-day gap the voice is always ready by the next LONG run. Its "never leave tomorrow empty" rule (step 4) means: never leave the long date D without a long video.
 4. Shorts: the LONG run schedules the Shorts for BOTH days — D 09:00 + 15:00 ET and D+1 09:00 + 15:00 ET (max 2/day per "Shorts: cadence + hook rules"). COLD WARRANT cuts its Shorts from the long, so pick the best 4 candidates by the scorecard (≥ 7/10): best → D 09:00, trailer for the long → D 15:00, 3rd/4th → D+1 09:00/15:00 (different templates and opening words on each day). Fewer than 4 score ≥ 7 → schedule only those and say so.
-5. Dubs: only for long videos, i.e. every LONG run (unchanged rules, see "Dubbing").
+5. Dubs: every LONG run makes the dub TEXT + THUMBNAIL package only — NO audio (see "Dubbing v2", owner 2026-11-28).
 6. OFF days have no other work (no long, no new Shorts); the Monday weekly review ("Performance rules") moves to the first LONG run on or after Monday.
 
 ## 0. Context
@@ -121,7 +121,17 @@ Measured on ep. 015: 46% of all pauses were the same ~0.45 s (every line got the
 - Pinned question: send Metricool `firstCommentText` on the long video with one sharp question about the case ("Was 20 years enough?"); if Metricool rejects it for YouTube, schedule without it and say so.
 - Description: first line = title promise + main keywords, then chapters, sources; end with 3 hashtags (#truecrime #fbi + one case keyword).
 
-## Dubbing (other-language audio tracks) — owner 2026-11-15
+## Dubbing v2 — owner decision 2026-11-28 (overrides "Dubbing (other-language audio tracks)" below: that section is HISTORY, do not run it)
+- AUDIO IS DONE BY YOUTUBE NOW. Once a video has its language set ("English (United States)"), YouTube auto-dubs it into ~20 languages (es, pt, hi, fr, it, de, ru, ar, ja, ko, …) within minutes. Our Edge-TTS dubs sounded worse and would REPLACE the auto-dub, so: never run `dub_build.py bed/voice/mix`, never build or send audio zips.
+- Metricool uploads videos WITHOUT a language → no auto-dub until it is set. The owner's Claude sets it in YouTube Studio after publishing (bulk edit → Video language). In the run report always list the new long video + Shorts under "needs video language: English (US)" so it is not forgotten.
+- What the run still makes for every new LONG episode, right after the fact check (cheap, ~15 min, no voice work):
+  1. episodes/NNN/dub/<lang>/title.txt + description.txt for es, pt, hi, fr, it, de, ru — same rules as before: ≤ 70 chars, allegation framing kept, same chapter timestamps, sources, credits, case-file label (EXPEDIENTE/ДЕЛО NNN …), 3 hashtags; reference episodes/024-munro-narco-sub/dub/<lang>/. These REPLACE YouTube's machine-translated titles/descriptions (which got numbers wrong, e.g. 7,700 kg vs 17,000 lb).
+  2. episodes/NNN/dub/thumb_loc.json + localized thumbnails episodes/NNN/dub/<lang>/thumb_<lang>.jpg rendered from the FINAL published English thumbnail (`node pipeline/thumb_loc.mjs …`, as before). "band" must start ~25–35 px above the English big text so no English letters peek out; LOOK at a grid of all 7 before committing.
+  3. Commit texts + thumbnails to main (images are small; audio never). The owner's Claude uploads them in YouTube Studio → Languages (title, description, thumbnail per language) straight from the raw GitHub files.
+- Translation agents + independent CHECK agent stay as before (numbers, names, meaning).
+- Episodes 016–024 are done (auto-dub + our titles/descriptions/thumbnails uploaded 2026-11-28).
+
+## Dubbing (other-language audio tracks) — owner 2026-11-15 — HISTORY, superseded by "Dubbing v2"
 - Rules, languages, voices: Projects doc `claude/dubbing.md`; voice engine `claude/dub_tts.py` → /home/claude/dub_tts.py. Languages: es, pt, hi, fr, it, de, ru (never Uzbek). The English channel voice never changes.
 - Builder `pipeline/dub_build.py`: `bed <ep>` (timing.json from vo/raw_NN.wav + music/FX/nat without English voice), `voice <ep> <lang> [rate]` (Edge TTS per line, offline fallback), `mix <ep> <lang>` (fits every line into its English slot, ducks music, −14 LUFS, exact video length). Needs <ep>/vo/raw_NN.wav (tts_ep.py is deterministic if missing) and <ep>/dub/<lang>/script.txt (one line per English line, same order).
 - Tempo (owner 2026-11-15): translations run longer, so dubs use Edge rate +10% (hi +8%) and atempo ≤ ×1.18 per line (≈1.3 max overall); a line may push ≤ 2.5 s into the next pause. Still too long → shorten the translation, never cut facts.
