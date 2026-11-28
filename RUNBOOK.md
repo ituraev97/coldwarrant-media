@@ -13,6 +13,13 @@ Run notes go to RUNBOOK_NOTES.md (append there, never here). Promote a note into
 The run fires daily but is a LONG run only every 2nd day (see "Long-video cadence" — do its OFF check FIRST, before reading further). A LONG run = publish the episode voiced since the previous long run + write and order the voice for the next one (see "Voice = Chatterbox via TTS relay"). An episode = one long video (English) + Short candidates (usually 5–6), of which the best 4 by the scorecard are uploaded here and scheduled in Metricool over two US days (see "Shorts: cadence + hook rules").
 On a LONG run read this whole file before starting. Episode 001 (`episodes/001-ms13/`) is the reference for structure, pacing and style.
 
+## IDEAS FROM DASHBOARD — owner decision 2026-11-28 (applies to every topic choice)
+Before choosing a topic, read `ideas/next.md`. It is rewritten every morning by the owner's analytics dashboard from this channel's
+YouTube/Metricool numbers, competitor videos that are breaking out right now, and fresh news. Take the highest-priority idea that fits
+this channel's rules, sourcing/fact standards and available footage (P1 first). If none fits, choose as usual and say in the run report
+which idea was skipped and why. The idea is the TOPIC only — research, script and visuals stay our own; never copy a competitor's video.
+After publishing, append one line to `ideas/used.md`: `<idea id> | <date> | <published title>`.
+
 ## Long-video cadence — owner decision 2026-11-23 (overrides every "one long per run/day" line)
 **ONE long video every 2 days.** Dates below are America/New_York; D = tomorrow (ET) at run time.
 1. **OFF check (first thing, every run):** Metricool getScheduledPosts, blogId 7731358, from today to D+1. If D already has its Shorts scheduled AND today or D has a long video → **OFF run**: do nothing else (no repo clone, no setup, no research, no voice status) and end with one line: `OFF run — D: <n> Shorts scheduled, last long <date>, next LONG run <date>.`
